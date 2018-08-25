@@ -131,8 +131,48 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.al-button {
-  display: block;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 11px;
+  line-height: 12px;
+  font-variant: normal;
+  font-weight: 600;
+}
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-variant: normal;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  font-variant: normal;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+h3 {
+  font-size: 26px;
+  line-height: 28px;
+  font-variant: normal;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+p {
+  font-size: 11px;
+  line-height: 12px;
+  font-variant: normal;
+  font-weight: 600;
+}
+p + p {
+  margin-top: 16px;
+}
+.alegrify-button {
+  display: inline-block;
   cursor: pointer;
   border: none;
   appearance: none;
@@ -142,31 +182,39 @@ table {
   line-height: 12px;
   font-weight: 400;
   font-style: normal;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.2);
+  border-width: 2px;
+  border-style: solid;
+  color: #4e4cc1;
+  border-color: #4e4cc1;
+  background-color: #ffffff;
+  transition: background-color 0.2s;
 }
-.al-button[disabled] {
+.alegrify-button[disabled] {
   opacity: 0.3;
   cursor: not-allowed;
 }
-.al-button:focus {
-  outline-color: #ffffff;
+.alegrify-button:focus {
+  outline-color: #4e4cc1;
 }
-.al-button:hover {
-  background: rgba(0, 0, 0, 0.4);
+.alegrify-button:hover {
+  background-color: #f7f6fc;
 }
-.al-button:active {
-  background: rgba(0, 0, 0, 0.6);
+.alegrify-button:active {
+  background-color: #e4e4f5;
 }
-.al-button--full {
+.alegrify-button--full {
   width: 100%;
 }
-.al-button--primary {
+.alegrify-button--primary {
   background-color: #4e4cc1;
+  color: #ffffff;
 }
-.al-button--primary:focus {
-  outline-color: #1f1e56;
+.alegrify-button--primary:focus {
+  outline-color: #4e4cc1;
 }
-.al-button--primary:hover {
-  outline-color: #000000;
+.alegrify-button--primary:hover {
+  background-color: #3a38a2;
+}
+.alegrify-button--primary:active {
+  background-color: #2c2b7c;
 }
