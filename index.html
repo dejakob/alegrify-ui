@@ -47,12 +47,12 @@
 
         <article class="alegrify-article">
             <h2>Alert</h2>
-            <label class="alegrify-button" for="alert-toggle-1">
+            <label class="alegrify-button" for="alert-toggle-1" tabindex="0">
                 Regular button
             </label>
             <input type="checkbox" class="alegrify-alert__trigger" id="alert-toggle-1" />
             <dialog class="alegrify-alert">
-                TEST TEST
+                Message has been sent successfully
             </dialog>
         </article>
 
@@ -82,6 +82,18 @@
 
         <article class="alegrify-article">
             <h2>Dialog</h2>
+            <label class="alegrify-button" for="dialog-toggle-1" tabindex="0">
+                Regular button
+            </label>
+            <input type="checkbox" class="alegrify-dialog__trigger" id="dialog-toggle-1" />
+            <label for="dialog-toggle-1" class="alegrify-dialog__wrapper">
+                <dialog class="alegrify-dialog">
+                    <div class="alegrify-dialog__content">
+                        <h1>Wow such dialog</h1>
+                        <p>Here is some more information.</p>
+                    </div>
+                </dialog>
+            </label>
         </article>
     </main>
 

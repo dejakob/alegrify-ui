@@ -131,6 +131,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+dialog {
+  border: none;
+}
 * {
   box-sizing: border-box;
 }
@@ -419,4 +422,78 @@ p + p {
   outline-offset: 4px;
   outline-width: 1px;
   outline-style: solid;
+}
+@keyframes alegrify-dialog__fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes alegrify-dialog__fade-out-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes alegrify-dialog__slide-down-animation {
+  from {
+    transform: translate(0, -100%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes alegrify-dialog__slide-up-animation {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -100%);
+  }
+}
+.alegrify-dialog {
+  display: none;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  border-radius: 4px;
+  animation: alegrify-dialog__slide-up-animation 0.4s, alegrify-dialog__fade-out-animation 0.4s;
+}
+.alegrify-dialog__trigger {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+  left: -999999px;
+}
+.alegrify-dialog__trigger:checked + .alegrify-dialog__wrapper {
+  display: block;
+  animation: alegrify-dialog__fade-in-animation 0.4s;
+}
+.alegrify-dialog__trigger:checked + .alegrify-dialog__wrapper .alegrify-dialog {
+  display: table;
+  animation: alegrify-dialog__slide-down-animation 0.4s;
+}
+.alegrify-dialog__wrapper {
+  display: none;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.alegrify-dialog__content {
+  padding: 16px;
+  background-color: #ffffff;
 }
