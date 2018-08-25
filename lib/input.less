@@ -13,6 +13,7 @@
     transition: border-color 0.4s, background-color 0.4s;
 
     text-align: left;
+    resize: none;
 
     &:focus {
         outline: none;
@@ -34,5 +35,8 @@
 
     &--full {
         width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        resize: vertical;
     }
 }

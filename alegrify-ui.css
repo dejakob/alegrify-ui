@@ -803,6 +803,7 @@ p + p {
   background-color: #ffffff;
   transition: border-color 0.4s, background-color 0.4s;
   text-align: left;
+  resize: none;
   font-size: 16px;
   line-height: 20px;
   font-variant: normal;
@@ -843,4 +844,7 @@ p + p {
 }
 .alegrify-input--full {
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  resize: vertical;
 }
