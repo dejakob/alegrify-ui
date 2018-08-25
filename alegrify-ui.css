@@ -148,9 +148,9 @@ h1 {
   font-size: 36px;
   line-height: 40px;
   font-variant: normal;
-  font-weight: 600;
+  font-weight: 100;
   padding-top: 16px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 h2 {
   font-size: 32px;
@@ -227,6 +227,29 @@ p + p {
   display: block;
   animation: alegrify-alert__fade-in-animation 0.4s;
 }
+.alegrify-article {
+  padding: 16px;
+}
+.alegrify-article > h1,
+.alegrify-article > h2,
+.alegrify-article > h3 {
+  padding-top: 0;
+}
+@media screen and (min-width: 960px) {
+  .alegrify-article {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .alegrify-article {
+    width: 66%;
+  }
+  .alegrify-article--full {
+    width: 100%;
+  }
+}
 .alegrify-button {
   display: inline-block;
   cursor: pointer;
@@ -274,10 +297,10 @@ p + p {
 .alegrify-button--primary:active {
   background-color: #2c2b7c;
 }
-.alegrify-main {
+.alegrify-body {
   min-height: 100vh;
 }
-.alegrify-main:after {
+.alegrify-body:after {
   content: '';
   display: block;
   height: 32px;
@@ -285,12 +308,43 @@ p + p {
   background: linear-gradient(to right, #4e4cc1, #953495);
 }
 @media screen and (min-width: 960px) {
-  .alegrify-main {
+  .alegrify-body {
+    color: #ffffff;
     background-color: #4e4cc1;
     background: linear-gradient(#4e4cc1, #953495);
   }
-  .alegrify-main:after {
+  .alegrify-body:after {
     content: none;
     display: none;
+  }
+}
+.alegrify-main {
+  position: relative;
+}
+.alegrify-main > h1 {
+  padding-left: 16px;
+  padding-right: 16px;
+  background: linear-gradient(to right, #4e4cc1, #953495);
+  color: #ffffff;
+}
+@media screen and (min-width: 960px) {
+  .alegrify-main {
+    margin: 32px auto;
+    width: 600px;
+  }
+  .alegrify-main > h1 {
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .alegrify-main {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 960px) {
+  h1 + .alegrify-main {
+    margin-bottom: 8px;
   }
 }

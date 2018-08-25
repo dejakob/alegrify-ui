@@ -1,0 +1,22 @@
+.alegrify-article {
+    padding: 16px;
+
+    & > h1,
+    & > h2,
+    & > h3 {
+        padding-top: 0;
+    }
+
+    @media screen and (min-width: @medium) {
+        color: @body-color;
+        background-color: @action-color;
+        border-radius: 4px;
+    }
+    @media screen and (min-width: @large) {
+        width: 66%;
+
+        &--full {
+            width: 100%;
+        }
+    }
+}
