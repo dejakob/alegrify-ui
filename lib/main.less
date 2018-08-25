@@ -1,0 +1,22 @@
+.alegrify-main {
+    min-height: 100vh;
+
+    &:after {
+        content: '';
+        display: block;
+        height: 32px;
+        margin-top: 16px;
+
+        background: linear-gradient(to right, @primary-color, @secondary-color);
+    }
+
+    @media screen and (min-width: @medium) {
+        background-color: @primary-color;
+        background: linear-gradient(@primary-color, @secondary-color);
+
+        &:after {
+            content: none;
+            display: none;
+        }
+    }
+}

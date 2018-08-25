@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,46 @@
     <title>Alegrify User Interface</title>
     <link rel="stylesheet" href="./alegrify-ui.css" />
 </head>
+
 <body>
-    <h1>Alegrify User Interface</h1>
+    <main class="alegrify-main">
+        <h1>Alegrify User Interface</h1>
 
-    <h2>Button</h2>
+        <h2>Button</h2>
 
-    <h3>Regular</h3>
-    <button
-        class="alegrify-button"
-    >
-        Regular button
-    </button>
+        <h3>Regular</h3>
+        <button class="alegrify-button">
+            Regular button
+        </button>
 
-    <h3>Full</h3>
-    <button
-        class="alegrify-button alegrify-button--full"
-    >
-        Full button
-    </button>
+        <h3>Full</h3>
+        <button class="alegrify-button alegrify-button--full">
+            Full button
+        </button>
 
-    <h3>Primary</h3>
-    <button
-        class="alegrify-button alegrify-button--primary"
-    >
-        Primary button
-    </button>
+        <h3>Primary</h3>
+        <button class="alegrify-button alegrify-button--primary">
+            Primary button
+        </button>
 
-    <h3>Disabled</h3>
-    <button
-        class="alegrify-button"
-        disabled
-    >
-        Disabled button
-    </button>
-    <button
-        class="alegrify-button alegrify-button--primary"
-        disabled
-    >
-        Disabled button
-    </button>
+        <h3>Disabled</h3>
+        <button class="alegrify-button" disabled>
+            Disabled button
+        </button>
+        <button class="alegrify-button alegrify-button--primary" disabled>
+            Disabled button
+        </button>
 
 
-    <h2>Alert</h2>
-    <label
-        class="alegrify-button"
-        for="alert-toggle-1"
-    >
-        Regular button
-    </label>
-    <input
-        type="checkbox"
-        class="alegrify-alert__trigger"
-        id="alert-toggle-1"
-    />
-    <dialog
-        class="alegrify-alert"
-    >
-        TEST TEST
-    </dialog>
+        <h2>Alert</h2>
+        <label class="alegrify-button" for="alert-toggle-1">
+            Regular button
+        </label>
+        <input type="checkbox" class="alegrify-alert__trigger" id="alert-toggle-1" />
+        <dialog class="alegrify-alert">
+            TEST TEST
+        </dialog>
+    </main>
 </body>
+
 </html>
