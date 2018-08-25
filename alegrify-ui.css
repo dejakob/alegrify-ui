@@ -202,15 +202,12 @@ p + p {
   bottom: 16px;
   left: 16px;
   margin: 0;
+  padding: 16px;
   border-radius: 4px;
   border: none;
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
   transition: background-color 0.2s;
-  font-size: 16px;
-  line-height: 20px;
-  font-variant: normal;
-  font-weight: 600;
 }
 .alegrify-alert[open] {
   display: block;
@@ -507,4 +504,9 @@ p + p {
 .alegrify-dialog__content h1:first-child {
   padding-top: 0;
   font-weight: 600;
+}
+.alegrify-error {
+  color: #900505;
+  padding: 4px;
+  margin-bottom: 8px;
 }
