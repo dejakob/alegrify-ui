@@ -1,0 +1,9 @@
+{
+  "name": "alegrify-ui",
+  "version": "1.0.0",
+  "description": "Alegrify User Interface",
+  "main": "index.html",
+  "repository": "https://github.com/dejakob/alegrify-ui",
+  "author": "dejakob",
+  "license": "MIT"
+}
