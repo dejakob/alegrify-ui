@@ -233,7 +233,6 @@ p + p {
 .alegrify-article,
 .alegrify-aside {
   display: block;
-  float: left;
   padding: 16px;
 }
 .alegrify-article > *:first-child,
@@ -257,6 +256,7 @@ p + p {
 @media screen and (min-width: 1200px) {
   .alegrify-article,
   .alegrify-aside {
+    float: left;
     width: 618.66666667px;
   }
   .alegrify-article--full,

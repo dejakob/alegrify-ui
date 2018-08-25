@@ -1,9 +1,6 @@
 .alegrify-article,
 .alegrify-aside {
     display: block;
-
-    // Todo: rtl
-    float: left;
     padding: 16px;
 
     & > *:first-child {
@@ -19,6 +16,8 @@
         border-radius: 4px;
     }
     @media screen and (min-width: @large) {
+        // Todo: rtl
+        float: left;
         width: (@medium - 32px) * 2 / 3;
 
         &--full {
