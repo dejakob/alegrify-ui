@@ -131,6 +131,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 .font--bold {
   font-size: 11px;
   line-height: 12px;
@@ -227,28 +230,52 @@ p + p {
   display: block;
   animation: alegrify-alert__fade-in-animation 0.4s;
 }
-.alegrify-article {
+.alegrify-article,
+.alegrify-aside {
+  display: block;
+  float: left;
   padding: 16px;
 }
-.alegrify-article > *:first-child {
+.alegrify-article > *:first-child,
+.alegrify-aside > *:first-child {
   padding-top: 0;
 }
-.alegrify-article + .alegrify-article {
+.alegrify-article + .alegrify-article,
+.alegrify-article + .alegrify-aside,
+.alegrify-aside + .alegrify-article,
+.alegrify-aside + .alegrify-aside {
   margin-top: 32px;
 }
 @media screen and (min-width: 960px) {
-  .alegrify-article {
+  .alegrify-article,
+  .alegrify-aside {
     color: #000000;
     background-color: #ffffff;
     border-radius: 4px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .alegrify-article {
-    width: 66%;
+  .alegrify-article,
+  .alegrify-aside {
+    width: 618.66666667px;
   }
-  .alegrify-article--full {
+  .alegrify-article--full,
+  .alegrify-aside--full {
     width: 100%;
+  }
+}
+.alegrify-article {
+  clear: both;
+}
+@media screen and (min-width: 1200px) {
+  .alegrify-article + .alegrify-aside {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .alegrify-aside {
+    margin-left: 32px;
+    width: 309.33333333px;
   }
 }
 .alegrify-button {

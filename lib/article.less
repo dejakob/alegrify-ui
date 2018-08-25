@@ -1,4 +1,9 @@
-.alegrify-article {
+.alegrify-article,
+.alegrify-aside {
+    display: block;
+
+    // Todo: rtl
+    float: left;
     padding: 16px;
 
     & > *:first-child {
@@ -14,10 +19,27 @@
         border-radius: 4px;
     }
     @media screen and (min-width: @large) {
-        width: 66%;
+        width: (@medium - 32px) * 2 / 3;
 
         &--full {
             width: 100%;
         }
+    }
+}
+
+.alegrify-article {
+    clear: both;
+
+    @media screen and (min-width: @large) {
+        & + .alegrify-aside {
+            margin-top: 0;
+        }
+    }
+}
+
+.alegrify-aside {
+    @media screen and (min-width: @large) {
+        margin-left: 32px;
+        width: (@medium - 32px) * 1 / 3;
     }
 }
