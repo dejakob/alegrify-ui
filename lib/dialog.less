@@ -45,6 +45,9 @@
     z-index: 3;
     border-radius: 4px;
 
+    // Todo RTL
+    text-align: left;
+
     animation: alegrify-dialog__slide-up-animation 0.4s, alegrify-dialog__fade-out-animation 0.4s;;
 
     &__trigger {
@@ -72,5 +75,14 @@
     &__content {
         padding: 16px;
         background-color: @action-color;
+        border-radius: 4px;
+
+        > * {
+            margin-top: 0;
+        }
+        h1:first-child {
+            padding-top: 0;
+            font-weight: 600;
+        }
     }
 }
