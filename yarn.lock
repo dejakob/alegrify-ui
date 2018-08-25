@@ -954,13 +954,17 @@ latest-version@^3.0.0:
   dependencies:
     package-json "^4.0.0"
 
-less-plugin-clean-css@^1.5.1:
+less-plugin-clean-css@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/less-plugin-clean-css/-/less-plugin-clean-css-1.5.1.tgz#cc57af7aa3398957e56decebe63cb60c23429703"
   dependencies:
     clean-css "^3.0.1"
 
-less@^3.8.1:
+less-plugin-rtl@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/less-plugin-rtl/-/less-plugin-rtl-1.0.0.tgz#ea6b5c4cdb90b805b53414164480169f9d7af2a4"
+
+less@3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/less/-/less-3.8.1.tgz#f31758598ef5a1930dd4caefa9e4340641e71e1d"
   dependencies:
@@ -1180,7 +1184,7 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-npm-watch@^0.3.0:
+npm-watch@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/npm-watch/-/npm-watch-0.3.0.tgz#8f4272c0143e2f4720dbafb111fb91d015fbf82d"
   dependencies:

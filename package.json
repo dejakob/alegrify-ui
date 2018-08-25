@@ -9,6 +9,7 @@
   "devDependencies": {
     "less": "3.8.1",
     "less-plugin-clean-css": "1.5.1",
+    "less-plugin-rtl": "1.0.0",
     "npm-watch": "0.3.0"
   },
   "watch": {
@@ -22,8 +23,8 @@
   },
   "scripts": {
     "build": "npm run build:full && npm run build:min",
-    "build:full": "lessc index.less alegrify-ui.css",
-    "build:min": "lessc index.less alegrify-ui.min.css --clean-css",
+    "build:full": "lessc index.less alegrify-ui.css --rtl",
+    "build:min": "lessc alegrify-ui.css alegrify-ui.min.css --clean-css",
     "watch": "npm-watch"
   }
 }
