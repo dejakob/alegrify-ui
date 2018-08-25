@@ -367,3 +367,54 @@ p + p {
     margin-bottom: 8px;
   }
 }
+.alegrify-checkbox {
+  cursor: pointer;
+  clear: both;
+}
+.alegrify-checkbox + .alegrify-checkbox {
+  margin-top: 8px;
+}
+.alegrify-checkbox__trigger {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+  left: -999999px;
+}
+.alegrify-checkbox__label {
+  line-height: 28px;
+  margin-left: 8px;
+}
+.alegrify-checkbox__check:before {
+  content: '';
+  display: block;
+  float: left;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 2px;
+  font-size: 12px;
+  transition: border-color 0.2s, font-size 0.2s;
+}
+.alegrify-checkbox__trigger:checked + .alegrify-checkbox__check:before {
+  content: 'check';
+  color: #953495;
+  border-color: #953495;
+  height: 16px;
+  width: 24px;
+  padding: 4px 0;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+}
+.alegrify-checkbox__trigger:focus + .alegrify-checkbox__check:before {
+  outline-color: #953495;
+  outline-offset: 4px;
+  outline-width: 1px;
+  outline-style: solid;
+}

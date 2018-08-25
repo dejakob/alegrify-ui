@@ -1,0 +1,60 @@
+.alegrify-checkbox {
+    cursor: pointer;
+    clear: both;
+
+    & + & {
+        margin-top: 8px;
+    }
+
+    &__trigger {
+        .checkbox-trigger();
+    }
+    &__label {
+        line-height: 28px;
+
+        // Todo RTL
+        margin-left: 8px;
+    }
+    &__check:before {
+        content: '';
+
+        display: block;
+
+        // Todo RTL
+        float: left;
+        text-align: center;
+        
+        height: 24px;
+        width: 24px;
+
+        border-width: 2px;
+        border-color: @body-color;
+        border-style: solid;
+        border-radius: 2px;
+
+        font-size: 12px;
+
+        transition: border-color 0.2s, font-size 0.2s;
+    }
+    &__trigger:checked + &__check:before {
+        content: 'check';
+
+        color: @secondary-color;
+        border-color: @secondary-color;
+
+        height: 16px;
+        width: 24px;
+        padding: 4px 0;
+
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+    }
+    &__trigger:focus + &__check:before {
+        outline-color: @secondary-color;
+        outline-offset: 4px;
+        outline-width: 1px;
+        outline-style: solid;
+    }
+}

@@ -59,7 +59,38 @@
         <aside class="alegrify-aside">
             Alerts can be used to show a short success message
         </aside>
+
+        <article class="alegrify-article">
+            <h2>Checkbox</h2>
+            <div class="alegrify-checkbox">
+                <input type="checkbox" id="checkbox-1" class="alegrify-checkbox__trigger" />
+                <label for="checkbox-1" class="alegrify-checkbox__check">
+                    <span class="alegrify-checkbox__label">Option 1</span>
+                </label>
+            </div>
+            <div class="alegrify-checkbox">
+                <input type="checkbox" id="checkbox-2" class="alegrify-checkbox__trigger" />
+                <label for="checkbox-2" class="alegrify-checkbox__check">
+                    <span class="alegrify-checkbox__label">Option 2</span>
+                </label>
+            </div>
+        </article>
     </main>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-120237228-1');
+    
+        var fonts = [
+            'https://fonts.googleapis.com/icon?family=Material+Icons'
+        ];
+    
+        document.head.innerHTML = document.head.innerHTML + fonts.map(function(font) {
+            return '<link href="' + font + '" rel="stylesheet" />';
+        });
+    </script>
 </body>
 
 </html>
