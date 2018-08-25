@@ -187,15 +187,6 @@ p + p {
     transform: translate(0);
   }
 }
-@keyframes alegrify-alert__fade-out-animation {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
 .alegrify-alert {
   display: none;
   cursor: pointer;
@@ -224,8 +215,17 @@ p + p {
 .alegrify-alert:active {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.alegrify-alert--hide {
-  animation: alegrify-alert__fade-out-animation 0.4s;
+.alegrify-alert__trigger {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+  left: -999999px;
+}
+.alegrify-alert__trigger:checked + .alegrify-alert {
+  display: block;
+  animation: alegrify-alert__fade-in-animation 0.4s;
 }
 .alegrify-button {
   display: inline-block;

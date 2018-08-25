@@ -8,9 +8,10 @@
         transform: translate(0);
     }
 }
-@keyframes alegrify-alert__fade-out-animation {
-    from { opacity: 1; }
-    to { opacity: 0; display: none; }
+
+.alegrify-alert__open() {
+    display: block;
+    animation: alegrify-alert__fade-in-animation 0.4s;
 }
 
 .alegrify-alert {
@@ -40,8 +41,7 @@
     .font--bold();
     
     &[open] {
-        display: block;
-        animation: alegrify-alert__fade-in-animation 0.4s;
+        .alegrify-alert__open();
     }
     &:hover {
         background-color: fade(@body-color, 60%);
@@ -50,8 +50,12 @@
         background-color: fade(@body-color, 50%);
     }
 
-    // Add --hide with JS for hiding animation
-    &--hide {
-        animation: alegrify-alert__fade-out-animation 0.4s;
+    
+    &__trigger {
+        .checkbox-trigger();
+
+        &:checked + .alegrify-alert {
+            .alegrify-alert__open();
+        }
     }
 }
