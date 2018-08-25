@@ -5,5 +5,25 @@
   "main": "index.html",
   "repository": "https://github.com/dejakob/alegrify-ui",
   "author": "dejakob",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "less": "3.8.1",
+    "less-plugin-clean-css": "1.5.1",
+    "npm-watch": "0.3.0"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "lib"
+      ],
+      "extensions": "less",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "build": "npm run build:full && npm run build:min",
+    "build:full": "lessc index.less alegrify-ui.css",
+    "build:min": "lessc index.less alegrify-ui.min.css --clean-css",
+    "watch": "npm-watch"
+  }
 }

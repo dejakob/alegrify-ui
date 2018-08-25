@@ -1,0 +1,57 @@
+.al-button {
+    // Reset default browser behavior
+    display: block;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    
+    // Border radius
+    border-radius: 4px;
+
+    // Margin / padding
+    padding: 16px;
+
+    // Typography
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 400;
+    font-style: normal;
+
+    // Colors
+    color: @action-color;
+    background-color: rgba(0,0,0,0.2);
+
+
+    // States
+    &[disabled] {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+    &:focus {
+        outline-color: @action-color;
+    }
+    &:hover {
+        background: rgba(0,0,0,0.4);
+    }
+    &:active {
+        background: rgba(0,0,0,0.6);
+    }
+
+
+    // Variants
+    &--full {
+        width: 100%;
+    }
+
+    &--primary {
+        background-color: @primary-color;
+
+        &:focus {
+            outline-color: darken(@primary-color, 30%);
+        }
+        &:hover {
+            outline-color: darken(@primary-color, 60%);
+        }
+    }
+}
