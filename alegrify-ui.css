@@ -135,15 +135,15 @@ table {
   box-sizing: border-box;
 }
 .font--bold {
-  font-size: 11px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 17px;
   font-variant: normal;
   font-weight: 600;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 11px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 17px;
   font-variant: normal;
   font-weight: 400;
 }
@@ -172,8 +172,8 @@ h3 {
   padding-bottom: 4px;
 }
 p {
-  font-size: 11px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 17px;
   font-variant: normal;
   font-weight: 400;
 }
@@ -203,8 +203,8 @@ p + p {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
   transition: background-color 0.2s;
-  font-size: 11px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 17px;
   font-variant: normal;
   font-weight: 600;
 }
@@ -234,16 +234,11 @@ p + p {
 .alegrify-aside {
   display: block;
   padding: 16px;
+  margin-top: 32px;
 }
 .alegrify-article > *:first-child,
 .alegrify-aside > *:first-child {
   padding-top: 0;
-}
-.alegrify-article + .alegrify-article,
-.alegrify-article + .alegrify-aside,
-.alegrify-aside + .alegrify-article,
-.alegrify-aside + .alegrify-aside {
-  margin-top: 32px;
 }
 @media screen and (min-width: 960px) {
   .alegrify-article,
@@ -266,11 +261,6 @@ p + p {
 }
 .alegrify-article {
   clear: both;
-}
-@media screen and (min-width: 1200px) {
-  .alegrify-article + .alegrify-aside {
-    margin-top: 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .alegrify-aside {
@@ -352,6 +342,7 @@ p + p {
 .alegrify-main > h1 {
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 0;
   background: linear-gradient(to right, #4e4cc1, #953495);
   color: #ffffff;
 }

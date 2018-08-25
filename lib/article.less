@@ -2,12 +2,10 @@
 .alegrify-aside {
     display: block;
     padding: 16px;
+    margin-top: 32px;
 
     & > *:first-child {
         padding-top: 0;
-    }
-    & + & {
-        margin-top: 32px;
     }
 
     @media screen and (min-width: @medium) {
@@ -28,12 +26,6 @@
 
 .alegrify-article {
     clear: both;
-
-    @media screen and (min-width: @large) {
-        & + .alegrify-aside {
-            margin-top: 0;
-        }
-    }
 }
 
 .alegrify-aside {
