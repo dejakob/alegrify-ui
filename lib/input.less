@@ -5,7 +5,7 @@
 
     border-top: none;
     border-right: none;
-    border-bottom: 3px #d2dce8 solid;
+    border-bottom: 3px lighten(@body-color, 90%) solid;
     border-left: none;
     border-radius: 2px;
 
@@ -15,7 +15,7 @@
     &:focus {
         outline: none;
         border-bottom-color: @secondary-color;
-        background-color: rgb(255, 249, 235);
+        background-color: lighten(@secondary-color, 58%);
     }
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         opacity: 0.3;

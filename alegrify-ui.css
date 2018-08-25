@@ -797,7 +797,7 @@ p + p {
   padding: 8px;
   border-top: none;
   border-right: none;
-  border-bottom: 3px #d2dce8 solid;
+  border-bottom: 3px #e6e6e6 solid;
   border-left: none;
   border-radius: 2px;
   background-color: #ffffff;
@@ -820,7 +820,7 @@ p + p {
 .alegrify-input:focus {
   outline: none;
   border-bottom-color: #953495;
-  background-color: #fff9eb;
+  background-color: #fcf5fc;
 }
 .alegrify-input::-webkit-input-placeholder {
   opacity: 0.3;
