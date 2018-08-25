@@ -848,3 +848,23 @@ p + p {
   max-width: 100%;
   resize: vertical;
 }
+.alegrify-label {
+  display: block;
+  color: #b3b3b3;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 400;
+}
+[dir="rtl"] .alegrify-label,
+:host-context([dir="rtl"]) .alegrify-label {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+[dir="ltr"] .alegrify-label,
+:host-context([dir="ltr"]) .alegrify-label {
+  padding-left: 8px;
+  padding-right: 8px;
+}
