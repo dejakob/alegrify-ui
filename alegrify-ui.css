@@ -368,7 +368,6 @@ p + p {
   }
 }
 .alegrify-checkbox {
-  cursor: pointer;
   clear: both;
 }
 .alegrify-checkbox + .alegrify-checkbox {
@@ -385,6 +384,9 @@ p + p {
 .alegrify-checkbox__label {
   line-height: 28px;
   margin-left: 8px;
+}
+.alegrify-checkbox__check {
+  cursor: pointer;
 }
 .alegrify-checkbox__check:before {
   content: '';
