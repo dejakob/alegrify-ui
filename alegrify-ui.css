@@ -802,6 +802,7 @@ p + p {
   border-radius: 2px;
   background-color: #ffffff;
   transition: border-color 0.4s, background-color 0.4s;
+  text-align: left;
   font-size: 16px;
   line-height: 20px;
   font-variant: normal;
@@ -811,11 +812,13 @@ p + p {
 :host-context([dir="rtl"]) .alegrify-input {
   border-left: none;
   border-right: none;
+  text-align: right;
 }
 [dir="ltr"] .alegrify-input,
 :host-context([dir="ltr"]) .alegrify-input {
   border-right: none;
   border-left: none;
+  text-align: left;
 }
 .alegrify-input:focus {
   outline: none;
