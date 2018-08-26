@@ -139,16 +139,56 @@ dialog {
   box-sizing: border-box;
 }
 .font--bold {
-  font-size: 16px;
-  line-height: 20px;
-  font-variant: normal;
+  font-style: normal;
   font-weight: 600;
 }
-body {
+.font--italic {
+  font-style: italic;
+  font-weight: 400;
+}
+.alegrify-body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-variant: normal;
+  font-weight: 400;
+}
+.alegrify-h1 {
+  font-size: 32px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 600;
+}
+.alegrify-h1--thin {
+  font-size: 32px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 100;
+}
+.alegrify-h2 {
+  font-size: 24px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 500;
+}
+.alegrify-h3 {
+  font-size: 16px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 400;
+}
+.alegrify-p {
+  font-size: 16px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 400;
+}
+.alegrify-strong {
+  font-style: normal;
+  font-weight: 600;
+}
+.alegrify-em {
+  font-style: italic;
   font-weight: 400;
 }
 @-webkit-keyframes alegrify-alert__fade-in-animation {
@@ -838,9 +878,7 @@ body {
   text-align: center;
   position: relative;
   background: none;
-  font-size: 16px;
-  line-height: 20px;
-  font-variant: normal;
+  font-style: normal;
   font-weight: 600;
 }
 .alegrify-number-input__input:focus {
