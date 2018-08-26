@@ -868,3 +868,82 @@ p + p {
   padding-left: 8px;
   padding-right: 8px;
 }
+.alegrify-number-input {
+  display: inline-block;
+  width: 50px;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px #e6e6e6 solid;
+  border-radius: 2px;
+}
+.alegrify-number-input__add,
+.alegrify-number-input__subtract {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  font-size: 13px;
+  line-height: 16px;
+  font-variant: normal;
+  font-weight: 400;
+}
+.alegrify-number-input__input {
+  border: none;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 600;
+}
+.alegrify-number-input__input:focus {
+  outline: none;
+  background-color: #fcf5fc;
+}
+.alegrify-number-input__input + .alegrify-number-input__subtract:before {
+  display: block;
+  content: '';
+  border-left: 3px #953495 solid;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+[dir="rtl"] .alegrify-number-input__input + .alegrify-number-input__subtract:before,
+:host-context([dir="rtl"]) .alegrify-number-input__input + .alegrify-number-input__subtract:before {
+  border-left: initial;
+  border-right: 3px #953495 solid;
+}
+[dir="ltr"] .alegrify-number-input__input + .alegrify-number-input__subtract:before,
+:host-context([dir="ltr"]) .alegrify-number-input__input + .alegrify-number-input__subtract:before {
+  border-right: initial;
+  border-left: 3px #953495 solid;
+}
+.alegrify-number-input__input:focus + .alegrify-number-input__subtract:before {
+  opacity: 1;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+}
+[dir="rtl"] .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before,
+:host-context([dir="rtl"]) .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before {
+  left: initial;
+  right: -1px;
+}
+[dir="ltr"] .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before,
+:host-context([dir="ltr"]) .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before {
+  right: initial;
+  left: -1px;
+}
+.alegrify-number-input--wide {
+  width: auto;
+}
+.alegrify-number-input--full {
+  width: 100%;
+}
