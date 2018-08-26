@@ -711,11 +711,11 @@ pre {
   vertical-align: middle;
   text-align: center;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  z-index: 4;
   border-radius: 4px;
   text-align: left;
   -webkit-animation: alegrify-dialog__slide-up-animation 0.4s, alegrify-dialog__fade-out-animation 0.4s;
@@ -723,14 +723,14 @@ pre {
 }
 [dir="rtl"] .alegrify-dialog,
 :host-context([dir="rtl"]) .alegrify-dialog {
-  left: 0;
-  right: 0;
+  left: 16px;
+  right: 16px;
   text-align: right;
 }
 [dir="ltr"] .alegrify-dialog,
 :host-context([dir="ltr"]) .alegrify-dialog {
-  right: 0;
-  left: 0;
+  right: 16px;
+  left: 16px;
   text-align: left;
 }
 .alegrify-dialog__trigger {
@@ -769,6 +769,7 @@ pre {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 4;
 }
 [dir="rtl"] .alegrify-dialog__wrapper,
 :host-context([dir="rtl"]) .alegrify-dialog__wrapper {
@@ -912,6 +913,10 @@ pre {
   text-align: center;
   position: relative;
   background: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 400;
   font-style: normal;
   font-weight: 600;
 }
