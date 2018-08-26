@@ -891,6 +891,21 @@ p + p {
   font-variant: normal;
   font-weight: 400;
 }
+.alegrify-number-input__add:focus,
+.alegrify-number-input__subtract:focus {
+  outline: none;
+}
+.alegrify-number-input__add:active .alegrify-number-input__add-span,
+.alegrify-number-input__subtract:active .alegrify-number-input__add-span,
+.alegrify-number-input__add:active .alegrify-number-input__subtract-span,
+.alegrify-number-input__subtract:active .alegrify-number-input__subtract-span {
+  opacity: 1;
+}
+.alegrify-number-input__add-span,
+.alegrify-number-input__subtract-span {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
 .alegrify-number-input__input {
   border: none;
   width: 100%;
@@ -911,8 +926,6 @@ p + p {
   content: '';
   border-left: 3px #953495 solid;
   border-radius: 2px;
-  opacity: 0;
-  transition: opacity 0.4s;
 }
 [dir="rtl"] .alegrify-number-input__input + .alegrify-number-input__subtract:before,
 :host-context([dir="rtl"]) .alegrify-number-input__input + .alegrify-number-input__subtract:before {
@@ -925,7 +938,6 @@ p + p {
   border-left: 3px #953495 solid;
 }
 .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before {
-  opacity: 1;
   position: absolute;
   top: -1px;
   bottom: -1px;

@@ -17,6 +17,21 @@
 
         .text-button();
         .font--small();
+
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            .alegrify-number-input__add-span,
+            .alegrify-number-input__subtract-span {
+                opacity: 1;
+            }
+        }
+    }
+    &__add-span,
+    &__subtract-span {
+        opacity: 0.5;
+        transition: opacity 0.2s;
     }
     &__input {
         border: none;
@@ -40,12 +55,8 @@
             border-left: 3px @secondary-color solid;
             border-radius: 2px;
 
-            opacity: 0;
-            transition: opacity 0.4s;
         }
         &:focus + .alegrify-number-input__subtract:before {
-            opacity: 1;
-
             position: absolute;
             top: -1px;
             bottom: -1px;
