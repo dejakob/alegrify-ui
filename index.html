@@ -54,13 +54,15 @@
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Alert</h2>
-            <label class="alegrify-button" for="alert-toggle-1" tabindex="0">
-                Regular button
-            </label>
-            <input type="checkbox" class="alegrify-alert__trigger" id="alert-toggle-1" />
-            <dialog class="alegrify-alert">
-                Message has been sent successfully
-            </dialog>
+            <section class="alegrify-section">
+                <label class="alegrify-button" for="alert-toggle-1" tabindex="0">
+                    Regular button
+                </label>
+                <input type="checkbox" class="alegrify-alert__trigger" id="alert-toggle-1" />
+                <dialog class="alegrify-alert">
+                    Message has been sent successfully
+                </dialog>
+            </section>
         </article>
 
         <aside class="alegrify-aside">
@@ -69,18 +71,20 @@
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Checkbox</h2>
-            <div class="alegrify-checkbox">
-                <input type="checkbox" id="checkbox-1" class="alegrify-checkbox__trigger" />
-                <label for="checkbox-1" class="alegrify-checkbox__check">
-                    <span class="alegrify-checkbox__label">Option 1</span>
-                </label>
-            </div>
-            <div class="alegrify-checkbox">
-                <input type="checkbox" id="checkbox-2" class="alegrify-checkbox__trigger" />
-                <label for="checkbox-2" class="alegrify-checkbox__check">
-                    <span class="alegrify-checkbox__label">Option 2</span>
-                </label>
-            </div>
+            <section class="alegrify-section">
+                <div class="alegrify-checkbox">
+                    <input type="checkbox" id="checkbox-1" class="alegrify-checkbox__trigger" />
+                    <label for="checkbox-1" class="alegrify-checkbox__check">
+                        <span class="alegrify-checkbox__label">Option 1</span>
+                    </label>
+                </div>
+                <div class="alegrify-checkbox">
+                    <input type="checkbox" id="checkbox-2" class="alegrify-checkbox__trigger" />
+                    <label for="checkbox-2" class="alegrify-checkbox__check">
+                        <span class="alegrify-checkbox__label">Option 2</span>
+                    </label>
+                </div>
+            </section>
         </article>
 
         <aside class="alegrify-aside">
@@ -89,96 +93,116 @@
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Dialog</h2>
-            <label class="alegrify-button" for="dialog-toggle-1" tabindex="0">
-                Open modal
-            </label>
-            <input type="checkbox" class="alegrify-dialog__trigger" id="dialog-toggle-1" />
-            <label for="dialog-toggle-1" class="alegrify-dialog__wrapper">
-                <dialog class="alegrify-dialog">
-                    <div class="alegrify-dialog__content">
-                        <h1>Wow such dialog</h1>
-                        <p>Here is some more information.</p>
-                        <label class="alegrify-button" for="dialog-toggle-1" tabindex="0">
-                            OK
-                        </label>
-                    </div>
-                </dialog>
-            </label>
+            <section class="alegrify-section">
+                <label class="alegrify-button" for="dialog-toggle-1" tabindex="0">
+                    Open modal
+                </label>
+                <input type="checkbox" class="alegrify-dialog__trigger" id="dialog-toggle-1" />
+                <label for="dialog-toggle-1" class="alegrify-dialog__wrapper">
+                    <dialog class="alegrify-dialog">
+                        <div class="alegrify-dialog__content">
+                            <h1>Wow such dialog</h1>
+                            <p>Here is some more information.</p>
+                            <label class="alegrify-button" for="dialog-toggle-1" tabindex="0">
+                                OK
+                            </label>
+                        </div>
+                    </dialog>
+                </label>
+            </section>
         </article>
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Error</h2>
-            <p class="alegrify-p alegrify-error">This is a regular error feedback message.</p>
+            <section class="alegrify-section">
+                <p class="alegrify-p alegrify-error">This is a regular error feedback message.</p>
+            </section>
         </article>
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Input</h2>
             <h3 class="alegrify-h3">Regular</h3>
-            <input type="text" class="alegrify-input alegrify-input--full" placeholder="Just an input" />
+            <section class="alegrify-section">
+                <input type="text" class="alegrify-input alegrify-input--full" placeholder="Just an input" />
+            </section>
 
             <h3 class="alegrify-h3">Textarea</h3>
-            <textarea name="textarea" id="textarea-1" cols="30" rows="5" class="alegrify-input alegrify-input--full">Amazing textarea</textarea>
+            <section class="alegrify-section">
+                <textarea name="textarea" id="textarea-1" cols="30" rows="5" class="alegrify-input alegrify-input--full">Amazing textarea</textarea>
+            </section>
 
             <h3 class="alegrify-h3">Email</h3>
-            <input type="email" class="alegrify-input alegrify-input--full" placeholder="me@alegrify.com" />
+            <section class="alegrify-section">
+                <input type="email" class="alegrify-input alegrify-input--full" placeholder="me@alegrify.com" />
+            </section>
         </article>
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Label</h2>
-            <label for="input-with-label-1" class="alegrify-label">Label for input</label>
-            <input type="text" id="input-with-label-1" class="alegrify-input alegrify-input--full" placeholder="Just an input" />
+            <section class="alegrify-section">
+                <label for="input-with-label-1" class="alegrify-label">Label for input</label>
+                <input type="text" id="input-with-label-1" class="alegrify-input alegrify-input--full" placeholder="Just an input" />
+            </section>
         </article>
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Number Input</h2>
             <h3 class="alegrify-h3">Regular</h3>
-            <label for="number-input-1" class="alegrify-number-input">
-                <button class="alegrify-number-input__add" tabindex="-1">
-                    <span>+</span>
-                </button>
-                <input type="text" id="number-input-1" class="alegrify-number-input__input" value="0" />
-                <button class="alegrify-number-input__subtract" tabindex="-1">
-                    <span>-</span>
-                </button>
-            </label>
+            <section class="alegrify-section">
+                <label for="number-input-1" class="alegrify-number-input">
+                    <button class="alegrify-number-input__add" tabindex="-1">
+                        <span>+</span>
+                    </button>
+                    <input type="text" id="number-input-1" class="alegrify-number-input__input" value="0" />
+                    <button class="alegrify-number-input__subtract" tabindex="-1">
+                        <span>-</span>
+                    </button>
+                </label>
+            </section>
 
             <h3 class="alegrify-h3">Wide</h3>
-            <label for="number-input-2" class="alegrify-number-input alegrify-number-input--wide">
-                <button class="alegrify-number-input__add" tabindex="-1">
-                    <span>+</span>
-                </button>
-                <input type="text" id="number-input-2" class="alegrify-number-input__input" value="0" />
-                <button class="alegrify-number-input__subtract" tabindex="-1">
-                    <span>-</span>
-                </button>
-            </label>
+            <section class="alegrify-section">
+                <label for="number-input-2" class="alegrify-number-input alegrify-number-input--wide">
+                    <button class="alegrify-number-input__add" tabindex="-1">
+                        <span>+</span>
+                    </button>
+                    <input type="text" id="number-input-2" class="alegrify-number-input__input" value="0" />
+                    <button class="alegrify-number-input__subtract" tabindex="-1">
+                        <span>-</span>
+                    </button>
+                </label>
+            </section>
 
             <h3 class="alegrify-h3">Full</h3>
-            <label for="number-input-3" class="alegrify-number-input alegrify-number-input--full">
-                <button class="alegrify-number-input__add" tabindex="-1">
-                    <span>+</span>
-                </button>
-                <input type="text" id="number-input-3" class="alegrify-number-input__input" value="0" />
-                <button class="alegrify-number-input__subtract" tabindex="-1">
-                    <span>-</span>
-                </button>
-            </label>
+            <section class="alegrify-section">
+                <label for="number-input-3" class="alegrify-number-input alegrify-number-input--full">
+                    <button class="alegrify-number-input__add" tabindex="-1">
+                        <span>+</span>
+                    </button>
+                    <input type="text" id="number-input-3" class="alegrify-number-input__input" value="0" />
+                    <button class="alegrify-number-input__subtract" tabindex="-1">
+                        <span>-</span>
+                    </button>
+                </label>
+            </section>
         </article>
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Radio</h2>
-            <div class="alegrify-radio">
-                <input type="radio" id="radio-1" name="radio-example" class="alegrify-radio__trigger" />
-                <label for="radio-1" class="alegrify-radio__check">
-                    <span class="alegrify-radio__label">Option 1</span>
-                </label>
-            </div>
-            <div class="alegrify-radio">
-                <input type="radio" id="radio-2" name="radio-example" class="alegrify-radio__trigger" />
-                <label for="radio-2" class="alegrify-radio__check">
-                    <span class="alegrify-radio__label">Option 2</span>
-                </label>
-            </div>
+            <section class="alegrify-section">
+                <div class="alegrify-radio">
+                    <input type="radio" id="radio-1" name="radio-example" class="alegrify-radio__trigger" />
+                    <label for="radio-1" class="alegrify-radio__check">
+                        <span class="alegrify-radio__label">Option 1</span>
+                    </label>
+                </div>
+                <div class="alegrify-radio">
+                    <input type="radio" id="radio-2" name="radio-example" class="alegrify-radio__trigger" />
+                    <label for="radio-2" class="alegrify-radio__check">
+                        <span class="alegrify-radio__label">Option 2</span>
+                    </label>
+                </div>
+            </section>
         </article>
     </main>
 
