@@ -1,3 +1,76 @@
+@keyframes alegrify-radio__scale-animation {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 .alegrify-radio {
-    
+    clear: both;
+    position: relative;
+
+    & + & {
+        margin-top: 8px;
+    }
+
+    &__trigger {
+        .checkbox-trigger();
+    }
+    &__label {
+        line-height: 28px;
+        margin-left: 8px;
+    }
+    &__check {
+        cursor: pointer;
+    }
+    &__check:before {
+        content: '';
+
+        display: table-cell;
+
+        float: left;
+        text-align: center;
+        
+        height: 24px;
+        width: 24px;
+
+        border-width: 2px;
+        border-color: @body-color;
+        border-style: solid;
+        border-radius: 50%;
+
+        font-size: 12px;
+
+        transition: border-color 0.2s;
+    }
+    &__check:after {
+        height: 14px;
+        width: 14px;
+
+        background-color: @secondary-color;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        margin: 7px;
+
+        animation: alegrify-radio__scale-animation 0.2s;
+    }
+    &__trigger:checked + &__check:before {
+        border-color: @secondary-color;
+    }
+    &__trigger:checked + &__check:after {
+        content: '';
+        display: block;
+    }
+    &__trigger:focus + &__check:before {
+        outline-color: @secondary-color;
+        outline-offset: 4px;
+        outline-width: 1px;
+        outline-style: solid;
+    }
 }
