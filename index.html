@@ -17,32 +17,39 @@
             <h2 class="alegrify-h2">Button</h2>
 
             <h3 class="alegrify-h3">Regular</h3>
-            <button class="alegrify-button">
-                Regular button
-            </button>
+            <section class="alegrify-section">
+                <button class="alegrify-button">
+                    Regular button
+                </button>
+            </section>
 
             <h3 class="alegrify-h3">Full</h3>
-            <button class="alegrify-button alegrify-button--full">
-                Full button
-            </button>
+            <section class="alegrify-section">
+                <button class="alegrify-button alegrify-button--full">
+                    Full button
+                </button>
+            </section>
 
             <h3 class="alegrify-h3">Primary</h3>
-            <button class="alegrify-button alegrify-button--primary">
-                Primary button
-            </button>
+            <section class="alegrify-section">
+                <button class="alegrify-button alegrify-button--primary">
+                    Primary button
+                </button>
+            </section>
 
             <h3 class="alegrify-h3">Disabled</h3>
-            <button class="alegrify-button" disabled>
-                Disabled button
-            </button>
-            <button class="alegrify-button alegrify-button--primary" disabled>
-                Disabled button
-            </button>
+            <section class="alegrify-section">
+                <button class="alegrify-button" disabled>
+                    Disabled button
+                </button>
+                <button class="alegrify-button alegrify-button--primary" disabled>
+                    Disabled button
+                </button>
+            </section>
         </article>
 
         <aside class="alegrify-aside">
-            Use only one primary button at the same time.
-            There can only be one prior action. If everything is priority, nothing is.
+            Use only one primary button at the same time. There can only be one prior action. If everything is priority, nothing is.
         </aside>
 
         <article class="alegrify-article">
@@ -179,8 +186,8 @@
         var fonts = [
             'https://fonts.googleapis.com/icon?family=Material+Icons'
         ];
-    
-        document.head.innerHTML = document.head.innerHTML + fonts.map(function(font) {
+
+        document.head.innerHTML = document.head.innerHTML + fonts.map(function (font) {
             return '<link href="' + font + '" rel="stylesheet" />';
         });
     </script>
