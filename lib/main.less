@@ -1,6 +1,12 @@
 .alegrify-main {
     position: relative;
 
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
     @media screen and (min-width: @medium) {
         margin: 32px auto;
         width: @small;
