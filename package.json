@@ -5,7 +5,7 @@
   "main": "index.html",
   "repository": "https://github.com/dejakob/alegrify-ui",
   "author": "dejakob",
-  "license": "MIT",
+  "license": "MPL",
   "devDependencies": {
     "less": "3.8.1",
     "less-plugin-auto-rtl": "^1.0.13",
