@@ -4,8 +4,6 @@
     padding: 16px;
     margin-top: 32px;
 
-    box-shadow: fade(lighten(@body-color, 20%), 80%) 0px 3px 4px 1px;
-
     & > *:first-child {
         padding-top: 0;
     }
@@ -17,6 +15,7 @@
         color: @body-color;
         background-color: @action-color;
         border-radius: 4px;
+        box-shadow: fade(lighten(@body-color, 20%), 80%) 0px 3px 4px 1px;
     }
     @media screen and (min-width: @large) {
         // Todo: rtl
