@@ -157,7 +157,7 @@ dialog {
   font-size: 32px;
   line-height: 20px;
   font-variant: normal;
-  font-weight: 600;
+  font-weight: 800;
 }
 .alegrify-h1--thin {
   font-size: 32px;
@@ -169,13 +169,13 @@ dialog {
   font-size: 24px;
   line-height: 20px;
   font-variant: normal;
-  font-weight: 500;
+  font-weight: 600;
 }
 .alegrify-h3 {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 .alegrify-p {
   font-size: 16px;
