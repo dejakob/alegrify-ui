@@ -151,39 +151,6 @@ body {
   font-variant: normal;
   font-weight: 400;
 }
-h1 {
-  font-size: 36px;
-  line-height: 40px;
-  font-variant: normal;
-  font-weight: 100;
-  padding-top: 32px;
-  padding-bottom: 16px;
-}
-h2 {
-  font-size: 32px;
-  line-height: 36px;
-  font-variant: normal;
-  font-weight: 500;
-  padding-top: 16px;
-  padding-bottom: 8px;
-}
-h3 {
-  font-size: 26px;
-  line-height: 28px;
-  font-variant: normal;
-  font-weight: 400;
-  padding-top: 8px;
-  padding-bottom: 4px;
-}
-p {
-  font-size: 16px;
-  line-height: 20px;
-  font-variant: normal;
-  font-weight: 400;
-}
-p + p {
-  padding-top: 16px;
-}
 @-webkit-keyframes alegrify-alert__fade-in-animation {
   from {
     opacity: 0;
@@ -420,52 +387,15 @@ p + p {
 .alegrify-main {
   position: relative;
 }
-.alegrify-main > h1 {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 0;
-  background: linear-gradient(to right, #4e4cc1, #953495);
-  color: #ffffff;
-}
-[dir="rtl"] .alegrify-main > h1,
-:host-context([dir="rtl"]) .alegrify-main > h1 {
-  padding-right: 16px;
-  padding-left: 16px;
-}
-[dir="ltr"] .alegrify-main > h1,
-:host-context([dir="ltr"]) .alegrify-main > h1 {
-  padding-left: 16px;
-  padding-right: 16px;
-}
 @media screen and (min-width: 960px) {
   .alegrify-main {
     margin: 32px auto;
     width: 600px;
   }
-  .alegrify-main > h1 {
-    padding-left: 0;
-    padding-right: 0;
-    background: none;
-  }
-  [dir="rtl"] .alegrify-main > h1,
-  :host-context([dir="rtl"]) .alegrify-main > h1 {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  [dir="ltr"] .alegrify-main > h1,
-  :host-context([dir="ltr"]) .alegrify-main > h1 {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .alegrify-main {
     width: 960px;
-  }
-}
-@media screen and (min-width: 960px) {
-  h1 + .alegrify-main {
-    margin-bottom: 8px;
   }
 }
 .alegrify-checkbox {
@@ -783,10 +713,6 @@ p + p {
 }
 .alegrify-dialog__content > * {
   margin-top: 0;
-}
-.alegrify-dialog__content h1:first-child {
-  padding-top: 0;
-  font-weight: 600;
 }
 .alegrify-error {
   color: #900505;

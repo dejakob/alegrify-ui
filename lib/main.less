@@ -1,31 +1,11 @@
 .alegrify-main {
     position: relative;
 
-    > h1 {
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 0;
-        background: linear-gradient(to right, @primary-color, @secondary-color);
-        color: @action-color;
-    }
-
     @media screen and (min-width: @medium) {
         margin: 32px auto;
         width: @small;
-
-        > h1 {
-            padding-left: 0;
-            padding-right: 0;
-            background: none;
-        }
     }
     @media screen and (min-width: @large) {
         width: @medium;
-    }
-}
-
-@media screen and (min-width: @medium) {
-    h1 + .alegrify-main {
-        margin-bottom: 8px;
     }
 }
