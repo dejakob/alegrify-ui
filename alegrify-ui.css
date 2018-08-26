@@ -191,6 +191,21 @@ dialog {
   font-style: italic;
   font-weight: 400;
 }
+.alegrify-space--extra-small {
+  margin-bottom: 2px;
+}
+.alegrify-space--small {
+  margin-bottom: 4px;
+}
+.alegrify-space--medium {
+  margin-bottom: 8px;
+}
+.alegrify-space--large {
+  margin-bottom: 16px;
+}
+.alegrify-space--extra-large {
+  margin-bottom: 32px;
+}
 @-webkit-keyframes alegrify-alert__fade-in-animation {
   from {
     opacity: 0;
