@@ -46,15 +46,35 @@ function reactify() {
     function collectionToReact(component) {
         const { variants, states, children, pseudo } = cssCollection[component];
 
-        
+        const componentName = camelizeString(component);
 
         const template = `
-/**
- * 
- */ 
-function ${camelizeString(component)} () {
+import React from 'react';
+import PropTypes from 'prop-types';
 
-}        
+/**
+ * <${componentName} />
+ */ 
+function ${componentName}(props) {
+    const classNames = ['${component}'];
+
+${variants.map(variant => `
+    if (props.${camelizeExceptFirst(variant)}) {
+        classNames.push('${component}--${variant}');
+    }
+
+`).join(' ')}
+    return (
+        <div
+            className={classNames.join(' ')}
+            {...props}
+        />
+    );
+}
+
+${componentName}.propTypes = {
+${variants.map(variant => `    ${camelizeExceptFirst(variant)}: PropTypes.bool`).join(',\n')}
+};
         `;
 
         console.log(template);
@@ -64,6 +84,13 @@ function ${camelizeString(component)} () {
         return string
             .split('-')
             .map(word => word.length ? word.replace(word[0], word[0].toUpperCase()) : '')
+            .join('');
+    }
+
+    function camelizeExceptFirst(string) {
+        return camelizeString(string)
+            .split('')
+            .map((letter, index) => index === 0 ? letter.toLowerCase() : letter)
             .join('');
     }
 
