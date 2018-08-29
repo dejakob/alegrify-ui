@@ -493,6 +493,10 @@ pre {
 .alegrify-checkbox {
   clear: both;
 }
+.alegrify-checkbox[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 .alegrify-checkbox + .alegrify-checkbox {
   margin-top: 8px;
 }
@@ -798,6 +802,16 @@ pre {
 :host-context([dir="ltr"]) .alegrify-dialog__wrapper {
   right: 0;
   left: 0;
+}
+.alegrify-dialog__wrapper[open] {
+  display: block;
+  -webkit-animation: alegrify-dialog__fade-in-animation 0.4s;
+          animation: alegrify-dialog__fade-in-animation 0.4s;
+}
+.alegrify-dialog__wrapper[open] .alegrify-dialog {
+  display: table;
+  -webkit-animation: alegrify-dialog__slide-down-animation 0.4s;
+          animation: alegrify-dialog__slide-down-animation 0.4s;
 }
 .alegrify-dialog__content {
   padding: 16px;
