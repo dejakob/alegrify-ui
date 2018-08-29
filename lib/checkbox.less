@@ -1,6 +1,11 @@
 .alegrify-checkbox {
     clear: both;
 
+    &[disabled] {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
     & + & {
         margin-top: 8px;
     }
