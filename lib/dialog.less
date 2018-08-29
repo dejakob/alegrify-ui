@@ -72,6 +72,15 @@
         left: 0;
 
         z-index: 4;
+
+        &[open] {
+            display: block;
+            animation: alegrify-dialog__fade-in-animation 0.4s;
+        }
+        &[open] .alegrify-dialog {
+            display: table;
+            animation: alegrify-dialog__slide-down-animation 0.4s;
+        }
     }
     &__content {
         padding: 16px;
