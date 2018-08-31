@@ -421,7 +421,8 @@ pre {
   background-color: #ffffff;
   transition: background-color 0.2s;
 }
-.alegrify-button[disabled] {
+.alegrify-button[disabled],
+.alegrify-button--disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
@@ -493,7 +494,8 @@ pre {
 .alegrify-checkbox {
   clear: both;
 }
-.alegrify-checkbox[disabled] {
+.alegrify-checkbox[disabled],
+.alegrify-checkbox--disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
@@ -1061,7 +1063,8 @@ pre {
 .alegrify-radio + .alegrify-radio {
   margin-top: 8px;
 }
-.alegrify-radio[disabled] {
+.alegrify-radio[disabled],
+.alegrify-radio--disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
