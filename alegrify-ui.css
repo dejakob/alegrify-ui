@@ -1061,6 +1061,10 @@ pre {
 .alegrify-radio + .alegrify-radio {
   margin-top: 8px;
 }
+.alegrify-radio[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 .alegrify-radio__trigger {
   position: absolute;
   height: 1px;
