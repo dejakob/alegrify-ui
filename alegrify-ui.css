@@ -473,6 +473,7 @@ pre {
 }
 .alegrify-main {
   position: relative;
+  margin: 32px auto;
 }
 .alegrify-main:after {
   content: '';
@@ -481,7 +482,6 @@ pre {
 }
 @media screen and (min-width: 960px) {
   .alegrify-main {
-    margin: 32px auto;
     width: 600px;
   }
 }
