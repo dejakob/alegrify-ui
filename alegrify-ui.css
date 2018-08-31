@@ -903,6 +903,9 @@ pre {
   padding-left: 8px;
   padding-right: 8px;
 }
+.alegrify-label--error {
+  color: #900505;
+}
 .alegrify-number-input {
   display: inline-block;
   width: 50px;
