@@ -453,7 +453,7 @@ pre {
 .alegrify-body {
   min-height: 100vh;
 }
-.alegrify-body:after {
+.alegrify-body--gradient:after {
   content: '';
   display: block;
   height: 32px;
@@ -461,12 +461,12 @@ pre {
   background: linear-gradient(to right, #4e4cc1, #953495);
 }
 @media screen and (min-width: 960px) {
-  .alegrify-body {
+  .alegrify-body--gradient {
     color: #ffffff;
     background-color: #4e4cc1;
     background: linear-gradient(#4e4cc1, #953495);
   }
-  .alegrify-body:after {
+  .alegrify-body--gradient:after {
     content: none;
     display: none;
   }
