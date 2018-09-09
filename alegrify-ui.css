@@ -453,9 +453,21 @@ pre {
 }
 .alegrify-card {
   background-color: #ffffff;
-  padding: 16px 0;
+  padding: 16px;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+  margin-left: auto;
+  margin-right: auto;
+}
+[dir="rtl"] .alegrify-card,
+:host-context([dir="rtl"]) .alegrify-card {
+  margin-right: auto;
+  margin-left: auto;
+}
+[dir="ltr"] .alegrify-card,
+:host-context([dir="ltr"]) .alegrify-card {
+  margin-left: auto;
+  margin-right: auto;
 }
 .alegrify-card + .alegrify-card {
   border-top: none;
@@ -466,22 +478,21 @@ pre {
 @media screen and (min-width: 600px) {
   .alegrify-card {
     border: 1px solid #e6e6e6;
-    padding: 16px;
     border-radius: 2px;
+    box-shadow: 0px 3px 4px 1px #333333;
+  }
+  [dir="rtl"] .alegrify-card,
+  :host-context([dir="rtl"]) .alegrify-card {
+    box-shadow: 0px 3px 4px 1px #333333;
+  }
+  [dir="ltr"] .alegrify-card,
+  :host-context([dir="ltr"]) .alegrify-card {
+    box-shadow: 0px 3px 4px 1px #333333;
   }
 }
 @media screen and (min-width: 960px) {
   .alegrify-card {
     border-radius: 4px;
-    box-shadow: 0px 3px 4px 1px #1a1a1a;
-  }
-  [dir="rtl"] .alegrify-card,
-  :host-context([dir="rtl"]) .alegrify-card {
-    box-shadow: 0px 3px 4px 1px #1a1a1a;
-  }
-  [dir="ltr"] .alegrify-card,
-  :host-context([dir="ltr"]) .alegrify-card {
-    box-shadow: 0px 3px 4px 1px #1a1a1a;
   }
 }
 .alegrify-main {
