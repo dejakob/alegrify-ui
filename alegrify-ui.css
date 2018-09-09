@@ -338,27 +338,6 @@ pre {
 .alegrify-aside > .alegrify-section:last-child {
   margin-bottom: 0;
 }
-@media screen and (min-width: 960px) {
-  .alegrify-article,
-  .alegrify-aside {
-    color: #000000;
-    background-color: #ffffff;
-    border-radius: 4px;
-    box-shadow: rgba(51, 51, 51, 0.8) 0px 3px 4px 1px;
-  }
-  [dir="rtl"] .alegrify-article,
-  [dir="rtl"] .alegrify-aside,
-  :host-context([dir="rtl"]) .alegrify-article,
-  :host-context([dir="rtl"]) .alegrify-aside {
-    box-shadow: rgba(51, 51, 51, 0.8) 0px 3px 4px 1px;
-  }
-  [dir="ltr"] .alegrify-article,
-  [dir="ltr"] .alegrify-aside,
-  :host-context([dir="ltr"]) .alegrify-article,
-  :host-context([dir="ltr"]) .alegrify-aside {
-    box-shadow: rgba(51, 51, 51, 0.8) 0px 3px 4px 1px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .alegrify-article,
   .alegrify-aside {
