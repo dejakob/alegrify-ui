@@ -460,6 +460,9 @@ pre {
 .alegrify-card + .alegrify-card {
   border-top: none;
 }
+.alegrify-card--small {
+  max-width: 500px;
+}
 @media screen and (min-width: 600px) {
   .alegrify-card {
     border: 1px solid #e6e6e6;
@@ -470,15 +473,15 @@ pre {
 @media screen and (min-width: 960px) {
   .alegrify-card {
     border-radius: 4px;
-    box-shadow: 0px 3px 4px 1px #4d4d4d;
+    box-shadow: 0px 3px 4px 1px #1a1a1a;
   }
   [dir="rtl"] .alegrify-card,
   :host-context([dir="rtl"]) .alegrify-card {
-    box-shadow: 0px 3px 4px 1px #4d4d4d;
+    box-shadow: 0px 3px 4px 1px #1a1a1a;
   }
   [dir="ltr"] .alegrify-card,
   :host-context([dir="ltr"]) .alegrify-card {
-    box-shadow: 0px 3px 4px 1px #4d4d4d;
+    box-shadow: 0px 3px 4px 1px #1a1a1a;
   }
 }
 .alegrify-main {

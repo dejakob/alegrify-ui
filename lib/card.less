@@ -8,6 +8,10 @@
         border-top: none;
     }
 
+    &--small {
+        max-width: 500px;
+    }
+
     @media screen and (min-width: @small) {
         border: 1px solid lighten(@body-color, 90%);
         padding: @space-16;
@@ -16,6 +20,6 @@
 
     @media screen and (min-width: @medium) {
         border-radius: @space-4;
-        box-shadow: 0px 3px 4px 1px lighten(@body-color, 30%);
+        box-shadow: 0px 3px 4px 1px lighten(@body-color, 10%);
     }
 }
