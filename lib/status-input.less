@@ -1,0 +1,73 @@
+.alegrify-status-input {
+    position: relative;
+    background-color: @action-color;
+    color: @body-color;
+
+    &__textarea {
+        border: none;
+        box-sizing: border-box;
+        width: 100%;
+        resize: none;
+
+        font-size: 24px;
+        line-height: 32px;
+        padding: 16px;
+
+        &:focus {
+            outline: none;
+        }
+        &:focus + &__actions:before {
+            content: '';
+            position: absolute;
+        }
+    }
+    &__actions {
+        list-style: none;
+        padding: 0;
+    }
+    &__action {
+        display: inline-block;
+    }
+    &__action-button {  
+        display: block;
+        background: none;
+        border: none;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+            transition: opacity 0.4s;
+            outline: none;
+        }
+        &:active {
+            opacity: 0.8;
+            transition: opacity 0.4s;
+        }
+
+        &:before {
+            content: attr(data-icon);
+            display: block;
+            float: left;
+            font-family: 'Material Icons';
+            font-size: 24px;
+        }
+    }
+    &__action-button-label {
+        padding-left: 8px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width: @small) {
+        border: 1px solid lighten(@body-color, 90%);
+        border-radius: @space-2;
+        box-shadow: 0px 3px 4px -4px lighten(@body-color, 20%);
+
+        &--focus {
+            box-shadow: 0px 3px 4px -1px lighten(@body-color, 20%);
+        }
+    }
+}
+
