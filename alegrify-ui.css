@@ -406,6 +406,9 @@ pre {
 .alegrify-button--full {
   width: 100%;
 }
+.alegrify-button--small {
+  padding: 8px 16px;
+}
 .alegrify-button--primary {
   background-color: #4e4cc1;
   color: #ffffff;
@@ -1205,7 +1208,7 @@ pre {
 }
 .alegrify-status-input__actions {
   list-style: none;
-  margin: 0 0 16px 0;
+  margin: 8px 0;
   padding: 0 8px;
 }
 .alegrify-status-input__action {
@@ -1259,6 +1262,23 @@ pre {
   padding-right: initial;
   padding-left: 8px;
   text-transform: uppercase;
+}
+.alegrify-status-input__submit {
+  float: right;
+  margin: 0 16px 16px 16px;
+}
+[dir="rtl"] .alegrify-status-input__submit,
+:host-context([dir="rtl"]) .alegrify-status-input__submit {
+  float: left;
+}
+[dir="ltr"] .alegrify-status-input__submit,
+:host-context([dir="ltr"]) .alegrify-status-input__submit {
+  float: right;
+}
+.alegrify-status-input:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 @media screen and (min-width: 600px) {
   .alegrify-status-input {
