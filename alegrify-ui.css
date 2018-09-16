@@ -1191,9 +1191,22 @@ pre {
   content: '';
   position: absolute;
 }
+.alegrify-status-input__textarea::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.alegrify-status-input__textarea:-ms-input-placeholder {
+  opacity: 0.3;
+}
+.alegrify-status-input__textarea::-ms-input-placeholder {
+  opacity: 0.3;
+}
+.alegrify-status-input__textarea::placeholder {
+  opacity: 0.3;
+}
 .alegrify-status-input__actions {
   list-style: none;
-  padding: 0;
+  margin: 0 0 16px 0;
+  padding: 0 8px;
 }
 .alegrify-status-input__action {
   display: inline-block;
