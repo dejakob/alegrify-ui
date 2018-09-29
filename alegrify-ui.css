@@ -328,6 +328,7 @@ pre {
 .alegrify-article,
 .alegrify-aside {
   display: block;
+  width: 100%;
 }
 .alegrify-article > *:first-child,
 .alegrify-aside > *:first-child {
