@@ -139,14 +139,6 @@
 .alegrify-body--reset * {
   box-sizing: border-box;
 }
-.font--bold {
-  font-style: normal;
-  font-weight: 600;
-}
-.font--italic {
-  font-style: italic;
-  font-weight: 400;
-}
 .alegrify-body,
 textarea,
 pre {
@@ -1306,4 +1298,131 @@ pre {
   :host-context([dir="ltr"]) .alegrify-status-input--focus {
     box-shadow: 0px 3px 4px -1px #333333;
   }
+}
+.alegrify-range-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  background: transparent;
+}
+.alegrify-range-input .focus-thumb {
+  background-color: #ffffff;
+  border-color: #4e4cc1;
+}
+.alegrify-range-input:focus {
+  outline: none;
+}
+.alegrify-range-input:before {
+  content: attr(data-low-indicator);
+  font-size: 24px;
+  margin-right: 16px;
+}
+[dir="rtl"] .alegrify-range-input:before,
+:host-context([dir="rtl"]) .alegrify-range-input:before {
+  margin-right: initial;
+  margin-left: 16px;
+}
+[dir="ltr"] .alegrify-range-input:before,
+:host-context([dir="ltr"]) .alegrify-range-input:before {
+  margin-left: initial;
+  margin-right: 16px;
+}
+.alegrify-range-input:after {
+  content: attr(data-high-indicator);
+  font-size: 24px;
+  margin-left: 16px;
+}
+[dir="rtl"] .alegrify-range-input:after,
+:host-context([dir="rtl"]) .alegrify-range-input:after {
+  margin-left: initial;
+  margin-right: 16px;
+}
+[dir="ltr"] .alegrify-range-input:after,
+:host-context([dir="ltr"]) .alegrify-range-input:after {
+  margin-right: initial;
+  margin-left: 16px;
+}
+.alegrify-range-input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.alegrify-range-input:focus::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border-color: #4e4cc1;
+}
+.alegrify-range-input:focus::-moz-range-thumb {
+  background-color: #ffffff;
+  border-color: #4e4cc1;
+}
+.alegrify-range-input:focus::-ms-thumb {
+  background-color: #ffffff;
+  border-color: #4e4cc1;
+}
+.alegrify-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(78, 76, 193, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-top: -12px;
+  border-radius: 2px;
+  transition: background 0.4s;
+}
+.alegrify-range-input::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(78, 76, 193, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-top: -12px;
+  border-radius: 2px;
+  transition: background 0.4s;
+}
+.alegrify-range-input::-ms-thumb {
+  appearance: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(78, 76, 193, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-top: -12px;
+  border-radius: 2px;
+  transition: background 0.4s;
+}
+.alegrify-range-input::-webkit-slider-runnable-track {
+  display: block;
+  background: linear-gradient(to right, #bebee8, #d78bd7);
+  height: 8px;
+}
+.alegrify-range-input::-moz-range-track {
+  display: block;
+  background: linear-gradient(to right, #bebee8, #d78bd7);
+  height: 8px;
+}
+.alegrify-range-input::-ms-fill-lower {
+  display: block;
+  background: linear-gradient(to right, #bebee8, #d78bd7);
+  height: 8px;
+}
+.alegrify-range-input::-ms-fill-upper {
+  display: block;
+  background: linear-gradient(to right, #bebee8, #d78bd7);
+  height: 8px;
 }
