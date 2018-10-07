@@ -1,5 +1,11 @@
 .alegrify-body {
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    [class^="alegrify-"] {
+        box-sizing: border-box;
+    }
 
     &--gradient:after {
         content: '';

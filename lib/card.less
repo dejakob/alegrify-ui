@@ -1,6 +1,9 @@
 .alegrify-card {
+    @card-padding: @space-16;
+    @card-large-viewport-border-radius: @space-4;
+
     background-color: @action-color;
-    padding: @space-16;
+    padding: @card-padding;
     border-top: 1px solid lighten(@body-color, 90%);
     border-bottom: 1px solid lighten(@body-color, 90%);
     margin-left: auto;
@@ -14,13 +17,64 @@
         max-width: 500px;
     }
 
-    @media screen and (min-width: @small) {
-        border: 1px solid lighten(@body-color, 90%);
-        border-radius: @space-2;
-        box-shadow: 0px 3px 4px 1px lighten(@body-color, 20%);
+    &__header {
+        background-color: lighten(@body-color, 20%);
+        margin-top: -1 * @card-padding - 1px;
+        margin-right: -1 * @card-padding - 1px;
+        margin-left: -1 * @card-padding - 1px;
+        padding: @card-padding;
+        position: relative;
+
+        &--background-image {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            padding-top: 8 * @card-padding;
+
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 6 * @card-padding;
+                background: linear-gradient(to bottom, fade(@body-color, 0%), fade(@body-color, 60%), fade(@body-color, 80%))
+            }
+        }
+    }
+    &__title {
+        margin: 0;
+        color: @action-color;
+        position: relative;
+
+        .font--head2();
+    }
+    &__content {
+        .alegrify-p:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__footer {
+        margin-top: @card-padding;
+        margin-right: -1 * @card-padding - 1px;
+        margin-left: -1 * @card-padding - 1px;
+        margin-bottom: -1 * @card-padding - 1px;
+
+        padding: @card-padding;
+
+        background-color: lighten(@body-color, 95%);
     }
 
-    @media screen and (min-width: @medium) {
-        border-radius: @space-4;
+    @media screen and (min-width: @small) {
+        border: 1px solid lighten(@body-color, 90%);
+        box-shadow: 0px 3px 4px 1px lighten(@body-color, 20%);
+
+        border-radius: @card-large-viewport-border-radius;
+
+        &__header {
+            border-top-left-radius: @card-large-viewport-border-radius;
+            border-top-right-radius: @card-large-viewport-border-radius;
+        }
     }
 }

@@ -1,144 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-.alegrify-body--reset {
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  /* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
-}
-.alegrify-body--reset div,
-.alegrify-body--reset span,
-.alegrify-body--reset applet,
-.alegrify-body--reset object,
-.alegrify-body--reset iframe,
-.alegrify-body--reset h1,
-.alegrify-body--reset h2,
-.alegrify-body--reset h3,
-.alegrify-body--reset h4,
-.alegrify-body--reset h5,
-.alegrify-body--reset h6,
-.alegrify-body--reset p,
-.alegrify-body--reset blockquote,
-.alegrify-body--reset pre,
-.alegrify-body--reset a,
-.alegrify-body--reset abbr,
-.alegrify-body--reset acronym,
-.alegrify-body--reset address,
-.alegrify-body--reset big,
-.alegrify-body--reset cite,
-.alegrify-body--reset code,
-.alegrify-body--reset del,
-.alegrify-body--reset dfn,
-.alegrify-body--reset em,
-.alegrify-body--reset img,
-.alegrify-body--reset ins,
-.alegrify-body--reset kbd,
-.alegrify-body--reset q,
-.alegrify-body--reset s,
-.alegrify-body--reset samp,
-.alegrify-body--reset small,
-.alegrify-body--reset strike,
-.alegrify-body--reset strong,
-.alegrify-body--reset sub,
-.alegrify-body--reset sup,
-.alegrify-body--reset tt,
-.alegrify-body--reset var,
-.alegrify-body--reset b,
-.alegrify-body--reset u,
-.alegrify-body--reset i,
-.alegrify-body--reset center,
-.alegrify-body--reset dl,
-.alegrify-body--reset dt,
-.alegrify-body--reset dd,
-.alegrify-body--reset ol,
-.alegrify-body--reset ul,
-.alegrify-body--reset li,
-.alegrify-body--reset fieldset,
-.alegrify-body--reset form,
-.alegrify-body--reset label,
-.alegrify-body--reset legend,
-.alegrify-body--reset table,
-.alegrify-body--reset caption,
-.alegrify-body--reset tbody,
-.alegrify-body--reset tfoot,
-.alegrify-body--reset thead,
-.alegrify-body--reset tr,
-.alegrify-body--reset th,
-.alegrify-body--reset td,
-.alegrify-body--reset article,
-.alegrify-body--reset aside,
-.alegrify-body--reset canvas,
-.alegrify-body--reset details,
-.alegrify-body--reset embed,
-.alegrify-body--reset figure,
-.alegrify-body--reset figcaption,
-.alegrify-body--reset footer,
-.alegrify-body--reset header,
-.alegrify-body--reset hgroup,
-.alegrify-body--reset main,
-.alegrify-body--reset menu,
-.alegrify-body--reset nav,
-.alegrify-body--reset output,
-.alegrify-body--reset ruby,
-.alegrify-body--reset section,
-.alegrify-body--reset summary,
-.alegrify-body--reset time,
-.alegrify-body--reset mark,
-.alegrify-body--reset audio,
-.alegrify-body--reset video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
-.alegrify-body--reset article,
-.alegrify-body--reset aside,
-.alegrify-body--reset details,
-.alegrify-body--reset figcaption,
-.alegrify-body--reset figure,
-.alegrify-body--reset footer,
-.alegrify-body--reset header,
-.alegrify-body--reset hgroup,
-.alegrify-body--reset main,
-.alegrify-body--reset menu,
-.alegrify-body--reset nav,
-.alegrify-body--reset section {
-  display: block;
-}
-.alegrify-body--reset ol,
-.alegrify-body--reset ul {
-  list-style: none;
-}
-.alegrify-body--reset blockquote,
-.alegrify-body--reset q {
-  quotes: none;
-}
-.alegrify-body--reset blockquote:before,
-.alegrify-body--reset blockquote:after,
-.alegrify-body--reset q:before,
-.alegrify-body--reset q:after {
-  content: '';
-  content: none;
-}
-.alegrify-body--reset a:hover,
-.alegrify-body--reset a:active {
-  outline: none;
-}
-.alegrify-body--reset table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.alegrify-body--reset dialog {
-  border: none;
-  padding: 0;
-}
-.alegrify-body--reset * {
-  box-sizing: border-box;
-}
 .alegrify-body,
 textarea,
 pre {
@@ -207,11 +66,19 @@ pre {
 .alegrify-h2 {
   margin-bottom: 16px;
 }
-.alegrify-h3 {
+.alegrify-h2 {
   margin-bottom: 8px;
 }
 .alegrify-section {
   margin-bottom: 16px;
+}
+@media (max-width: 599px) {
+  .alegrify-h1,
+  .alegrify-h2,
+  .alegrify-h3,
+  .alegrify-section {
+    padding: 0 16px;
+  }
 }
 @-webkit-keyframes alegrify-alert__fade-in-animation {
   from {
@@ -417,6 +284,11 @@ pre {
 }
 .alegrify-body {
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.alegrify-body [class^="alegrify-"] {
+  box-sizing: border-box;
 }
 .alegrify-body--gradient:after {
   content: '';
@@ -460,11 +332,84 @@ pre {
 .alegrify-card--small {
   max-width: 500px;
 }
+.alegrify-card__header {
+  background-color: #333333;
+  margin-top: -17px;
+  margin-right: -17px;
+  margin-left: -17px;
+  padding: 16px;
+  position: relative;
+}
+[dir="rtl"] .alegrify-card__header,
+:host-context([dir="rtl"]) .alegrify-card__header {
+  margin-left: -17px;
+  margin-right: -17px;
+}
+[dir="ltr"] .alegrify-card__header,
+:host-context([dir="ltr"]) .alegrify-card__header {
+  margin-right: -17px;
+  margin-left: -17px;
+}
+.alegrify-card__header--background-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 128px;
+}
+.alegrify-card__header--background-image:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 96px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+}
+[dir="rtl"] .alegrify-card__header--background-image:before,
+:host-context([dir="rtl"]) .alegrify-card__header--background-image:before {
+  right: 0;
+  left: 0;
+}
+[dir="ltr"] .alegrify-card__header--background-image:before,
+:host-context([dir="ltr"]) .alegrify-card__header--background-image:before {
+  left: 0;
+  right: 0;
+}
+.alegrify-card__title {
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  font-size: 24px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 600;
+}
+.alegrify-card__content .alegrify-p:last-child {
+  margin-bottom: 0;
+}
+.alegrify-card__footer {
+  margin-top: 16px;
+  margin-right: -17px;
+  margin-left: -17px;
+  margin-bottom: -17px;
+  padding: 16px;
+  background-color: #f2f2f2;
+}
+[dir="rtl"] .alegrify-card__footer,
+:host-context([dir="rtl"]) .alegrify-card__footer {
+  margin-left: -17px;
+  margin-right: -17px;
+}
+[dir="ltr"] .alegrify-card__footer,
+:host-context([dir="ltr"]) .alegrify-card__footer {
+  margin-right: -17px;
+  margin-left: -17px;
+}
 @media screen and (min-width: 600px) {
   .alegrify-card {
     border: 1px solid #e6e6e6;
-    border-radius: 2px;
     box-shadow: 0px 3px 4px 1px #333333;
+    border-radius: 4px;
   }
   [dir="rtl"] .alegrify-card,
   :host-context([dir="rtl"]) .alegrify-card {
@@ -474,10 +419,19 @@ pre {
   :host-context([dir="ltr"]) .alegrify-card {
     box-shadow: 0px 3px 4px 1px #333333;
   }
-}
-@media screen and (min-width: 960px) {
-  .alegrify-card {
-    border-radius: 4px;
+  .alegrify-card__header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  [dir="rtl"] .alegrify-card__header,
+  :host-context([dir="rtl"]) .alegrify-card__header {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  [dir="ltr"] .alegrify-card__header,
+  :host-context([dir="ltr"]) .alegrify-card__header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
 }
 .alegrify-main {
@@ -489,12 +443,12 @@ pre {
   display: table;
   clear: both;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 600px) {
   .alegrify-main {
     width: 600px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
   .alegrify-main {
     width: 960px;
   }
@@ -1309,6 +1263,9 @@ pre {
 .alegrify-range-input .focus-thumb {
   background-color: #ffffff;
   border-color: #4e4cc1;
+}
+.alegrify-range-input[disabled] {
+  opacity: 0.3;
 }
 .alegrify-range-input:focus {
   outline: none;

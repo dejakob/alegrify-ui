@@ -11,7 +11,7 @@
 
 <body class="alegrify-body">
     <main class="alegrify-main">
-        <h1 class="alegrify-h1--thin">Alegrify User Interface</h1>
+        <h1 class="alegrify-h1 alegrify-h1--thin">Alegrify User Interface</h1>
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Button</h2>
@@ -49,7 +49,9 @@
         </article>
 
         <aside class="alegrify-aside">
-            Use only one primary button at the same time. There can only be one prior action. If everything is priority, nothing is.
+            <section class="alegrify-section">
+                Use only one primary button at the same time. There can only be one prior action. If everything is priority, nothing is.
+            </section>
         </aside>
 
         <article class="alegrify-article">
@@ -66,7 +68,9 @@
         </article>
 
         <aside class="alegrify-aside">
-            Alerts can be used to show a short success message
+            <section class="alegrify-section">
+                Alerts can be used to show a short success message
+            </section>
         </aside>
 
         <article class="alegrify-article">
@@ -88,7 +92,9 @@
         </article>
 
         <aside class="alegrify-aside">
-            Important: include material icons lib for checkboxes to work
+            <section class="alegrify-section">
+                Important: include material icons lib for checkboxes to work
+            </section>
         </aside>
 
         <article class="alegrify-article">
@@ -209,34 +215,32 @@
 
         <article class="alegrify-article">
             <h2 class="alegrify-h2">Status Input</h2>
-            <section class="alegrify-section">
-                <div class="alegrify-status-input">
-                    <textarea
-                        class="alegrify-status-input__textarea"
-                        placeholder="How are you feeling?"
-                        name="alegrify-status-input1"
-                        id="alegrify-status-input1"
-                        cols="30"
-                        rows="3"
-                    ></textarea>
-                    <ul class="alegrify-status-input__actions">
-                        <li class="alegrify-status-input__action">
-                            <button class="alegrify-status-input__action-button" data-icon="camera_alt">
-                                <span class="alegrify-status-input__action-button-label">Picture</span>
-                            </button>
-                        </li>
-                        <li class="alegrify-status-input__action">
-                            <button class="alegrify-status-input__action-button" data-icon="audiotrack">
-                                <span class="alegrify-status-input__action-button-label">Music</span>
-                            </button>
-                        </li>
-                        <li class="alegrify-status-input__action">
-                            <button class="alegrify-status-input__action-button" data-icon="attach_file">
-                                <span class="alegrify-status-input__action-button-label">File</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+            <section class="alegrify-status-input">
+                <textarea
+                    class="alegrify-status-input__textarea"
+                    placeholder="How are you feeling?"
+                    name="alegrify-status-input1"
+                    id="alegrify-status-input1"
+                    cols="30"
+                    rows="3"
+                ></textarea>
+                <ul class="alegrify-status-input__actions">
+                    <li class="alegrify-status-input__action">
+                        <button class="alegrify-status-input__action-button" data-icon="camera_alt">
+                            <span class="alegrify-status-input__action-button-label">Picture</span>
+                        </button>
+                    </li>
+                    <li class="alegrify-status-input__action">
+                        <button class="alegrify-status-input__action-button" data-icon="audiotrack">
+                            <span class="alegrify-status-input__action-button-label">Music</span>
+                        </button>
+                    </li>
+                    <li class="alegrify-status-input__action">
+                        <button class="alegrify-status-input__action-button" data-icon="attach_file">
+                            <span class="alegrify-status-input__action-button-label">File</span>
+                        </button>
+                    </li>
+                </ul>
             </section>
         </article>
 
@@ -252,6 +256,34 @@
                     max="10"
                     step="1"
                 />
+            </section>
+        </article>
+
+        <article class="alegrify-article">
+            <h2 class="alegrify-h2">Card</h2>
+            <section
+                class="alegrify-card"
+            >
+                <div
+                    class="alegrify-card__header alegrify-card__header--background-image"
+                    style="background-image: url('./local/road.jpg')"
+                >
+                    <h2
+                        class="alegrify-card__title"
+                    >
+                        Card title
+                    </h2>
+                </div>
+                <div class="alegrify-card__content">
+                    <p class="alegrify-p">
+                        All the card things. Here can be some text.
+                    </p>
+                </div>
+                <div class="alegrify-card__footer">
+                    <button class="alegrify-button alegrify-button--primary alegrify-button--small">
+                        Primary button
+                    </button>
+                </div>
             </section>
         </article>
     </main>

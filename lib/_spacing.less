@@ -26,9 +26,18 @@
 .alegrify-h2 {
     margin-bottom: @space-16;
 }
-.alegrify-h3 {
+.alegrify-h2 {
     margin-bottom: @space-8;
 }
 .alegrify-section {
     margin-bottom: @space-16;
+}
+
+@media (max-width: @small - 1px) {
+    .alegrify-h1,
+    .alegrify-h2,
+    .alegrify-h3,
+    .alegrify-section {
+        padding: 0 @space-16;
+    }
 }
