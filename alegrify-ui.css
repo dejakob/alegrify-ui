@@ -433,6 +433,20 @@ pre {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
   }
+  .alegrify-card__footer {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  [dir="rtl"] .alegrify-card__footer,
+  :host-context([dir="rtl"]) .alegrify-card__footer {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  [dir="ltr"] .alegrify-card__footer,
+  :host-context([dir="ltr"]) .alegrify-card__footer {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
 }
 .alegrify-main {
   position: relative;
