@@ -1280,6 +1280,7 @@ pre {
 }
 .alegrify-range-input[disabled] {
   opacity: 0.3;
+  cursor: not-allowed;
 }
 .alegrify-range-input:focus {
   outline: none;
