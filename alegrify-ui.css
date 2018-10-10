@@ -1173,6 +1173,19 @@
 .alegrify-status-input__action {
   display: inline-block;
 }
+.alegrify-status-input__action + .alegrify-status-input__action {
+  margin-left: 16px;
+}
+[dir="rtl"] .alegrify-status-input__action + .alegrify-status-input__action,
+:host-context([dir="rtl"]) .alegrify-status-input__action + .alegrify-status-input__action {
+  margin-left: initial;
+  margin-right: 16px;
+}
+[dir="ltr"] .alegrify-status-input__action + .alegrify-status-input__action,
+:host-context([dir="ltr"]) .alegrify-status-input__action + .alegrify-status-input__action {
+  margin-right: initial;
+  margin-left: 16px;
+}
 .alegrify-status-input__action-button {
   display: block;
   background: none;
@@ -1205,19 +1218,6 @@
 [dir="ltr"] .alegrify-status-input__action-button:before,
 :host-context([dir="ltr"]) .alegrify-status-input__action-button:before {
   float: left;
-}
-.alegrify-status-input__action-button + .alegrify-status-input__action-button {
-  margin-left: 16px;
-}
-[dir="rtl"] .alegrify-status-input__action-button + .alegrify-status-input__action-button,
-:host-context([dir="rtl"]) .alegrify-status-input__action-button + .alegrify-status-input__action-button {
-  margin-left: initial;
-  margin-right: 16px;
-}
-[dir="ltr"] .alegrify-status-input__action-button + .alegrify-status-input__action-button,
-:host-context([dir="ltr"]) .alegrify-status-input__action-button + .alegrify-status-input__action-button {
-  margin-right: initial;
-  margin-left: 16px;
 }
 .alegrify-status-input__action-button-label {
   padding-left: 8px;

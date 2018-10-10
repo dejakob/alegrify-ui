@@ -31,6 +31,10 @@
     }
     &__action {
         display: inline-block;
+
+        & + .alegrify-status-input__action {
+            margin-left: 16px;
+        }
     }
     &__action-button {  
         display: block;
@@ -57,10 +61,6 @@
             font-family: 'Material Icons';
             font-size: 24px;
             max-width: 24px;
-        }
-
-        & + .alegrify-status-input__action-button {
-            margin-left: 16px;
         }
     }
     &__action-button-label {
