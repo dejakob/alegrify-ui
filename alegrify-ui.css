@@ -1413,3 +1413,22 @@
   background: linear-gradient(to right, #bebee8, #d78bd7);
   height: 8px;
 }
+.alegrify-section {
+  background-color: #ffffff;
+  padding: 16px;
+}
+@media screen and (min-width: 600px) {
+  .alegrify-section {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 3px 4px 1px #333333;
+    border-radius: 4px;
+  }
+  [dir="rtl"] .alegrify-section,
+  :host-context([dir="rtl"]) .alegrify-section {
+    box-shadow: 0px 3px 4px 1px #333333;
+  }
+  [dir="ltr"] .alegrify-section,
+  :host-context([dir="ltr"]) .alegrify-section {
+    box-shadow: 0px 3px 4px 1px #333333;
+  }
+}
