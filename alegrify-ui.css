@@ -7,25 +7,25 @@
 }
 .alegrify-h1 {
   font-size: 32px;
-  line-height: 20px;
+  line-height: 48px;
   font-variant: normal;
   font-weight: 800;
 }
 .alegrify-h1--thin {
   font-size: 32px;
-  line-height: 20px;
+  line-height: 48px;
   font-variant: normal;
   font-weight: 100;
 }
 .alegrify-h2 {
   font-size: 24px;
-  line-height: 20px;
+  line-height: 32px;
   font-variant: normal;
   font-weight: 600;
 }
 .alegrify-h3 {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 24px;
   font-variant: normal;
   font-weight: 500;
 }
@@ -382,7 +382,7 @@
   color: #ffffff;
   position: relative;
   font-size: 24px;
-  line-height: 20px;
+  line-height: 32px;
   font-variant: normal;
   font-weight: 600;
 }
