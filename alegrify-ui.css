@@ -380,11 +380,13 @@
   font-variant: normal;
   font-weight: 600;
 }
+.alegrify-card__content {
+  padding: 16px 0;
+}
 .alegrify-card__content .alegrify-p:last-child {
   margin-bottom: 0;
 }
 .alegrify-card__footer {
-  margin-top: 16px;
   margin-right: -17px;
   margin-left: -17px;
   margin-bottom: -17px;
@@ -1256,16 +1258,16 @@
 @media screen and (min-width: 600px) {
   .alegrify-status-input {
     border: 1px solid #e6e6e6;
+    box-shadow: 0px 3px 4px 1px #333333;
     border-radius: 4px;
-    box-shadow: 0px 3px 4px -4px #333333;
   }
   [dir="rtl"] .alegrify-status-input,
   :host-context([dir="rtl"]) .alegrify-status-input {
-    box-shadow: 0px 3px 4px -4px #333333;
+    box-shadow: 0px 3px 4px 1px #333333;
   }
   [dir="ltr"] .alegrify-status-input,
   :host-context([dir="ltr"]) .alegrify-status-input {
-    box-shadow: 0px 3px 4px -4px #333333;
+    box-shadow: 0px 3px 4px 1px #333333;
   }
   .alegrify-status-input--focus {
     box-shadow: 0px 3px 4px -1px #333333;
