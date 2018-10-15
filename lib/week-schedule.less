@@ -3,6 +3,7 @@
     @week-schedule-selection-padding: @space-8;
 
     position: relative;
+    overflow: auto;
 
     &__table {        
         border-spacing: 0;
@@ -15,6 +16,7 @@
         text-transform: uppercase;
         font-weight: 100;
         height: @space-32 * 2;
+        min-height: @space-32 * 2;
         max-height: @space-32 * 2;
         overflow: hidden;
     }
@@ -26,6 +28,7 @@
         line-height: 0;
         padding-right: @space-8;
         width: @space-32 * 2;
+        min-width: @space-32 * 2;
         max-width: @space-32 * 2;
         text-align: right;
     }
@@ -33,7 +36,11 @@
         position: relative;
         vertical-align: top;
         height: @week-schedule-cell-size;
+        min-height: @week-schedule-cell-size;
+        max-height: @week-schedule-cell-size;
         width: @week-schedule-cell-size;
+        min-width: @week-schedule-cell-size;
+        max-width: @week-schedule-cell-size;
         padding: 0;
         border: 1px lighten(@body-color, 90%) dashed;
     }
@@ -50,7 +57,11 @@
     &__selection {
         position: absolute;
         height: (@week-schedule-cell-size * 3) - (@week-schedule-selection-padding * 2);
+        min-height: (@week-schedule-cell-size * 3) - (@week-schedule-selection-padding * 2);
+        max-height: (@week-schedule-cell-size * 3) - (@week-schedule-selection-padding * 2);
         width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
+        min-width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
+        max-width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
         margin: @week-schedule-selection-padding;
         background-color: fade(@primary-color, 50%);
         border: 1px @primary-color solid;
