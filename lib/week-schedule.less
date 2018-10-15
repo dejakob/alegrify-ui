@@ -1,15 +1,22 @@
 .alegrify-week-schedule {
-    border-spacing: 0;
-    border-collapse: collapse;
-
     @week-schedule-cell-size: @space-32 * 2;
     @week-schedule-selection-padding: @space-8;
+
+    position: relative;
+
+    &__table {        
+        border-spacing: 0;
+        border-collapse: collapse;
+    }
 
     &__day {
         border: none;
         padding: @space-8;
         text-transform: uppercase;
         font-weight: 100;
+        height: @space-32 * 2;
+        max-height: @space-32 * 2;
+        overflow: hidden;
     }
     &__time {
         border: none;
@@ -18,6 +25,9 @@
         font-size: @space-16;
         line-height: 0;
         padding-right: @space-8;
+        width: @space-32 * 2;
+        max-width: @space-32 * 2;
+        text-align: right;
     }
     &__cell {
         position: relative;
@@ -26,6 +36,16 @@
         width: @week-schedule-cell-size;
         padding: 0;
         border: 1px lighten(@body-color, 90%) dashed;
+    }
+    &__selections {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        position: absolute;
+        top: @space-32 * 2;
+        left: @space-32 * 2;
+        bottom: 0;
     }
     &__selection {
         position: absolute;
@@ -39,11 +59,21 @@
         transition: background-color 0.4s;
 
         &:hover {
-            background-color: fade(@primary-color, 90%);
+            background-color: fade(@primary-color, 80%);
+        }
+        &:active {
+            background-color: @primary-color;
+
+            .alegrify-week-schedule__selection-resize-up,
+            .alegrify-week-schedule__selection-resize-down {
+                cursor: move;
+            }
         }
 
         &-content {
             position: relative;
+            height: 100%;
+            cursor: move;
         }
         &-resize {
             &-up, &-down {
@@ -52,12 +82,22 @@
                 background: none;
                 border: none;
                 width: 100%;
+                height: @space-32;
+
+                &:hover {
+                    background-color: @primary-color;
+                }
+                &:focus {
+                    outline: none;
+                }
             }
             &-up {
-
+                cursor: n-resize;
             }
             &-down {
-
+                cursor: s-resize;
+                position: absolute;
+                bottom: 0;
             }
         }
     }
