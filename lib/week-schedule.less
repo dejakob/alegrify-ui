@@ -1,0 +1,64 @@
+.alegrify-week-schedule {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    @week-schedule-cell-size: @space-32 * 2;
+    @week-schedule-selection-padding: @space-8;
+
+    &__day {
+        border: none;
+        padding: @space-8;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    &__time {
+        border: none;
+        vertical-align: top;
+        font-weight: 500;
+        font-size: @space-16;
+        line-height: 0;
+        padding-right: @space-8;
+    }
+    &__cell {
+        position: relative;
+        vertical-align: top;
+        height: @week-schedule-cell-size;
+        width: @week-schedule-cell-size;
+        padding: 0;
+        border: 1px lighten(@body-color, 90%) dashed;
+    }
+    &__selection {
+        position: absolute;
+        height: (@week-schedule-cell-size * 3) - (@week-schedule-selection-padding * 2);
+        width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
+        margin: @week-schedule-selection-padding;
+        background-color: fade(@primary-color, 50%);
+        border: 1px @primary-color solid;
+        border-radius: @space-4;
+        opacity: 0.5;
+        transition: background-color 0.4s;
+
+        &:hover {
+            background-color: fade(@primary-color, 90%);
+        }
+
+        &-content {
+            position: relative;
+        }
+        &-resize {
+            &-up, &-down {
+                appearance: none;
+                display: block;
+                background: none;
+                border: none;
+                width: 100%;
+            }
+            &-up {
+
+            }
+            &-down {
+
+            }
+        }
+    }
+}
