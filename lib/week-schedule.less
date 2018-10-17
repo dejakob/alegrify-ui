@@ -56,13 +56,14 @@
     }
     &__selection {
         position: absolute;
-        height: (@week-schedule-cell-size * 3) - (@week-schedule-selection-padding * 2);
-        min-height: (@week-schedule-cell-size * 3) - (@week-schedule-selection-padding * 2);
-        max-height: (@week-schedule-cell-size * 3) - (@week-schedule-selection-padding * 2);
+        height: (@week-schedule-cell-size * 3);
+        min-height: (@week-schedule-cell-size * 3);
+        max-height: (@week-schedule-cell-size * 3);
         width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
         min-width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
         max-width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
-        margin: @week-schedule-selection-padding;
+        margin-left: @week-schedule-selection-padding;
+        margin-right: @week-schedule-selection-padding;
         background-color: fade(@primary-color, 50%);
         border: 1px @primary-color solid;
         border-radius: @space-4;

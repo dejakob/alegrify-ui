@@ -1525,18 +1525,29 @@
 }
 .alegrify-week-schedule__selection {
   position: absolute;
-  height: 176px;
-  min-height: 176px;
-  max-height: 176px;
+  height: 192px;
+  min-height: 192px;
+  max-height: 192px;
   width: 48px;
   min-width: 48px;
   max-width: 48px;
-  margin: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
   background-color: rgba(78, 76, 193, 0.5);
   border: 1px #4e4cc1 solid;
   border-radius: 4px;
   opacity: 0.5;
   transition: background-color 0.4s;
+}
+[dir="rtl"] .alegrify-week-schedule__selection,
+:host-context([dir="rtl"]) .alegrify-week-schedule__selection {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+[dir="ltr"] .alegrify-week-schedule__selection,
+:host-context([dir="ltr"]) .alegrify-week-schedule__selection {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 .alegrify-week-schedule__selection:hover {
   background-color: rgba(78, 76, 193, 0.8);
