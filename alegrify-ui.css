@@ -1533,10 +1533,9 @@
   max-width: 48px;
   margin-left: 8px;
   margin-right: 8px;
-  background-color: rgba(78, 76, 193, 0.5);
+  background-color: rgba(78, 76, 193, 0.4);
   border: 1px #4e4cc1 solid;
   border-radius: 4px;
-  opacity: 0.5;
   transition: background-color 0.4s;
 }
 [dir="rtl"] .alegrify-week-schedule__selection,
@@ -1550,10 +1549,10 @@
   margin-right: 8px;
 }
 .alegrify-week-schedule__selection:hover {
-  background-color: rgba(78, 76, 193, 0.8);
+  background-color: rgba(78, 76, 193, 0.6);
 }
 .alegrify-week-schedule__selection:active {
-  background-color: #4e4cc1;
+  background-color: rgba(78, 76, 193, 0.8);
 }
 .alegrify-week-schedule__selection:active .alegrify-week-schedule__selection-resize-up,
 .alegrify-week-schedule__selection:active .alegrify-week-schedule__selection-resize-down {
@@ -1577,7 +1576,7 @@
 }
 .alegrify-week-schedule__selection-resize-up:hover,
 .alegrify-week-schedule__selection-resize-down:hover {
-  background-color: #4e4cc1;
+  background-color: rgba(78, 76, 193, 0.8);
 }
 .alegrify-week-schedule__selection-resize-up:focus,
 .alegrify-week-schedule__selection-resize-down:focus {

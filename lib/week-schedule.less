@@ -64,17 +64,16 @@
         max-width: @week-schedule-cell-size - (@week-schedule-selection-padding * 2);
         margin-left: @week-schedule-selection-padding;
         margin-right: @week-schedule-selection-padding;
-        background-color: fade(@primary-color, 50%);
+        background-color: fade(@primary-color, 40%);
         border: 1px @primary-color solid;
         border-radius: @space-4;
-        opacity: 0.5;
         transition: background-color 0.4s;
 
         &:hover {
-            background-color: fade(@primary-color, 80%);
+            background-color: fade(@primary-color, 60%);
         }
         &:active {
-            background-color: @primary-color;
+            background-color: fade(@primary-color, 80%);
 
             .alegrify-week-schedule__selection-resize-up,
             .alegrify-week-schedule__selection-resize-down {
@@ -97,7 +96,7 @@
                 height: @space-32;
 
                 &:hover {
-                    background-color: @primary-color;
+                    background-color: fade(@primary-color, 80%);
                 }
                 &:focus {
                     outline: none;
