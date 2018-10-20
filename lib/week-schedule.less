@@ -35,9 +35,9 @@
     &__cell {
         position: relative;
         vertical-align: top;
-        height: @week-schedule-cell-size;
-        min-height: @week-schedule-cell-size;
-        max-height: @week-schedule-cell-size;
+        height: @week-schedule-cell-size * 0.5;
+        min-height: @week-schedule-cell-size * 0.5;
+        max-height: @week-schedule-cell-size * 0.5;
         width: @week-schedule-cell-size;
         min-width: @week-schedule-cell-size;
         max-width: @week-schedule-cell-size;
@@ -93,20 +93,17 @@
                 background: none;
                 border: none;
                 width: 100%;
-                height: @space-32;
+                height: @space-8;
 
-                &:hover {
-                    background-color: fade(@primary-color, 80%);
-                }
                 &:focus {
                     outline: none;
                 }
             }
             &-up {
-                cursor: n-resize;
+                cursor: ns-resize;
             }
             &-down {
-                cursor: s-resize;
+                cursor: ns-resize;
                 position: absolute;
                 bottom: 0;
             }
