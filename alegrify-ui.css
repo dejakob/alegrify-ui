@@ -462,6 +462,7 @@
   padding: 0;
 }
 .alegrify-dl__dt {
+  opacity: 0.8;
   font-size: 13px;
   line-height: 16px;
   font-variant: normal;
