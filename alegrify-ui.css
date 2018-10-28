@@ -457,6 +457,43 @@
     border-bottom-right-radius: 4px;
   }
 }
+.alegrify-date-indicator {
+  display: inline-block;
+  border: 1px solid #953495;
+  border-radius: 2px;
+  margin: 0 16px 16px 0;
+}
+[dir="rtl"] .alegrify-date-indicator,
+:host-context([dir="rtl"]) .alegrify-date-indicator {
+  margin: 0 0 16px 16px;
+}
+[dir="ltr"] .alegrify-date-indicator,
+:host-context([dir="ltr"]) .alegrify-date-indicator {
+  margin: 0 16px 16px 0;
+}
+.alegrify-date-indicator__month {
+  display: block;
+  padding: 2px 8px;
+  background-color: #953495;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+[dir="rtl"] .alegrify-date-indicator__month,
+:host-context([dir="rtl"]) .alegrify-date-indicator__month {
+  text-transform: uppercase;
+}
+[dir="ltr"] .alegrify-date-indicator__month,
+:host-context([dir="ltr"]) .alegrify-date-indicator__month {
+  text-transform: uppercase;
+}
+.alegrify-date-indicator__day {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  font-size: 28px;
+}
 .alegrify-dl {
   margin: 0;
   padding: 0;
