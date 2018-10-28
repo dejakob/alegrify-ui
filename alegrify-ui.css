@@ -462,6 +462,7 @@
   padding: 0;
 }
 .alegrify-dl__dt {
+  text-transform: uppercase;
   opacity: 0.8;
   font-size: 13px;
   line-height: 16px;
@@ -469,6 +470,14 @@
   font-weight: 400;
   font-style: normal;
   font-weight: 600;
+}
+[dir="rtl"] .alegrify-dl__dt,
+:host-context([dir="rtl"]) .alegrify-dl__dt {
+  text-transform: uppercase;
+}
+[dir="ltr"] .alegrify-dl__dt,
+:host-context([dir="ltr"]) .alegrify-dl__dt {
+  text-transform: uppercase;
 }
 .alegrify-dl__dd {
   margin: 0;
