@@ -1,0 +1,20 @@
+.alegrify-dl {
+    margin: 0;
+    padding: 0;
+
+    &__dt {
+        .font--small();
+        .font--bold();   
+    }
+    &__dd {
+        .font--body();
+
+        margin: 0;
+        padding-top: @space-8;
+
+        & + .alegrify-dl__dt {
+            margin-top: @space-16;
+        }
+
+    }
+}
