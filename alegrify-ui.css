@@ -459,6 +459,7 @@
 }
 .alegrify-date-indicator {
   display: inline-block;
+  background-color: #ffffff;
   border: 1px solid #953495;
   border-radius: 2px;
   margin: 0 16px 16px 0;
