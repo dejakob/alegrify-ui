@@ -880,6 +880,80 @@
 .alegrify-dialog__content > * {
   margin-top: 0;
 }
+.alegrify-historic-item {
+  display: flex;
+  align-items: flex-start;
+}
+.alegrify-historic-item__date {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 14px;
+}
+[dir="rtl"] .alegrify-historic-item__date,
+:host-context([dir="rtl"]) .alegrify-historic-item__date {
+  float: right;
+  margin-right: initial;
+  margin-left: 14px;
+}
+[dir="ltr"] .alegrify-historic-item__date,
+:host-context([dir="ltr"]) .alegrify-historic-item__date {
+  float: left;
+  margin-left: initial;
+  margin-right: 14px;
+}
+.alegrify-historic-item__date:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  margin-right: -16px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #ffffff;
+}
+[dir="rtl"] .alegrify-historic-item__date:after,
+:host-context([dir="rtl"]) .alegrify-historic-item__date:after {
+  margin-right: initial;
+  margin-left: -16px;
+  right: initial;
+  left: 0;
+  border-right: initial;
+  border-left: 8px solid #ffffff;
+}
+[dir="ltr"] .alegrify-historic-item__date:after,
+:host-context([dir="ltr"]) .alegrify-historic-item__date:after {
+  margin-left: initial;
+  margin-right: -16px;
+  left: initial;
+  right: 0;
+  border-left: initial;
+  border-right: 8px solid #ffffff;
+}
+.alegrify-historic-item__content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 16px;
+}
+@media screen and (min-width: 600px) {
+  .alegrify-historic-item__content {
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 3px 4px 1px #333333;
+    border-radius: 4px;
+  }
+  [dir="rtl"] .alegrify-historic-item__content,
+  :host-context([dir="rtl"]) .alegrify-historic-item__content {
+    box-shadow: 0px 3px 4px 1px #333333;
+  }
+  [dir="ltr"] .alegrify-historic-item__content,
+  :host-context([dir="ltr"]) .alegrify-historic-item__content {
+    box-shadow: 0px 3px 4px 1px #333333;
+  }
+}
 .alegrify-input {
   padding: 8px;
   border-top: none;

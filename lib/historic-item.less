@@ -1,0 +1,36 @@
+.alegrify-historic-item {
+    @arrow-size: @space-8;
+
+    display: flex;
+    align-items: flex-start;
+        
+    &__date {
+        position: relative;
+        display: block;
+        float: left;
+
+        margin-right: @arrow-size * 2 - 2px;
+
+        &:after {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: 50%;
+            margin-top: -1 * @arrow-size;
+            margin-right: -2 * @arrow-size;
+            right: 0;
+
+            width: 0; 
+            height: 0;
+
+            border-top: @arrow-size solid transparent;
+            border-bottom: @arrow-size solid transparent; 
+            border-right: @arrow-size solid @action-color; 
+        }
+    }
+    &__content {
+        flex: 1;
+        .alegrify-section();
+    }
+}
