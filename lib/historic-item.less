@@ -1,18 +1,22 @@
 .alegrify-historic-item {
     @arrow-size: @space-8;
 
-    display: flex;
-    align-items: flex-start;
+    @media screen and (min-width: @small) {
+        display: flex;
+        align-items: flex-start;
+    }
         
     &__date {
         position: relative;
         display: block;
-        float: left;
-
-        margin-right: @arrow-size * 2 - 2px;
+        margin: 0 auto (2 * @arrow-size) auto;
+        width: @space-32 * 2;
         
         @media screen and (min-width: @small) {
             box-shadow: 0px 3px 4px 1px lighten(@body-color, 20%);
+            float: left;
+            margin: 0 (@arrow-size * 2 - 2px) 0 0;
+            width: auto;
         }
 
         &:after {
@@ -20,21 +24,37 @@
             display: block;
 
             position: absolute;
-            top: 50%;
-            margin-top: -1 * @arrow-size;
-            margin-right: -2 * @arrow-size;
-            right: 0;
+            left: 50%;
+            margin-left: -1 * @arrow-size;
+            bottom: -2 * @arrow-size - 1px;
 
             width: 0; 
             height: 0;
 
-            border-top: @arrow-size solid transparent;
-            border-bottom: @arrow-size solid transparent; 
-            border-right: @arrow-size solid @action-color; 
+            border-left: @arrow-size solid transparent;
+            border-right: @arrow-size solid transparent; 
+            border-bottom: @arrow-size solid @action-color;
+            border-top: none;
+            
+            @media screen and (min-width: @small) {
+                left: auto;
+                top: 50%;
+                margin-top: -1 * @arrow-size;
+                margin-right: -2 * @arrow-size;
+                right: 0;
+
+                border-top: @arrow-size solid transparent;
+                border-bottom: @arrow-size solid transparent; 
+                border-right: @arrow-size solid @action-color;
+                border-left: none;
+            }
         }
     }
     &__content {
-        flex: 1;
         .alegrify-section();
+
+        @media screen and (min-width: @small) {
+            flex: 1;
+        }
     }
 }
