@@ -388,6 +388,7 @@
 }
 .alegrify-card__content {
   padding: 16px 0;
+  line-height: 1.8;
 }
 .alegrify-card__content .alegrify-p:last-child {
   margin-bottom: 0;
