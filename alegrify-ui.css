@@ -80,6 +80,75 @@
   .alegrify-section {
     padding: 0 16px;
   }
+  .alegrify-h1 .alegrify-h1,
+  .alegrify-h2 .alegrify-h1,
+  .alegrify-h3 .alegrify-h1,
+  .alegrify-section .alegrify-h1,
+  .alegrify-h1 .alegrify-h2,
+  .alegrify-h2 .alegrify-h2,
+  .alegrify-h3 .alegrify-h2,
+  .alegrify-section .alegrify-h2,
+  .alegrify-h1 .alegrify-h3,
+  .alegrify-h2 .alegrify-h3,
+  .alegrify-h3 .alegrify-h3,
+  .alegrify-section .alegrify-h3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  [dir="rtl"] .alegrify-h1 .alegrify-h1,
+  [dir="rtl"] .alegrify-h2 .alegrify-h1,
+  [dir="rtl"] .alegrify-h3 .alegrify-h1,
+  [dir="rtl"] .alegrify-section .alegrify-h1,
+  [dir="rtl"] .alegrify-h1 .alegrify-h2,
+  [dir="rtl"] .alegrify-h2 .alegrify-h2,
+  [dir="rtl"] .alegrify-h3 .alegrify-h2,
+  [dir="rtl"] .alegrify-section .alegrify-h2,
+  [dir="rtl"] .alegrify-h1 .alegrify-h3,
+  [dir="rtl"] .alegrify-h2 .alegrify-h3,
+  [dir="rtl"] .alegrify-h3 .alegrify-h3,
+  [dir="rtl"] .alegrify-section .alegrify-h3,
+  :host-context([dir="rtl"]) .alegrify-h1 .alegrify-h1,
+  :host-context([dir="rtl"]) .alegrify-h2 .alegrify-h1,
+  :host-context([dir="rtl"]) .alegrify-h3 .alegrify-h1,
+  :host-context([dir="rtl"]) .alegrify-section .alegrify-h1,
+  :host-context([dir="rtl"]) .alegrify-h1 .alegrify-h2,
+  :host-context([dir="rtl"]) .alegrify-h2 .alegrify-h2,
+  :host-context([dir="rtl"]) .alegrify-h3 .alegrify-h2,
+  :host-context([dir="rtl"]) .alegrify-section .alegrify-h2,
+  :host-context([dir="rtl"]) .alegrify-h1 .alegrify-h3,
+  :host-context([dir="rtl"]) .alegrify-h2 .alegrify-h3,
+  :host-context([dir="rtl"]) .alegrify-h3 .alegrify-h3,
+  :host-context([dir="rtl"]) .alegrify-section .alegrify-h3 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  [dir="ltr"] .alegrify-h1 .alegrify-h1,
+  [dir="ltr"] .alegrify-h2 .alegrify-h1,
+  [dir="ltr"] .alegrify-h3 .alegrify-h1,
+  [dir="ltr"] .alegrify-section .alegrify-h1,
+  [dir="ltr"] .alegrify-h1 .alegrify-h2,
+  [dir="ltr"] .alegrify-h2 .alegrify-h2,
+  [dir="ltr"] .alegrify-h3 .alegrify-h2,
+  [dir="ltr"] .alegrify-section .alegrify-h2,
+  [dir="ltr"] .alegrify-h1 .alegrify-h3,
+  [dir="ltr"] .alegrify-h2 .alegrify-h3,
+  [dir="ltr"] .alegrify-h3 .alegrify-h3,
+  [dir="ltr"] .alegrify-section .alegrify-h3,
+  :host-context([dir="ltr"]) .alegrify-h1 .alegrify-h1,
+  :host-context([dir="ltr"]) .alegrify-h2 .alegrify-h1,
+  :host-context([dir="ltr"]) .alegrify-h3 .alegrify-h1,
+  :host-context([dir="ltr"]) .alegrify-section .alegrify-h1,
+  :host-context([dir="ltr"]) .alegrify-h1 .alegrify-h2,
+  :host-context([dir="ltr"]) .alegrify-h2 .alegrify-h2,
+  :host-context([dir="ltr"]) .alegrify-h3 .alegrify-h2,
+  :host-context([dir="ltr"]) .alegrify-section .alegrify-h2,
+  :host-context([dir="ltr"]) .alegrify-h1 .alegrify-h3,
+  :host-context([dir="ltr"]) .alegrify-h2 .alegrify-h3,
+  :host-context([dir="ltr"]) .alegrify-h3 .alegrify-h3,
+  :host-context([dir="ltr"]) .alegrify-section .alegrify-h3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @-webkit-keyframes alegrify-alert__fade-in-animation {
   from {
