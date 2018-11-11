@@ -1,5 +1,6 @@
 .alegrify-article,
 .alegrify-aside {
+    clear: both;
     display: block;
     width: 100%;
 
@@ -8,26 +9,5 @@
     }
     & > .alegrify-section:last-child {
         margin-bottom: 0;
-    }
-    
-    @media screen and (min-width: @large) {
-        // Todo: rtl
-        float: left;
-        width: (@medium - 32px) * 2 / 3;
-        padding: 16px;
-
-        &--full {
-            width: 100%;
-        }
-    }
-}
-
-.alegrify-article {
-    clear: both;
-}
-
-.alegrify-aside {
-    @media screen and (min-width: @large) {
-        width: (@medium) * 1 / 3;
     }
 }

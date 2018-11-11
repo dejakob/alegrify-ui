@@ -1,10 +1,11 @@
-.alegrify-grid {
+.grid() {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: flex-start;
     clear: both;
-    margin: -1 * @space-16;
+    margin: -1 * @space-8;
 
     &--top {
         align-items: flex-start;
@@ -37,80 +38,63 @@
     }
 }
 
-.alegrify-grid__cell,
-[class^="alegrify-"].alegrify-grid__cell {
+.grid-cell() {
     float: left;
-    width: 100%;
-    padding: @space-16;
+    padding: @space-8;
 
-    &--1-all {
+    &--1 {
         width: 100% * 1 / 12;
     }
-    &--2-all {
+    &--2 {
         width: 100% * 2 / 12;
     }
-    &--3-all {
+    &--3 {
         width: 100% * 3 / 12;
     }
-    &--4-all {
+    &--4 {
         width: 100% * 4 / 12;
     }
-    &--5-all {
+    &--5 {
         width: 100% * 5 / 12;
     }
-    &--6-all {
+    &--6 {
         width: 100% * 6 / 12;
     }
-    &--7-all {
+    &--7 {
         width: 100% * 7 / 12;
     }
-    &--8-all {
+    &--8 {
         width: 100% * 8 / 12;
     }
-    &--9-all {
+    &--9 {
         width: 100% * 9 / 12;
     }
-    &--10-all {
+    &--10 {
         width: 100% * 10 / 12;
     }
-    &--11-all {
+    &--11 {
         width: 100% * 11 / 12;
+    }
+}
+
+.alegrify-grid {
+    &--all {
+        .grid();
+
+        .alegrify-grid__cell,
+        [class^="alegrify-"].alegrify-grid__cell {
+            .grid-cell();
+        }
     }
 
     @media (min-width: @medium) {
-        &--1 {
-            width: 100% * 1 / 12;
-        }
-        &--2 {
-            width: 100% * 2 / 12;
-        }
-        &--3 {
-            width: 100% * 3 / 12;
-        }
-        &--4 {
-            width: 100% * 4 / 12;
-        }
-        &--5 {
-            width: 100% * 5 / 12;
-        }
-        &--6 {
-            width: 100% * 6 / 12;
-        }
-        &--7 {
-            width: 100% * 7 / 12;
-        }
-        &--8 {
-            width: 100% * 8 / 12;
-        }
-        &--9 {
-            width: 100% * 9 / 12;
-        }
-        &--10 {
-            width: 100% * 10 / 12;
-        }
-        &--11 {
-            width: 100% * 11 / 12;
-        }
+        .grid();
     }
-    
+}
+
+.alegrify-grid__cell,
+[class^="alegrify-"].alegrify-grid__cell {
+    @media (min-width: @medium) {
+        .grid-cell();
+    }
 }
