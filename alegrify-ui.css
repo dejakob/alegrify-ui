@@ -664,6 +664,10 @@
 .alegrify-dropdown--open .alegrify-dropdown__option {
   display: block;
 }
+.alegrify-dropdown--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 .alegrify-main {
   position: relative;
   margin: 32px auto;
