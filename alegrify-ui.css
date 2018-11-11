@@ -44,19 +44,24 @@
   font-style: italic;
   font-weight: 400;
 }
-.alegrify-space--extra-small {
+.alegrify-space--extra-small,
+[class^="alegrify-"].alegrify-space--extra-small {
   margin-bottom: 2px;
 }
-.alegrify-space--small {
+.alegrify-space--small,
+[class^="alegrify-"].alegrify-space--small {
   margin-bottom: 4px;
 }
-.alegrify-space--medium {
+.alegrify-space--medium,
+[class^="alegrify-"].alegrify-space--medium {
   margin-bottom: 8px;
 }
-.alegrify-space--large {
+.alegrify-space--large,
+[class^="alegrify-"].alegrify-space--large {
   margin-bottom: 16px;
 }
-.alegrify-space--extra-large {
+.alegrify-space--extra-large,
+[class^="alegrify-"].alegrify-space--extra-large {
   margin-bottom: 32px;
 }
 .alegrify-h1 {
@@ -667,6 +672,87 @@
 .alegrify-dropdown--disabled {
   opacity: 0.3;
   cursor: not-allowed;
+}
+.alegrify-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  clear: both;
+  margin: -16px;
+}
+.alegrify-grid__cell {
+  float: left;
+  width: 100%;
+  padding: 16px;
+}
+[dir="rtl"] .alegrify-grid__cell,
+:host-context([dir="rtl"]) .alegrify-grid__cell {
+  float: right;
+}
+[dir="ltr"] .alegrify-grid__cell,
+:host-context([dir="ltr"]) .alegrify-grid__cell {
+  float: left;
+}
+.alegrify-grid__cell--1 {
+  width: 8.33333333%;
+}
+.alegrify-grid__cell--2 {
+  width: 16.66666667%;
+}
+.alegrify-grid__cell--3 {
+  width: 25%;
+}
+.alegrify-grid__cell--4 {
+  width: 33.33333333%;
+}
+.alegrify-grid__cell--5 {
+  width: 41.66666667%;
+}
+.alegrify-grid__cell--6 {
+  width: 50%;
+}
+.alegrify-grid__cell--7 {
+  width: 58.33333333%;
+}
+.alegrify-grid__cell--8 {
+  width: 66.66666667%;
+}
+.alegrify-grid__cell--9 {
+  width: 75%;
+}
+.alegrify-grid__cell--10 {
+  width: 83.33333333%;
+}
+.alegrify-grid__cell--11 {
+  width: 91.66666667%;
+}
+.alegrify-grid--top {
+  align-items: flex-start;
+}
+.alegrify-grid--middle {
+  align-items: center;
+}
+.alegrify-grid--bottom {
+  align-items: flex-end;
+}
+.alegrify-grid--left {
+  justify-content: flex-start;
+}
+.alegrify-grid--center {
+  justify-content: center;
+}
+.alegrify-grid--right {
+  justify-content: flex-end;
+}
+.alegrify-grid--outline {
+  justify-content: space-between;
+}
+.alegrify-grid--even {
+  justify-content: space-around;
+}
+.alegrify-grid--reverse {
+  flex-direction: row-reverse;
 }
 .alegrify-main {
   position: relative;

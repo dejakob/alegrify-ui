@@ -1,0 +1,78 @@
+.alegrify-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    clear: both;
+    margin: -1 * @space-16;
+
+    &__cell {
+        float: left;
+        width: 100%;
+        padding: @space-16;
+
+        &--1 {
+            width: 100% * 1 / 12;
+        }
+        &--2 {
+            width: 100% * 2 / 12;
+        }
+        &--3 {
+            width: 100% * 3 / 12;
+        }
+        &--4 {
+            width: 100% * 4 / 12;
+        }
+        &--5 {
+            width: 100% * 5 / 12;
+        }
+        &--6 {
+            width: 100% * 6 / 12;
+        }
+        &--7 {
+            width: 100% * 7 / 12;
+        }
+        &--8 {
+            width: 100% * 8 / 12;
+        }
+        &--9 {
+            width: 100% * 9 / 12;
+        }
+        &--10 {
+            width: 100% * 10 / 12;
+        }
+        &--11 {
+            width: 100% * 11 / 12;
+        }
+    }
+
+    &--top {
+        align-items: flex-start;
+    }
+    &--middle {
+        align-items: center;
+    }
+    &--bottom {
+        align-items: flex-end;
+    }
+
+    &--left {
+        justify-content: flex-start;
+    }
+    &--center {
+        justify-content: center;
+    }
+    &--right {
+        justify-content: flex-end;
+    }
+    &--outline {
+        justify-content: space-between;
+    }
+    &--even {
+        justify-content: space-around;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
