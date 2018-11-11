@@ -1,0 +1,46 @@
+.alegrify-footer {
+    display: block;
+    width: 100%;
+    padding: @space-32 @space-16;
+
+    background-color: lighten(@body-color, 20%);
+
+    .font--body();
+    color: @action-color;
+
+    &__content {
+        @media (min-width: @medium) {
+            position: relative;
+            width: @medium;
+            margin: 0 auto;
+        }
+    }
+    &__nav {
+
+    }
+    &__nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__nav-list-item + .alegrify-footer__nav-list-item {
+        margin-top: @space-8;
+    }
+    &__link {
+        color: @action-color;
+        text-decoration: none;
+        margin-left: -1 * @space-16;
+        padding-left: 16px;
+
+        &:hover {
+            border-left: @space-8 lighten(@primary-color, 10%) solid;
+            padding-left: @space-8;
+        }
+    }
+    &__logo {
+        text-align: center;
+    }
+    &__trademark {
+        text-align: right;
+    }
+}

@@ -712,6 +712,85 @@
   opacity: 0.3;
   cursor: not-allowed;
 }
+.alegrify-footer {
+  display: block;
+  width: 100%;
+  padding: 32px 16px;
+  background-color: #333333;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 400;
+}
+@media (min-width: 960px) {
+  .alegrify-footer__content {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+.alegrify-footer__nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.alegrify-footer__nav-list-item + .alegrify-footer__nav-list-item {
+  margin-top: 8px;
+}
+.alegrify-footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: -16px;
+  padding-left: 16px;
+}
+[dir="rtl"] .alegrify-footer__link,
+:host-context([dir="rtl"]) .alegrify-footer__link {
+  margin-left: initial;
+  margin-right: -16px;
+  padding-left: initial;
+  padding-right: 16px;
+}
+[dir="ltr"] .alegrify-footer__link,
+:host-context([dir="ltr"]) .alegrify-footer__link {
+  margin-right: initial;
+  margin-left: -16px;
+  padding-right: initial;
+  padding-left: 16px;
+}
+.alegrify-footer__link:hover {
+  border-left: 8px #7372ce solid;
+  padding-left: 8px;
+}
+[dir="rtl"] .alegrify-footer__link:hover,
+:host-context([dir="rtl"]) .alegrify-footer__link:hover {
+  border-left: initial;
+  border-right: 8px #7372ce solid;
+  padding-left: initial;
+  padding-right: 8px;
+}
+[dir="ltr"] .alegrify-footer__link:hover,
+:host-context([dir="ltr"]) .alegrify-footer__link:hover {
+  border-right: initial;
+  border-left: 8px #7372ce solid;
+  padding-right: initial;
+  padding-left: 8px;
+}
+.alegrify-footer__logo {
+  text-align: center;
+}
+.alegrify-footer__trademark {
+  text-align: right;
+}
+[dir="rtl"] .alegrify-footer__trademark,
+:host-context([dir="rtl"]) .alegrify-footer__trademark {
+  text-align: left;
+}
+[dir="ltr"] .alegrify-footer__trademark,
+:host-context([dir="ltr"]) .alegrify-footer__trademark {
+  text-align: right;
+}
 .alegrify-grid--all {
   display: flex;
   flex-direction: row;
