@@ -7,25 +7,14 @@
         box-sizing: border-box;
     }
 
-    &--gradient:after {
-        content: '';
-        display: block;
-        height: 32px;
-        margin-top: 16px;
+    &--gradient {
+        color: @action-color;
+        background-color: @primary-color;
+        background: linear-gradient(@primary-color, @secondary-color);
 
-        background: linear-gradient(to right, @primary-color, @secondary-color);
-    }
-
-    @media screen and (min-width: @medium) {
-        &--gradient {
-            color: @action-color;
-            background-color: @primary-color;
-            background: linear-gradient(@primary-color, @secondary-color);
-    
-            &:after {
-                content: none;
-                display: none;
-            }
+        &:after {
+            content: none;
+            display: none;
         }
     }
 }
