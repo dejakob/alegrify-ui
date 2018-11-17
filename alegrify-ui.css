@@ -331,18 +331,14 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  color: #ffffff;
+  background-color: #4e4cc1;
 }
 .alegrify-body [class^="alegrify-"] {
   box-sizing: border-box;
 }
 .alegrify-body--gradient {
-  color: #ffffff;
-  background-color: #4e4cc1;
   background: linear-gradient(#4e4cc1, #953495);
-}
-.alegrify-body--gradient:after {
-  content: none;
-  display: none;
 }
 .alegrify-card {
   background-color: #ffffff;
@@ -1427,6 +1423,7 @@
 .alegrify-historic-item__content {
   background-color: #ffffff;
   padding: 16px;
+  color: #000000;
 }
 @media screen and (min-width: 600px) {
   .alegrify-historic-item__content {
@@ -2066,6 +2063,7 @@
 .alegrify-section {
   background-color: #ffffff;
   padding: 16px;
+  color: #000000;
 }
 @media screen and (min-width: 600px) {
   .alegrify-section {

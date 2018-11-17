@@ -3,18 +3,15 @@
     margin: 0;
     padding: 0;
 
+    color: @action-color;
+    background-color: @primary-color;
+
     [class^="alegrify-"] {
         box-sizing: border-box;
     }
 
     &--gradient {
-        color: @action-color;
-        background-color: @primary-color;
-        background: linear-gradient(@primary-color, @secondary-color);
 
-        &:after {
-            content: none;
-            display: none;
-        }
+        background: linear-gradient(@primary-color, @secondary-color);
     }
 }
