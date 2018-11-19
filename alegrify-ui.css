@@ -429,20 +429,20 @@
 }
 .alegrify-card__footer {
   margin-right: -16px;
-  margin-left: -17px;
-  margin-bottom: -17px;
+  margin-left: -16px;
+  margin-bottom: -16px;
   padding: 16px;
   background-color: #f2f2f2;
 }
 [dir="rtl"] .alegrify-card__footer,
 :host-context([dir="rtl"]) .alegrify-card__footer {
   margin-left: -16px;
-  margin-right: -17px;
+  margin-right: -16px;
 }
 [dir="ltr"] .alegrify-card__footer,
 :host-context([dir="ltr"]) .alegrify-card__footer {
   margin-right: -16px;
-  margin-left: -17px;
+  margin-left: -16px;
 }
 @media screen and (min-width: 600px) {
   .alegrify-card {
@@ -451,21 +451,21 @@
   .alegrify-card__header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    margin-right: -17px;
+    margin-right: -16px;
   }
   [dir="rtl"] .alegrify-card__header,
   :host-context([dir="rtl"]) .alegrify-card__header {
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
     margin-right: initial;
-    margin-left: -17px;
+    margin-left: -16px;
   }
   [dir="ltr"] .alegrify-card__header,
   :host-context([dir="ltr"]) .alegrify-card__header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     margin-left: initial;
-    margin-right: -17px;
+    margin-right: -16px;
   }
   .alegrify-card__footer {
     border-bottom-left-radius: 2px;
@@ -705,6 +705,9 @@
   line-height: 20px;
   font-variant: normal;
   font-weight: 400;
+}
+.alegrify-footer .alegrify-grid {
+  margin: 0;
 }
 @media (min-width: 960px) {
   .alegrify-footer__content {
