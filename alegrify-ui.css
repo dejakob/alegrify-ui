@@ -327,6 +327,9 @@
 .alegrify-button--primary:active {
   background-color: #2c2b7c;
 }
+.alegrify-button--no-border {
+  border: none;
+}
 .alegrify-body {
   min-height: 100vh;
   margin: 0;
