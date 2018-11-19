@@ -443,17 +443,7 @@
 }
 @media screen and (min-width: 600px) {
   .alegrify-card {
-    border: 1px solid #e6e6e6;
-    box-shadow: 0px 3px 4px 1px #333333;
     border-radius: 2px;
-  }
-  [dir="rtl"] .alegrify-card,
-  :host-context([dir="rtl"]) .alegrify-card {
-    box-shadow: 0px 3px 4px 1px #333333;
-  }
-  [dir="ltr"] .alegrify-card,
-  :host-context([dir="ltr"]) .alegrify-card {
-    box-shadow: 0px 3px 4px 1px #333333;
   }
   .alegrify-card__header {
     border-top-left-radius: 2px;
@@ -1343,19 +1333,16 @@
 }
 @media screen and (min-width: 600px) {
   .alegrify-historic-item__date {
-    box-shadow: 0px 3px 4px 1px #333333;
     float: left;
     margin: 0 14px 0 0;
     width: auto;
   }
   [dir="rtl"] .alegrify-historic-item__date,
   :host-context([dir="rtl"]) .alegrify-historic-item__date {
-    box-shadow: 0px 3px 4px 1px #333333;
     float: right;
   }
   [dir="ltr"] .alegrify-historic-item__date,
   :host-context([dir="ltr"]) .alegrify-historic-item__date {
-    box-shadow: 0px 3px 4px 1px #333333;
     float: left;
   }
 }
@@ -1429,17 +1416,7 @@
 }
 @media screen and (min-width: 600px) {
   .alegrify-historic-item__content {
-    border: 1px solid #e6e6e6;
-    box-shadow: 0px 3px 4px 1px #333333;
     border-radius: 2px;
-  }
-  [dir="rtl"] .alegrify-historic-item__content,
-  :host-context([dir="rtl"]) .alegrify-historic-item__content {
-    box-shadow: 0px 3px 4px 1px #333333;
-  }
-  [dir="ltr"] .alegrify-historic-item__content,
-  :host-context([dir="ltr"]) .alegrify-historic-item__content {
-    box-shadow: 0px 3px 4px 1px #333333;
   }
 }
 @media screen and (min-width: 600px) {
@@ -1908,16 +1885,7 @@
 @media screen and (min-width: 600px) {
   .alegrify-status-input {
     border: 1px solid #e6e6e6;
-    box-shadow: 0px 3px 4px 1px #333333;
     border-radius: 2px;
-  }
-  [dir="rtl"] .alegrify-status-input,
-  :host-context([dir="rtl"]) .alegrify-status-input {
-    box-shadow: 0px 3px 4px 1px #333333;
-  }
-  [dir="ltr"] .alegrify-status-input,
-  :host-context([dir="ltr"]) .alegrify-status-input {
-    box-shadow: 0px 3px 4px 1px #333333;
   }
   .alegrify-status-input--focus {
     box-shadow: 0px 3px 4px -1px #333333;
@@ -2069,17 +2037,7 @@
 }
 @media screen and (min-width: 600px) {
   .alegrify-section {
-    border: 1px solid #e6e6e6;
-    box-shadow: 0px 3px 4px 1px #333333;
     border-radius: 2px;
-  }
-  [dir="rtl"] .alegrify-section,
-  :host-context([dir="rtl"]) .alegrify-section {
-    box-shadow: 0px 3px 4px 1px #333333;
-  }
-  [dir="ltr"] .alegrify-section,
-  :host-context([dir="ltr"]) .alegrify-section {
-    box-shadow: 0px 3px 4px 1px #333333;
   }
 }
 .alegrify-week-schedule {
