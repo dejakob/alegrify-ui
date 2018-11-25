@@ -347,21 +347,16 @@
   .alegrify-card__header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    margin-right: -16px;
   }
   [dir="rtl"] .alegrify-card__header,
   :host-context([dir="rtl"]) .alegrify-card__header {
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
-    margin-right: initial;
-    margin-left: -16px;
   }
   [dir="ltr"] .alegrify-card__header,
   :host-context([dir="ltr"]) .alegrify-card__header {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    margin-left: initial;
-    margin-right: -16px;
   }
   .alegrify-card__footer {
     border-bottom-left-radius: 2px;
