@@ -3,9 +3,7 @@
     @card-large-viewport-border-radius: @space-2;
 
     background-color: @action-color;
-    padding: @card-padding;
-    border-top: 1px solid lighten(@body-color, 90%);
-    border-bottom: 1px solid lighten(@body-color, 90%);
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
 
@@ -19,9 +17,6 @@
 
     &__header {
         background-color: lighten(@body-color, 20%);
-        margin-top: -1 * @card-padding - 1px;
-        margin-right: -1 * @card-padding;
-        margin-left: -1 * @card-padding;
         padding: @card-padding;
         position: relative;
 
@@ -51,7 +46,7 @@
         .font--head2();
     }
     &__content {
-        padding: @card-padding 0;
+        padding: @card-padding;
         line-height: 1.8;
         color: @body-color;
 
@@ -60,12 +55,7 @@
         }
     }
     &__footer {
-        margin-right: -1 * @card-padding;
-        margin-left: -1 * @card-padding;
-        margin-bottom: -1 * @card-padding ;
-
         padding: @card-padding;
-
         background-color: lighten(@body-color, 95%);
         color: @body-color;
     }
