@@ -677,7 +677,7 @@
   justify-content: flex-start;
   clear: both;
   margin: -8px;
-  width: 100%;
+  min-width: 100%;
 }
 .alegrify-grid--all.alegrify-grid--top {
   align-items: flex-start;
@@ -776,7 +776,7 @@
     justify-content: flex-start;
     clear: both;
     margin: -8px;
-    width: 100%;
+    min-width: 100%;
   }
   .alegrify-grid.alegrify-grid--top {
     align-items: flex-start;
@@ -1312,6 +1312,8 @@
   }
 }
 .alegrify-historic-item__content {
+  position: relative;
+  overflow: hidden;
   background-color: #ffffff;
   padding: 16px;
   color: #000000;
