@@ -264,6 +264,7 @@
   box-sizing: border-box;
 }
 .alegrify-body--gradient {
+  background-color: #333333;
   background: linear-gradient(#4e4cc1, #953495);
 }
 .alegrify-card {
@@ -514,6 +515,7 @@
   border-bottom: 3px solid #e6e6e6;
   border-radius: 2px;
   cursor: pointer;
+  color: #000000;
   background-color: #ffffff;
   transition: border-color 0.4s, background-color 0.4s;
 }
@@ -1687,9 +1689,6 @@
   position: absolute;
 }
 .alegrify-status-input__textarea::-webkit-input-placeholder {
-  opacity: 0.3;
-}
-.alegrify-status-input__textarea:-ms-input-placeholder {
   opacity: 0.3;
 }
 .alegrify-status-input__textarea::-ms-input-placeholder {
