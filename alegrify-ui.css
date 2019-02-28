@@ -79,6 +79,10 @@
 [class^="alegrify-"].alegrify-space--extra-large {
   margin-bottom: 32px;
 }
+.alegrify-space--bleed,
+[class^="alegrify-"].alegrify-space--bleed {
+  margin-bottom: 0;
+}
 .alegrify-h1 {
   margin-bottom: 32px;
 }
