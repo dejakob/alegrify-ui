@@ -285,6 +285,7 @@
 }
 .alegrify-button--destructive {
   background-color: #900505;
+  border-color: #900505;
   color: #ffffff;
 }
 .alegrify-button--destructive:focus {
@@ -292,9 +293,11 @@
 }
 .alegrify-button--destructive:hover {
   background-color: #5f0303;
+  border-color: #5f0303;
 }
 .alegrify-button--destructive:active {
   background-color: #2d0202;
+  border-color: #2d0202;
 }
 .alegrify-button--no-border {
   border: none;

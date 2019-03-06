@@ -79,6 +79,7 @@
 
     &--destructive {
         background-color: @error-color;
+        border-color: @error-color;
         color: @action-color;
 
         &:focus {
@@ -86,9 +87,11 @@
         }
         &:hover {
             background-color: darken(@error-color, 10%);
+            border-color: darken(@error-color, 10%);
         }
         &:active {
             background-color: darken(@error-color, 20%);
+            border-color: darken(@error-color, 20%);
         }
     }
 
