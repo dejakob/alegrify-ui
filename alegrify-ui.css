@@ -283,6 +283,19 @@
 .alegrify-button--primary:active {
   background-color: #2c2b7c;
 }
+.alegrify-button--destructive {
+  background-color: #900505;
+  color: #ffffff;
+}
+.alegrify-button--destructive:focus {
+  outline-color: #900505;
+}
+.alegrify-button--destructive:hover {
+  background-color: #5f0303;
+}
+.alegrify-button--destructive:active {
+  background-color: #2d0202;
+}
 .alegrify-button--no-border {
   border: none;
 }

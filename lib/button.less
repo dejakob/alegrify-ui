@@ -77,6 +77,21 @@
         }
     }
 
+    &--destructive {
+        background-color: @error-color;
+        color: @action-color;
+
+        &:focus {
+            outline-color: @error-color;
+        }
+        &:hover {
+            background-color: darken(@error-color, 10%);
+        }
+        &:active {
+            background-color: darken(@error-color, 20%);
+        }
+    }
+
     &--no-border {
         border: none;
     }
