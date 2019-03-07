@@ -729,6 +729,7 @@
   clear: both;
   margin: -8px;
   min-width: 100%;
+  box-sizing: border-box;
 }
 .alegrify-grid--all.alegrify-grid--top {
   align-items: flex-start;
@@ -761,6 +762,7 @@
 .alegrify-grid--all [class^="alegrify-"].alegrify-grid__cell {
   float: left;
   padding: 8px;
+  box-sizing: border-box;
 }
 [dir="rtl"] .alegrify-grid--all .alegrify-grid__cell,
 [dir="rtl"] .alegrify-grid--all [class^="alegrify-"].alegrify-grid__cell,
@@ -828,6 +830,7 @@
     clear: both;
     margin: -8px;
     min-width: 100%;
+    box-sizing: border-box;
   }
   .alegrify-grid.alegrify-grid--top {
     align-items: flex-start;
@@ -862,6 +865,7 @@
   [class^="alegrify-"].alegrify-grid__cell {
     float: left;
     padding: 8px;
+    box-sizing: border-box;
   }
   [dir="rtl"] .alegrify-grid__cell,
   [dir="rtl"] [class^="alegrify-"].alegrify-grid__cell,
