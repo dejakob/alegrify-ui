@@ -1413,6 +1413,11 @@
   border-left: none;
   text-align: left;
 }
+.alegrify-input[disabled],
+.alegrify-input--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 .alegrify-input:focus {
   outline: none;
   border-bottom-color: #953495;
