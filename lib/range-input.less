@@ -36,12 +36,12 @@
         outline: none;
     }
 
-    &:before {
+    &[data-low-indicator]:before {
         content: attr(data-low-indicator);
         font-size: 24px;
         margin-right: @space-16;
     }
-    &:after {
+    &[data-high-indicator]:after {
         content: attr(data-high-indicator);
         font-size: 24px;
         margin-left: @space-16;
