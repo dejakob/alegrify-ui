@@ -654,7 +654,7 @@
 .alegrify-footer .alegrify-grid {
   margin: 0;
 }
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   .alegrify-footer__content {
     position: relative;
     width: 960px;
@@ -821,7 +821,7 @@
 .alegrify-grid--all [class^="alegrify-"].alegrify-grid__cell--11 {
   width: 91.66666667%;
 }
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   .alegrify-grid {
     display: flex;
     flex-direction: row;
@@ -861,7 +861,7 @@
     flex-direction: row-reverse;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1000px) {
   .alegrify-grid__cell,
   [class^="alegrify-"].alegrify-grid__cell {
     float: left;
@@ -941,7 +941,7 @@
     width: 600px;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1000px) {
   .alegrify-main {
     width: 960px;
   }
