@@ -1,5 +1,37 @@
-[class^="alegrify-"][class$="--center"] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.alegrify-align-child--start,
+.alegrify-align-child--center,
+.alegrify-align-child--end,
+.alegrify-align-child--top,
+.alegrify-align-child--middle,
+.alegrify-align-child--bottom {
+    display: flex;
+    flex-direction: row;
+}
+.alegrify-align-child--start {
+    justify-items: flex-start;
+}
+.alegrify-align-child--center {
+    justify-items: center;
+}
+.alegrify-align-child--end {
+    justify-items: flex-start;
+}
+.alegrify-align-child--top {
+    align-items: flex-start;
+}
+.alegrify-align-child--middle {
+    align-items: center;
+}
+.alegrify-align-child--end {
+    align-items: flex-end;
+}
+
+.alegrify-align-text--start {
+    text-align: left;
+}
+.alegrify-align-text--center {
+    text-align: center;
+}
+.alegrify-align-text--end {
+    text-align: right;
 }
