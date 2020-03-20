@@ -8,13 +8,13 @@
   flex-direction: row;
 }
 .alegrify-align-child--start {
-  justify-items: flex-start;
+  justify-content: flex-start;
 }
 .alegrify-align-child--center {
-  justify-items: center;
+  justify-content: center;
 }
 .alegrify-align-child--end {
-  justify-items: flex-start;
+  justify-content: flex-end;
 }
 .alegrify-align-child--top {
   align-items: flex-start;
@@ -22,7 +22,7 @@
 .alegrify-align-child--middle {
   align-items: center;
 }
-.alegrify-align-child--end {
+.alegrify-align-child--bottom {
   align-items: flex-end;
 }
 .alegrify-align-text--start {
@@ -49,6 +49,38 @@
 [dir="ltr"] .alegrify-align-text--end,
 :host-context([dir="ltr"]) .alegrify-align-text--end {
   text-align: right;
+}
+@-webkit-keyframes alegrify-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes alegrify-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes alegrify-disappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes alegrify-disappear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @-webkit-keyframes alegrify-rotate {
   from {
@@ -108,22 +140,6 @@
   :host-context([dir="ltr"]) to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes alegrify-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes alegrify-appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 .alegrify-body {
@@ -191,10 +207,6 @@
 .alegrify-space--extra-large,
 [class^="alegrify-"].alegrify-space--extra-large {
   margin-bottom: 32px;
-}
-.alegrify-space--bleed,
-[class^="alegrify-"].alegrify-space--bleed {
-  margin-bottom: 0;
 }
 .alegrify-h1 {
   margin-bottom: 32px;
