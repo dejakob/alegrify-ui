@@ -50,6 +50,82 @@
 :host-context([dir="ltr"]) .alegrify-align-text--end {
   text-align: right;
 }
+@-webkit-keyframes alegrify-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes alegrify-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes alegrify-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes alegrify-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .alegrify-body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
@@ -260,10 +336,11 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 2px;
-  padding: 16px;
-  font-size: 16px;
-  line-height: 22px;
+  height: 48px;
+  border-radius: 24px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
   font-style: normal;
   border-width: 2px;
@@ -273,19 +350,40 @@
   background-color: #ffffff;
   transition: background-color 0.2s;
 }
-.alegrify-button[disabled],
-.alegrify-button--disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
+.alegrify-button__content {
+  display: block;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+[dir="rtl"] .alegrify-button__content,
+:host-context([dir="rtl"]) .alegrify-button__content {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[dir="ltr"] .alegrify-button__content,
+:host-context([dir="ltr"]) .alegrify-button__content {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 .alegrify-button:focus {
-  outline-color: #4e4cc1;
+  outline-color: #9998db;
+  outline-style: dashed;
+  outline-width: 1px;
+  outline-offset: 2px;
 }
 .alegrify-button:hover {
   background-color: #f7f6fc;
 }
 .alegrify-button:active {
   background-color: #e4e4f5;
+}
+.alegrify-button[disabled],
+.alegrify-button--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 .alegrify-button--full {
   width: 100%;
@@ -308,11 +406,13 @@
   text-transform: capitalize;
 }
 .alegrify-button--primary {
+  border: none;
+  padding: 0 20px;
   background-color: #4e4cc1;
   color: #ffffff;
 }
 .alegrify-button--primary:focus {
-  outline-color: #4e4cc1;
+  outline-color: #9998db;
 }
 .alegrify-button--primary:hover {
   background-color: #3a38a2;
@@ -320,24 +420,111 @@
 .alegrify-button--primary:active {
   background-color: #2c2b7c;
 }
+.alegrify-button--primary[disabled],
+.alegrify-button--primary.alegrify-button--disabled,
+.alegrify-button--primary.alegrify-button--loading {
+  background-color: #4e4cc1;
+}
 .alegrify-button--destructive {
-  background-color: #900505;
-  border-color: #900505;
+  border: none;
+  padding: 0 20px;
+  background-color: #c90a0a;
   color: #ffffff;
 }
 .alegrify-button--destructive:focus {
-  outline-color: #900505;
+  outline-color: #f64343;
 }
 .alegrify-button--destructive:hover {
-  background-color: #5f0303;
-  border-color: #5f0303;
+  background-color: #980808;
+  border-color: #980808;
 }
 .alegrify-button--destructive:active {
-  background-color: #2d0202;
-  border-color: #2d0202;
+  background-color: #680505;
+  border-color: #680505;
 }
-.alegrify-button--no-border {
+.alegrify-button--destructive[disabled],
+.alegrify-button--destructive.alegrify-button--disabled,
+.alegrify-button--destructive.alegrify-button--loading {
+  background-color: #c90a0a;
+}
+.alegrify-button--link {
   border: none;
+}
+.alegrify-button--loading {
+  -webkit-animation: alegrify-button__loading-slide 1s;
+          animation: alegrify-button__loading-slide 1s;
+  transition: padding 0.4s;
+  padding-right: 56px;
+  cursor: progress;
+}
+[dir="rtl"] .alegrify-button--loading,
+:host-context([dir="rtl"]) .alegrify-button--loading {
+  padding-right: initial;
+  padding-left: 56px;
+}
+[dir="ltr"] .alegrify-button--loading,
+:host-context([dir="ltr"]) .alegrify-button--loading {
+  padding-left: initial;
+  padding-right: 56px;
+}
+.alegrify-button--loading:before {
+  content: '';
+  display: block;
+  height: 24px;
+  width: 24px;
+  float: left;
+  margin-right: 16px;
+  position: absolute;
+  border-radius: 12px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #4e4cc1;
+  -webkit-clip-path: circle(12px at 0 0);
+          clip-path: circle(12px at 0 0);
+  -webkit-animation: alegrify-appear 2s, alegrify-rotate 1s infinite linear;
+          animation: alegrify-appear 2s, alegrify-rotate 1s infinite linear;
+  /* @TODO: clip-path is only supported from IE10 */
+}
+[dir="rtl"] .alegrify-button--loading:before,
+:host-context([dir="rtl"]) .alegrify-button--loading:before {
+  float: right;
+  margin-right: initial;
+  margin-left: 16px;
+}
+[dir="ltr"] .alegrify-button--loading:before,
+:host-context([dir="ltr"]) .alegrify-button--loading:before {
+  float: left;
+  margin-left: initial;
+  margin-right: 16px;
+}
+.alegrify-button--loading:hover,
+.alegrify-button--loading:active {
+  background-color: #ffffff;
+}
+.alegrify-button--loading.alegrify-button--primary:hover,
+.alegrify-button--loading.alegrify-button--primary:active {
+  background-color: #4e4cc1;
+}
+.alegrify-button--loading.alegrify-button--error:hover,
+.alegrify-button--loading.alegrify-button--error:active {
+  background-color: #c90a0a;
+}
+.alegrify-button--loading .alegrify-button__content {
+  -webkit-transform: translate(40px, 0);
+          transform: translate(40px, 0);
+}
+[dir="rtl"] .alegrify-button--loading .alegrify-button__content,
+:host-context([dir="rtl"]) .alegrify-button--loading .alegrify-button__content {
+  -webkit-transform: translate(-40px, 0);
+          transform: translate(-40px, 0);
+}
+[dir="ltr"] .alegrify-button--loading .alegrify-button__content,
+:host-context([dir="ltr"]) .alegrify-button--loading .alegrify-button__content {
+  -webkit-transform: translate(40px, 0);
+          transform: translate(40px, 0);
+}
+.alegrify-button--loading.alegrify-button--primary:before {
+  border-color: #ffffff;
 }
 .alegrify-body {
   min-height: 100vh;
@@ -346,12 +533,16 @@
   color: #ffffff;
   background-color: #4e4cc1;
 }
-.alegrify-body [class^="alegrify-"] {
-  box-sizing: border-box;
-}
 .alegrify-body--gradient {
   background-color: #333333;
   background: linear-gradient(#4e4cc1, #953495);
+}
+[class^="alegrify-"] {
+  box-sizing: border-box;
+}
+[class^="alegrify-"]:before,
+[class^="alegrify-"]:after {
+  box-sizing: border-box;
 }
 .alegrify-card {
   background-color: #ffffff;
@@ -1493,7 +1684,7 @@
   font-weight: 400;
 }
 .alegrify-label--error {
-  color: #900505;
+  color: #c90a0a;
 }
 .alegrify-number-input {
   display: inline-block;
@@ -1775,6 +1966,9 @@
   position: absolute;
 }
 .alegrify-status-input__textarea::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.alegrify-status-input__textarea:-ms-input-placeholder {
   opacity: 0.3;
 }
 .alegrify-status-input__textarea::-ms-input-placeholder {

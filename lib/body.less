@@ -6,12 +6,17 @@
     color: @action-color;
     background-color: @primary-color;
 
-    [class^="alegrify-"] {
-        box-sizing: border-box;
-    }
-
     &--gradient {
         background-color: @nav-color;
         background: linear-gradient(@primary-color, @secondary-color);
+    }
+}
+
+[class^="alegrify-"] {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
     }
 }
