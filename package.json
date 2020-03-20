@@ -7,11 +7,11 @@
   "author": "dejakob",
   "license": "MPL",
   "devDependencies": {
-    "less": "3.8.1",
-    "less-plugin-auto-rtl": "^1.0.13",
-    "less-plugin-autoprefix": "^2.0.0",
+    "less": "3.11.1",
+    "less-plugin-auto-rtl": "1.0.13",
+    "less-plugin-autoprefix": "2.0.0",
     "less-plugin-clean-css": "1.5.1",
-    "npm-watch": "0.3.0"
+    "npm-watch": "0.6.0"
   },
   "watch": {
     "build": {
