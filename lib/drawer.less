@@ -1,0 +1,52 @@
+.alegrify-drawer {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  .font--body();
+  animation: alegrify-disappear 0.4s;
+
+  &[open] {
+    display: block;
+    position: fixed;
+    background: @backdrop-color;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    animation: alegrify-appear 0.4s;
+
+    .alegrify-drawer__content {
+      animation: alegrify-slide-in--from-right 0.4s linear;
+    }
+  }
+
+  &__content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 100%;
+    width: 400px;
+    max-width: 90vw;
+
+    padding: 16px;
+    background-color: @action-color;
+    animation: alegrify-slide-out--to-right 0.4s linear;
+  }
+
+  &__title {
+      margin: 0;
+      margin-bottom: 16px;
+      .font--head2();
+  }
+
+  &__actions {
+      margin-top: 16px;
+  }
+}
