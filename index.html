@@ -30,6 +30,8 @@
 
             elements.pageContent.innerHTML = htmlResult;
             elements.pageContent.querySelectorAll('a').forEach(replaceLink);
+
+            runOtherThings();
         }
 
         function replaceLink(aTag) {
@@ -41,6 +43,24 @@
 
             clickEvent.preventDefault();
             loadPage(`/docs/${href}`);
+        }
+
+
+        function runOtherThings() {
+            const dialogControl = document.querySelector('[aria-controls="dialog__001"]');
+
+            // DIALOG
+            dialogControl && dialogControl.addEventListener('click', function () {
+                const dialog = document.getElementById('dialog__001');
+
+                if (!dialog.hasAttribute('open')) {
+                    dialog.setAttribute('open', 'open');
+                }
+
+                dialog.addEventListener('click', function() {
+                    dialog.removeAttribute('open');
+                });
+            });
         }
     </script>
 
