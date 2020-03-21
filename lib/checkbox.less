@@ -1,7 +1,12 @@
 .alegrify-checkbox {
+    @alegrify-checkbox__check-size: 24px;
+
     clear: both;
     .font--body();
 
+    &__trigger {
+        .checkbox-trigger();
+    }
     &__trigger[disabled] + .alegrify-checkbox__check,
     &__trigger[disabled] + .alegrify-checkbox__check + .alegrify-checkbox__label {
         opacity: 0.3;
@@ -9,40 +14,34 @@
         user-select: none;
     }
 
-    & + & {
-        margin-top: 8px;
-    }
-
-    &__trigger {
-        .checkbox-trigger();
-    }
     &__label {
         font-family: inherit;
-        line-height: 24px;
+        line-height: @alegrify-checkbox__check-size;
         padding-left: 8px;
     }
     &__check {
         cursor: pointer;
-    }
-    &__check:before {
-        content: '';
 
-        display: block;
+        &:before {
+            content: '';
 
-        float: left;
-        text-align: center;
-        
-        height: 24px;
-        width: 24px;
+            display: block;
 
-        border-width: 2px;
-        border-color: @body-color;
-        border-style: solid;
-        border-radius: 2px;
+            float: left;
+            text-align: center;
+            
+            height: @alegrify-checkbox__check-size;
+            width: @alegrify-checkbox__check-size;
 
-        font-size: 12px;
+            border-width: 2px;
+            border-color: @body-color;
+            border-style: solid;
+            border-radius: 2px;
 
-        transition: border-color 0.2s, font-size 0.2s;
+            font-size: 12px;
+
+            transition: border-color 0.2s, font-size 0.2s;
+        }
     }
     &__trigger:checked + &__check:before {
         content: 'x';
@@ -50,18 +49,51 @@
         color: @secondary-color;
         border-color: @secondary-color;
 
-        height: 24px;
-        width: 24px;
+        height: @alegrify-checkbox__check-size;
+        width: @alegrify-checkbox__check-size;
 
         font-family: inherit;
         font-size: 20px;
         font-weight: 600;
         line-height: 18px;
     }
-    &__trigger:focus + &__check:before {
-        outline-color: @secondary-color--outline;
-        outline-offset: 2px;
-        outline-width: 1px;
-        outline-style: dashed;
+    &__trigger:focus + &__check {
+        &:before {
+            outline-color: @secondary-color--outline;
+            outline-offset: 2px;
+            outline-width: 1px;
+            outline-style: dashed;
+        }
+    }
+
+    &__trigger--loading:checked + .alegrify-checkbox__check {
+        cursor: progress;
+
+        &:before {
+            content: '';
+            display: block;
+            height: @alegrify-checkbox__check-size;
+            width: @alegrify-checkbox__check-size;
+
+            float: left;
+
+            position: absolute;
+
+            border-radius: @alegrify-checkbox__check-size * .5;
+            border-width: 2px;
+            border-style: solid;
+            border-color: @secondary-color;
+
+            /* @TODO: clip-path is only supported from IE10 */
+            clip-path: circle(12px at 0 0);
+            animation: alegrify-appear 2s, alegrify-rotate 1s infinite linear;
+
+            outline: none;
+        }
+
+        & + .alegrify-checkbox__label {
+            cursor: progress;
+            padding-left: 32px;
+        }
     }
 }
