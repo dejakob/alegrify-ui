@@ -1,76 +1,115 @@
 .alegrify-card {
     @card-padding: @space-16;
-    @card-large-viewport-border-radius: @space-2;
 
-    background-color: @action-color;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+    .font--body();
+    
+    display: block;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 
-    & + & {
-        border-top: none;
+    border-radius: 16px;
+
+    &:hover {
+        .alegrify-card__title-overlay {
+            opacity: 1;
+            transition: opacity 0.4s;
+        }
+        .alegrify-card__title {
+            opacity: 1;
+            transition: opacity 0.4s;
+        }
     }
 
-    &--small {
-        max-width: 500px;
-    }
+    &__trigger {
+        .checkbox-trigger();
 
-    &__header {
-        background-color: lighten(@body-color, 20%);
-        padding: @card-padding;
-        position: relative;
+        &:checked {
+            & + .alegrify-card {
+                .alegrify-card__content {
+                    transform: translate(0, -100%);
+                    transition: transform 0.4s;
+                }
 
-        &--background-image {
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-
-            padding-top: 8 * @card-padding;
-
-            &:before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 6 * @card-padding;
-                background: linear-gradient(to bottom, fade(@body-color, 0%), fade(@body-color, 60%), fade(@body-color, 80%))
+                .alegrify-card__title-overlay {
+                    background-color: fade(@body-color, 70%);
+                    transition: background-color 0.4s;
+                    opacity: 1;
+                }
+                .alegrify-card__title {
+                    opacity: 0;
+                }
+            }
+        }
+        &:focus {
+            & + .alegrify-card {
+                outline-color: @secondary-color--outline;
+                outline-style: dashed;
+                outline-width: 1px;
+                outline-offset: 2px;
+                transition: outline-color 0.4s;
+            }
+        }
+        &:checked:focus {
+            & + .alegrify-card {
+                outline-color: @primary-color--outline;
             }
         }
     }
+    
+    &__figure {
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+
+        background-color: @image-placeholder-color;
+    }
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__title-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        opacity: 0;
+        transition: opacity 0.4s, background-color 0.4s;
+        background: fade(@secondary-color, 80%);
+        color: @action-color;
+    }
     &__title {
         margin: 0;
-        color: @action-color;
-        position: relative;
-
-        .font--head2();
+        padding: 0;
+        opacity: 0;
     }
+
     &__content {
-        position: relative;
-        padding: @card-padding;
-        line-height: 1.8;
-        color: @body-color;
+        background-color: @action-color;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        padding: 16px;
 
-        .alegrify-p:last-child {
-            margin-bottom: 0;
-        }
-    }
-    &__footer {
-        padding: @card-padding;
-        background-color: lighten(@body-color, 95%);
-        color: @body-color;
-    }
+        position: absolute;
+        transform: translate(0, 32px);
+        transition: transform 0.4s;
 
-    @media screen and (min-width: @small) {
-        border-radius: @card-large-viewport-border-radius;
-
-        &__header {
-            border-top-left-radius: @card-large-viewport-border-radius;
-            border-top-right-radius: @card-large-viewport-border-radius;
-        }
-        &__footer {
-            border-bottom-left-radius: @card-large-viewport-border-radius;
-            border-bottom-right-radius: @card-large-viewport-border-radius;
+        &:before {
+            content: attr(data-title);
+            transform: translate(0, -48px);
+            display: block;
+            height: 0;
+            overflow: visible;
+            color: @action-color;
+            font-size: 24px;
         }
     }
 }
