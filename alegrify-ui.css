@@ -934,7 +934,7 @@
   display: block;
 }
 .alegrify-dropdown__trigger:focus + .alegrify-dropdown__label {
-  outline-color: #953495;
+  outline-color: #c966c9;
   outline-offset: 2px;
   outline-style: dashed;
   outline-width: 1px;
@@ -1040,7 +1040,7 @@
   background-color: #f8eaf8;
 }
 .alegrify-dropdown__list-item-trigger:focus + .alegrify-dropdown__list-item-label {
-  outline-color: #953495;
+  outline-color: #c966c9;
   outline-offset: 2px;
   outline-style: dashed;
   outline-width: 1px;
