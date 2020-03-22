@@ -1,5 +1,7 @@
 # Alegrify User Interface
 
+[Alegrify UI snippets](http://dejakob.github.io/alegrify-ui)
+
 ## Set up
 
 1) Clone / Copy / npm install this repo and locate the source files
