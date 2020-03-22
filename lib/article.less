@@ -1,13 +1,12 @@
-.alegrify-article,
-.alegrify-aside {
-    clear: both;
-    display: block;
-    width: 100%;
+.alegrify-article {
+  > .alegrify-h2,
+  > .alegrify-h3 {
+    padding-left: 16px;
+    padding-right: 16px;
 
-    & > .alegrify-h1,.alegrify-h2,.alegrify-h3,.alegrify-p:first-child {
-        padding-top: 0;
+    @media (min-width: @small + 40px) {
+      padding-left: inherit;
+      padding-right: inherit;
     }
-    & > .alegrify-section:last-child {
-        margin-bottom: 0;
-    }
+  }
 }

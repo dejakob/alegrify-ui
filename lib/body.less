@@ -1,17 +1,22 @@
 .alegrify-body {
-    min-height: 100vh;
     margin: 0;
     padding: 0;
 
     color: @action-color;
     background-color: @primary-color;
 
-    [class^="alegrify-"] {
-        box-sizing: border-box;
-    }
-
     &--gradient {
         background-color: @nav-color;
         background: linear-gradient(@primary-color, @secondary-color);
+    }
+}
+
+[class^="alegrify-"] {
+    margin: 0;
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
     }
 }

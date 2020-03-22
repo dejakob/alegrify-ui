@@ -1,95 +1,48 @@
-@keyframes alegrify-dialog__fade-in-animation {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes alegrify-dialog__fade-out-animation {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-@keyframes alegrify-dialog__slide-down-animation {
-    from {
-        transform: translate(0, -100%);
-    }
-    to {
-        transform: translate(0, 0);
-    }
-}
-@keyframes alegrify-dialog__slide-up-animation {
-    from {
-        transform: translate(0, 0);
-    }
-    to {
-        transform: translate(0, -100%);
-    }
-}
-
 .alegrify-dialog {
     display: none;
-    vertical-align: middle;
-    text-align: center;
-
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    bottom: 16px;
-    left: 16px;
+    margin: 0;
     padding: 0;
+    border: none;
 
-    z-index: 4;
-    border-radius: 2px;
+    .font--body();
+    animation: alegrify-disappear 0.4s;
 
-    text-align: left;
-
-    animation: alegrify-dialog__slide-up-animation 0.4s, alegrify-dialog__fade-out-animation 0.4s;;
-
-    &__trigger {
-        .checkbox-trigger();
-
-        &:checked + .alegrify-dialog__wrapper {
-            display: block;
-            animation: alegrify-dialog__fade-in-animation 0.4s;
-        }
-        &:checked + .alegrify-dialog__wrapper .alegrify-dialog {
-            display: table;
-            animation: alegrify-dialog__slide-down-animation 0.4s;
-        }
-    }
-    &__wrapper {
-        display: none;
-        background: fade(@body-color, 90%);
+    &[open] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         position: fixed;
+        background: @backdrop-color;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
+        height: 100%;
+        width: 100%;
 
-        z-index: 4;
+        animation: alegrify-appear 0.4s;
 
-        &[open] {
-            display: block;
-            animation: alegrify-dialog__fade-in-animation 0.4s;
-        }
-        &[open] .alegrify-dialog {
-            display: table;
-            animation: alegrify-dialog__slide-down-animation 0.4s;
+        .alegrify-dialog__content {
+            animation: alegrify-slide-in 0.4s linear;
         }
     }
-    &__content {
-        padding: 16px;
-        background-color: @action-color;
-        border-radius: 2px;
 
-        > * {
-            margin-top: 0;
-        }
+    &__content {
+        margin: 16px;
+        padding: 16px;
+        border-radius: 8px;
+        background-color: @action-color;
+        animation: alegrify-slide-out 0.4s linear;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 16px;
+        .font--head2();
+    }
+
+    &__actions {
+        margin-top: 16px;
     }
 }

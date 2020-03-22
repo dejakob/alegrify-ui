@@ -1,0 +1,24 @@
+.alegrify-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__li {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: '';
+      display: block;
+      border-radius: 4px;
+      height: 8px;
+      width: 8px;
+      border: 2px solid @primary-color;
+      margin-right: 8px;
+    }
+
+    & + .alegrify-ul__li {
+      margin-top: 2px;
+    }
+  }
+}

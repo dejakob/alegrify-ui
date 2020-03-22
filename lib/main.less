@@ -1,8 +1,9 @@
 .alegrify-main {
     display: block;
     position: relative;
-    margin: 32px auto;
-    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
 
     &:after {
         content: '';
@@ -15,5 +16,10 @@
     }
     @media screen and (min-width: @medium + 40px) {
         width: @medium;
+    }
+
+    & > .alegrify-h1,
+    & > .alegrify-h2 {
+        text-align: center;
     }
 }

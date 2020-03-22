@@ -1,0 +1,21 @@
+.alegrify-a {
+  color: @primary-color;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline-color: @primary-color--outline;
+    outline-offset: 2px;
+    outline-style: dashed;
+    outline-width: 1px;
+  }
+}
