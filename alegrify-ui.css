@@ -471,6 +471,24 @@
 * + [class^="alegrify-"].alegrify-h3 {
   margin-top: 24px;
 }
+.alegrify-a {
+  color: #4e4cc1;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 1;
+}
+.alegrify-a:hover {
+  text-decoration: underline;
+}
+.alegrify-a:active {
+  opacity: 0.7;
+}
+.alegrify-a:focus {
+  outline-color: #9998db;
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-width: 1px;
+}
 .alegrify-article > .alegrify-h2,
 .alegrify-article > .alegrify-h3 {
   padding-left: 16px;
