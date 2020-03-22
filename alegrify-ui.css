@@ -1679,13 +1679,158 @@
 .alegrify-drawer__actions {
   margin-top: 16px;
 }
+@-webkit-keyframes alegrify-input__error-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] 0%,
+  :host-context([dir="rtl"]) 0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] 0%,
+  :host-context([dir="ltr"]) 0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  [dir="rtl"] 25%,
+  :host-context([dir="rtl"]) 25% {
+    -webkit-transform: translate(16px, 0);
+            transform: translate(16px, 0);
+  }
+  [dir="ltr"] 25%,
+  :host-context([dir="ltr"]) 25% {
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] 50%,
+  :host-context([dir="rtl"]) 50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] 50%,
+  :host-context([dir="ltr"]) 50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  75% {
+    -webkit-transform: translate(16px, 0);
+            transform: translate(16px, 0);
+  }
+  [dir="rtl"] 75%,
+  :host-context([dir="rtl"]) 75% {
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  [dir="ltr"] 75%,
+  :host-context([dir="ltr"]) 75% {
+    -webkit-transform: translate(16px, 0);
+            transform: translate(16px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] 100%,
+  :host-context([dir="rtl"]) 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] 100%,
+  :host-context([dir="ltr"]) 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes alegrify-input__error-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] 0%,
+  :host-context([dir="rtl"]) 0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] 0%,
+  :host-context([dir="ltr"]) 0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  [dir="rtl"] 25%,
+  :host-context([dir="rtl"]) 25% {
+    -webkit-transform: translate(16px, 0);
+            transform: translate(16px, 0);
+  }
+  [dir="ltr"] 25%,
+  :host-context([dir="ltr"]) 25% {
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] 50%,
+  :host-context([dir="rtl"]) 50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] 50%,
+  :host-context([dir="ltr"]) 50% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  75% {
+    -webkit-transform: translate(16px, 0);
+            transform: translate(16px, 0);
+  }
+  [dir="rtl"] 75%,
+  :host-context([dir="rtl"]) 75% {
+    -webkit-transform: translate(-16px, 0);
+            transform: translate(-16px, 0);
+  }
+  [dir="ltr"] 75%,
+  :host-context([dir="ltr"]) 75% {
+    -webkit-transform: translate(16px, 0);
+            transform: translate(16px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] 100%,
+  :host-context([dir="rtl"]) 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] 100%,
+  :host-context([dir="ltr"]) 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
 .alegrify-input {
-  padding: 16px;
-  border-top: none;
-  border-right: none;
-  border-bottom: 3px #e6e6e6 solid;
-  border-left: none;
-  border-radius: 2px;
+  padding: 8px 16px;
+  width: 100%;
+  cursor: text;
+  border: none;
+  border-bottom-color: #cccccc;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
   background-color: #ffffff;
   transition: border-color 0.4s, background-color 0.4s;
   text-align: left;
@@ -1698,14 +1843,10 @@
 }
 [dir="rtl"] .alegrify-input,
 :host-context([dir="rtl"]) .alegrify-input {
-  border-left: none;
-  border-right: none;
   text-align: right;
 }
 [dir="ltr"] .alegrify-input,
 :host-context([dir="ltr"]) .alegrify-input {
-  border-right: none;
-  border-left: none;
   text-align: left;
 }
 .alegrify-input[disabled],
@@ -1713,8 +1854,49 @@
   opacity: 0.3;
   cursor: not-allowed;
 }
+.alegrify-input[disabled]:hover,
+.alegrify-input--disabled:hover {
+  border-color: #cccccc;
+}
+.alegrify-input[error] {
+  color: #c90a0a;
+  border-color: #c90a0a;
+  -webkit-animation: alegrify-input__error-animation 0.2s 4 linear;
+          animation: alegrify-input__error-animation 0.2s 4 linear;
+}
+.alegrify-input[error]:after {
+  content: attr(error);
+  display: block;
+}
+.alegrify-input[error]:hover,
+.alegrify-input[error]:focus {
+  color: #c90a0a;
+  border-color: #c90a0a;
+}
+.alegrify-input[error]::-webkit-input-placeholder {
+  color: #c90a0a;
+  /* Chrome/Opera/Safari */
+}
+.alegrify-input[error]::-moz-placeholder {
+  color: #c90a0a;
+  /* Firefox 19+ */
+}
+.alegrify-input[error]:-ms-input-placeholder {
+  color: #c90a0a;
+  /* IE 10+ */
+}
+.alegrify-input[error]:-moz-placeholder {
+  color: #c90a0a;
+  /* Firefox 18- */
+}
+.alegrify-input:hover {
+  border-color: #4d4d4d;
+}
 .alegrify-input:focus {
-  outline: none;
+  outline-color: #c966c9;
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-width: 1px;
   border-bottom-color: #953495;
   background-color: #fcf5fc;
 }
@@ -1733,12 +1915,6 @@
 .alegrify-input:-moz-placeholder {
   opacity: 0.3;
   /* Firefox 18- */
-}
-.alegrify-input--full {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  resize: vertical;
 }
 .alegrify-label {
   display: block;
