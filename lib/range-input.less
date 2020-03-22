@@ -1,5 +1,5 @@
 .alegrify-range-input {
-    .focus-thumb {
+    .focus-thumb() {
         background-color: @action-color;
         border-color: @primary-color;
     }
@@ -14,7 +14,7 @@
         height: @space-32;
         width: @space-32;
         margin-top: -12px;
-        border-radius: @space-2;
+        border-radius: @space-16;
         transition: background 0.4s;
     }
     .runnable-track() {
@@ -30,10 +30,23 @@
     &[disabled] {
         opacity: 0.3;
         cursor: not-allowed;
+
+        &::-webkit-slider-thumb {
+            cursor: not-allowed;
+        }
+        &::-moz-range-thumb {
+            cursor: not-allowed;
+        }
+        &::-ms-thumb {
+            cursor: not-allowed;
+        }
     }
 
     &:focus {
-        outline: none;
+        outline-color: @secondary-color--outline;
+        outline-offset: 15px;
+        outline-style: dashed;
+        outline-width: 1px;
     }
 
     &[data-low-indicator]:before {

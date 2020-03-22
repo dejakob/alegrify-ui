@@ -2289,16 +2289,24 @@
   width: 100%;
   background: transparent;
 }
-.alegrify-range-input .focus-thumb {
-  background-color: #ffffff;
-  border-color: #4e4cc1;
-}
 .alegrify-range-input[disabled] {
   opacity: 0.3;
   cursor: not-allowed;
 }
+.alegrify-range-input[disabled]::-webkit-slider-thumb {
+  cursor: not-allowed;
+}
+.alegrify-range-input[disabled]::-moz-range-thumb {
+  cursor: not-allowed;
+}
+.alegrify-range-input[disabled]::-ms-thumb {
+  cursor: not-allowed;
+}
 .alegrify-range-input:focus {
-  outline: none;
+  outline-color: #c966c9;
+  outline-offset: 15px;
+  outline-style: dashed;
+  outline-width: 1px;
 }
 .alegrify-range-input[data-low-indicator]:before {
   content: attr(data-low-indicator);
@@ -2361,7 +2369,7 @@
   height: 32px;
   width: 32px;
   margin-top: -12px;
-  border-radius: 2px;
+  border-radius: 16px;
   transition: background 0.4s;
 }
 .alegrify-range-input::-moz-range-thumb {
@@ -2376,7 +2384,7 @@
   height: 32px;
   width: 32px;
   margin-top: -12px;
-  border-radius: 2px;
+  border-radius: 16px;
   transition: background 0.4s;
 }
 .alegrify-range-input::-ms-thumb {
@@ -2390,7 +2398,7 @@
   height: 32px;
   width: 32px;
   margin-top: -12px;
-  border-radius: 2px;
+  border-radius: 16px;
   transition: background 0.4s;
 }
 .alegrify-range-input::-webkit-slider-runnable-track {
