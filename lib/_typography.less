@@ -68,7 +68,10 @@
 }
 [class^="alegrify-"].alegrify-p {
     .font--paragraph();
-    margin-bottom: 16px;
+
+    & + .alegrify-p {
+        margin-bottom: 16px;
+    }
 }
 .alegrify-strong {
     .font--bold();
