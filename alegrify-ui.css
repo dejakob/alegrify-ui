@@ -1926,100 +1926,6 @@
 .alegrify-label--error {
   color: #c90a0a;
 }
-.alegrify-number-input {
-  display: inline-block;
-  width: 50px;
-  position: relative;
-  background-color: #ffffff;
-  border: 1px #e6e6e6 solid;
-  border-radius: 2px;
-}
-.alegrify-number-input__add,
-.alegrify-number-input__subtract {
-  display: block;
-  cursor: pointer;
-  margin: 0 auto;
-  border: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: none;
-  font-size: 12px;
-  line-height: 16px;
-  font-variant: normal;
-  font-weight: 400;
-}
-.alegrify-number-input__add:focus,
-.alegrify-number-input__subtract:focus {
-  outline: none;
-}
-.alegrify-number-input__add:active .alegrify-number-input__add-span,
-.alegrify-number-input__subtract:active .alegrify-number-input__add-span,
-.alegrify-number-input__add:active .alegrify-number-input__subtract-span,
-.alegrify-number-input__subtract:active .alegrify-number-input__subtract-span {
-  opacity: 1;
-}
-.alegrify-number-input__add-span,
-.alegrify-number-input__subtract-span {
-  opacity: 0.5;
-  transition: opacity 0.2s;
-}
-.alegrify-number-input__input {
-  border: none;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  background: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  font-variant: normal;
-  font-weight: 400;
-  font-style: normal;
-  font-weight: 600;
-}
-.alegrify-number-input__input:focus {
-  outline: none;
-  background-color: #fcf5fc;
-}
-.alegrify-number-input__input + .alegrify-number-input__subtract:before {
-  display: block;
-  content: '';
-  border-left: 3px #953495 solid;
-  border-radius: 2px;
-}
-[dir="rtl"] .alegrify-number-input__input + .alegrify-number-input__subtract:before,
-:host-context([dir="rtl"]) .alegrify-number-input__input + .alegrify-number-input__subtract:before {
-  border-left: initial;
-  border-right: 3px #953495 solid;
-}
-[dir="ltr"] .alegrify-number-input__input + .alegrify-number-input__subtract:before,
-:host-context([dir="ltr"]) .alegrify-number-input__input + .alegrify-number-input__subtract:before {
-  border-right: initial;
-  border-left: 3px #953495 solid;
-}
-.alegrify-number-input__input:focus + .alegrify-number-input__subtract:before {
-  position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-}
-[dir="rtl"] .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before,
-:host-context([dir="rtl"]) .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before {
-  left: initial;
-  right: -1px;
-}
-[dir="ltr"] .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before,
-:host-context([dir="ltr"]) .alegrify-number-input__input:focus + .alegrify-number-input__subtract:before {
-  right: initial;
-  left: -1px;
-}
-.alegrify-number-input--wide {
-  width: auto;
-}
-.alegrify-number-input--full {
-  width: 100%;
-}
 .alegrify-notification {
   display: block;
   width: auto;
@@ -2251,15 +2157,11 @@
 }
 .alegrify-radio {
   clear: both;
-  position: relative;
-}
-.alegrify-radio + .alegrify-radio {
-  margin-top: 8px;
-}
-.alegrify-radio[disabled],
-.alegrify-radio--disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-variant: normal;
+  font-weight: 400;
 }
 .alegrify-radio__trigger {
   position: absolute;
@@ -2279,22 +2181,33 @@
   right: initial;
   left: -999999px;
 }
+.alegrify-radio__trigger[disabled] + .alegrify-radio__check,
+.alegrify-radio__trigger[disabled] + .alegrify-radio__check + .alegrify-radio__label {
+  opacity: 0.3;
+  cursor: not-allowed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .alegrify-radio__label {
-  line-height: 28px;
-  margin-left: 8px;
+  font-family: inherit;
+  line-height: 24px;
+  padding-left: 8px;
 }
 [dir="rtl"] .alegrify-radio__label,
 :host-context([dir="rtl"]) .alegrify-radio__label {
-  margin-left: initial;
-  margin-right: 8px;
+  padding-left: initial;
+  padding-right: 8px;
 }
 [dir="ltr"] .alegrify-radio__label,
 :host-context([dir="ltr"]) .alegrify-radio__label {
-  margin-right: initial;
-  margin-left: 8px;
+  padding-right: initial;
+  padding-left: 8px;
 }
 .alegrify-radio__check {
   cursor: pointer;
+  position: relative;
 }
 .alegrify-radio__check:before {
   content: '';
@@ -2326,7 +2239,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin: 7px;
+  margin-top: 2px;
+  margin-left: -19px;
   -webkit-animation: alegrify-radio__scale-animation 0.2s;
           animation: alegrify-radio__scale-animation 0.2s;
 }
@@ -2334,11 +2248,15 @@
 :host-context([dir="rtl"]) .alegrify-radio__check:after {
   left: initial;
   right: 0;
+  margin-left: initial;
+  margin-right: -19px;
 }
 [dir="ltr"] .alegrify-radio__check:after,
 :host-context([dir="ltr"]) .alegrify-radio__check:after {
   right: initial;
   left: 0;
+  margin-right: initial;
+  margin-left: -19px;
 }
 .alegrify-radio__trigger:checked + .alegrify-radio__check:before {
   border-color: #953495;
@@ -2347,11 +2265,22 @@
   content: '';
   display: block;
 }
+.alegrify-radio__trigger:checked + .alegrify-radio__check:before {
+  content: '';
+  color: #953495;
+  border-color: #953495;
+  height: 24px;
+  width: 24px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 18px;
+}
 .alegrify-radio__trigger:focus + .alegrify-radio__check:before {
-  outline-color: #953495;
-  outline-offset: 4px;
+  outline-color: #c966c9;
+  outline-offset: 2px;
   outline-width: 1px;
-  outline-style: solid;
+  outline-style: dashed;
 }
 .alegrify-range-input {
   -webkit-appearance: none;
