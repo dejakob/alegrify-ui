@@ -18,6 +18,9 @@
     &.alegrify-grid--bottom {
         align-items: flex-end;
     }
+    &.alegrify-grid--stretch {
+        align-items: stretch;
+    }
 
     &.alegrify-grid--left {
         justify-content: flex-start;
@@ -37,6 +40,13 @@
 
     &.alegrify-grid--reverse {
         flex-direction: row-reverse;
+    }
+    &.alegrify-grid--bleed {
+        margin: 0;
+
+        .alegrify-grid__cell {
+            padding: 0;
+        }
     }
 }
 
