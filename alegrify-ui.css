@@ -606,23 +606,6 @@
 .alegrify-button--full {
   width: 100%;
 }
-.alegrify-button--small {
-  padding: 8px 16px;
-}
-.alegrify-button--large {
-  font-size: 24px;
-  padding: 16px 32px;
-  border-radius: 4px;
-  text-transform: capitalize;
-}
-[dir="rtl"] .alegrify-button--large,
-:host-context([dir="rtl"]) .alegrify-button--large {
-  text-transform: capitalize;
-}
-[dir="ltr"] .alegrify-button--large,
-:host-context([dir="ltr"]) .alegrify-button--large {
-  text-transform: capitalize;
-}
 .alegrify-button--primary {
   border: none;
   padding: 0 20px;
@@ -1164,6 +1147,9 @@
   .alegrify-grid.alegrify-grid--bottom {
     align-items: flex-end;
   }
+  .alegrify-grid.alegrify-grid--stretch {
+    align-items: stretch;
+  }
   .alegrify-grid.alegrify-grid--left {
     justify-content: flex-start;
   }
@@ -1181,6 +1167,12 @@
   }
   .alegrify-grid.alegrify-grid--reverse {
     flex-direction: row-reverse;
+  }
+  .alegrify-grid.alegrify-grid--bleed {
+    margin: 0;
+  }
+  .alegrify-grid.alegrify-grid--bleed .alegrify-grid__cell {
+    padding: 0;
   }
 }
 @media (min-width: 1240px) {
@@ -1204,6 +1196,9 @@
   .alegrify-grid--large.alegrify-grid--bottom {
     align-items: flex-end;
   }
+  .alegrify-grid--large.alegrify-grid--stretch {
+    align-items: stretch;
+  }
   .alegrify-grid--large.alegrify-grid--left {
     justify-content: flex-start;
   }
@@ -1221,6 +1216,12 @@
   }
   .alegrify-grid--large.alegrify-grid--reverse {
     flex-direction: row-reverse;
+  }
+  .alegrify-grid--large.alegrify-grid--bleed {
+    margin: 0;
+  }
+  .alegrify-grid--large.alegrify-grid--bleed .alegrify-grid__cell {
+    padding: 0;
   }
   .alegrify-grid--large .alegrify-grid__cell,
   .alegrify-grid--large [class^="alegrify-"].alegrify-grid__cell {
@@ -1305,6 +1306,9 @@
 .alegrify-grid--all.alegrify-grid--bottom {
   align-items: flex-end;
 }
+.alegrify-grid--all.alegrify-grid--stretch {
+  align-items: stretch;
+}
 .alegrify-grid--all.alegrify-grid--left {
   justify-content: flex-start;
 }
@@ -1322,6 +1326,12 @@
 }
 .alegrify-grid--all.alegrify-grid--reverse {
   flex-direction: row-reverse;
+}
+.alegrify-grid--all.alegrify-grid--bleed {
+  margin: 0;
+}
+.alegrify-grid--all.alegrify-grid--bleed .alegrify-grid__cell {
+  padding: 0;
 }
 .alegrify-grid--all .alegrify-grid__cell,
 .alegrify-grid--all [class^="alegrify-"].alegrify-grid__cell {
