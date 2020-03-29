@@ -1171,7 +1171,7 @@
   .alegrify-grid.alegrify-grid--bleed {
     margin: 0;
   }
-  .alegrify-grid.alegrify-grid--bleed .alegrify-grid__cell {
+  .alegrify-grid.alegrify-grid--bleed > .alegrify-grid__cell {
     padding: 0;
   }
 }
@@ -1220,7 +1220,7 @@
   .alegrify-grid--large.alegrify-grid--bleed {
     margin: 0;
   }
-  .alegrify-grid--large.alegrify-grid--bleed .alegrify-grid__cell {
+  .alegrify-grid--large.alegrify-grid--bleed > .alegrify-grid__cell {
     padding: 0;
   }
   .alegrify-grid--large .alegrify-grid__cell,
@@ -1330,7 +1330,7 @@
 .alegrify-grid--all.alegrify-grid--bleed {
   margin: 0;
 }
-.alegrify-grid--all.alegrify-grid--bleed .alegrify-grid__cell {
+.alegrify-grid--all.alegrify-grid--bleed > .alegrify-grid__cell {
   padding: 0;
 }
 .alegrify-grid--all .alegrify-grid__cell,
