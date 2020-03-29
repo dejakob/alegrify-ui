@@ -11,9 +11,3 @@
 ```html
 <link rel="stylesheet" href="alegrify-ui.min.css" />
 ```
-
-3) This repo uses material icons. Link them as well if you didn't already.
-
-```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-```
