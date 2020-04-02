@@ -42,7 +42,7 @@
         width: 24px;
 
         border-width: 2px;
-        border-color: @body-color;
+        border-color: @radio-border-color;
         border-style: solid;
         border-radius: 50%;
 
@@ -54,7 +54,7 @@
         height: 14px;
         width: 14px;
 
-        background-color: @secondary-color;
+        background-color: @radio-checked-color;
         border-radius: 50%;
 
         position: absolute;
@@ -67,7 +67,7 @@
         animation: alegrify-radio__scale-animation 0.2s;
     }
     &__trigger:checked + &__check:before {
-        border-color: @secondary-color;
+        border-color: @radio-checked-color;
     }
     &__trigger:checked + &__check:after {
         content: '';
@@ -76,8 +76,8 @@
     &__trigger:checked + &__check:before {
         content: '';
 
-        color: @secondary-color;
-        border-color: @secondary-color;
+        color: @radio-checked-color;
+        border-color: @radio-checked-color;
 
         height: 24px;
         width: 24px;
@@ -89,7 +89,7 @@
     }
     &__trigger:focus + &__check {
         &:before {
-            outline-color: @secondary-color--outline;
+            outline-color: @radio-outline-color;
             outline-offset: 2px;
             outline-width: 1px;
             outline-style: dashed;

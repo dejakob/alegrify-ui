@@ -52,66 +52,66 @@
     }
     
     &--success {
-        border-left-color: darken(@success-color, 5%);
-        background-color: lighten(@success-color, 52%);
-        color: darken(@success-color, 25%);
+        border-left-color: @notification-success-border-color;
+        background-color: @notification-success-background-color;
+        color: @notification-success-color;
 
         &:after {
             content: 'OK';
-            color: darken(@success-color, 5%);
-            border-color: darken(@success-color, 5%);
+            color: @notification-success-border-color;
+            border-color: @notification-success-border-color;
         }
 
         .alegrify-notification__title {
-            color: darken(@success-color, 5%);
+            color: @notification-success-border-color;
         }
     }
 
     &--info {
-        border-left-color: darken(@info-color, 5%);
-        background-color: lighten(@info-color, 52%);
-        color: darken(@info-color, 25%);
+        border-left-color: @notification-info-border-color;
+        background-color: @notification-info-background-color;
+        color: @notification-info-color;
 
         &:after {
             content: '?';
-            color: darken(@info-color, 5%);
-            border-color: darken(@info-color, 5%);
+            color: @notification-info-border-color;
+            border-color: @notification-info-border-color;
         }
 
         .alegrify-notification__title {
-            color: darken(@info-color, 5%);
+            color: @notification-info-border-color;
         }
     }
 
     &--warning {
-        border-left-color: darken(@warning-color, 5%);
-        background-color: lighten(@warning-color, 45%);
-        color: darken(@warning-color, 25%);
+        border-left-color: @notification-warning-border-color;
+        background-color: @notification-warning-background-color;
+        color: @notification-warning-color;
 
         &:after {
             content: '!';
-            color: darken(@warning-color, 5%);
-            border-color: darken(@warning-color, 5%);
+            color: @notification-warning-border-color;
+            border-color: @notification-warning-border-color;
         }
 
         .alegrify-notification__title {
-            color: darken(@warning-color, 5%);
+            color: @notification-warning-border-color;
         }
     }
 
     &--error {
-        border-left-color: darken(@error-color, 5%);
-        background-color: lighten(@error-color, 52%);
-        color: darken(@error-color, 25%);
+        border-left-color: @notification-error-border-color;
+        background-color: @notification-error-background-color;
+        color: @notification-error-color;
 
         &:after {
             content: '...';
-            color: darken(@error-color, 5%);
-            border-color: darken(@error-color, 5%);
+            color: @notification-error-border-color;
+            border-color: @notification-error-border-color;
         }
 
         .alegrify-notification__title {
-            color: darken(@error-color, 5%);
+            color: @notification-error-border-color;
         }
     }
 }

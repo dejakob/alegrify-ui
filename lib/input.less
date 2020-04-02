@@ -24,11 +24,11 @@
     .font--body();
 
     border: none;
-    border-bottom-color: @subtile-border-color;
+    border-bottom-color: @input-border-color;
     border-bottom-width: 2px;
     border-bottom-style: solid;
 
-    background-color: @action-color;
+    background-color: @input-background-color;
     transition: border-color 0.4s, background-color 0.4s;
 
     text-align: left;
@@ -40,13 +40,13 @@
         cursor: not-allowed;
 
         &:hover {
-            border-color: @subtile-border-color;
+            border-color: @input-border-color;
         }
     }
 
     &[error] {
-        color: @error-color;
-        border-color: @error-color;
+        color: @input-error-color;
+        border-color: @input-error-border-color;
         animation: alegrify-input__error-animation 0.2s 4 linear;
 
         &:after {
@@ -56,35 +56,35 @@
 
         &:hover,
         &:focus {
-            color: @error-color;
-            border-color: @error-color;
+            color: @input-error-color;
+            border-color: @input-error-border-color;
         }
 
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: @error-color;
+            color: @input-error-color;
         }
         &::-moz-placeholder { /* Firefox 19+ */
-            color: @error-color;
+            color: @input-error-color;
         }
         &:-ms-input-placeholder { /* IE 10+ */
-            color: @error-color;
+            color: @input-error-color;
         }
         &:-moz-placeholder { /* Firefox 18- */
-            color: @error-color;
+            color: @input-error-color;
         }
     }
 
     &:hover {
-        border-color: darken(@subtile-border-color, 50%);
+        border-color: darken(@input-border-color, 50%);
     }
     &:focus {
-        outline-color: @secondary-color--outline;
+        outline-color: @input-focus-outline-color;
         outline-offset: 2px;
         outline-style: dashed;
         outline-width: 1px;
 
-        border-bottom-color: @secondary-color;
-        background-color: lighten(@secondary-color, 58%);
+        border-bottom-color: @input-focus-border-color;
+        background-color: @input-focus-background-color;
     }
 
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */

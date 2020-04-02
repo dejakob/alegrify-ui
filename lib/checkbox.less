@@ -34,7 +34,7 @@
             width: @alegrify-checkbox__check-size;
 
             border-width: 2px;
-            border-color: @body-color;
+            border-color: @checkbox-border-color;
             border-style: solid;
             border-radius: 2px;
 
@@ -46,8 +46,8 @@
     &__trigger:checked + &__check:before {
         content: 'x';
 
-        color: @secondary-color;
-        border-color: @secondary-color;
+        color: @checkbox-check-color;
+        border-color: @checkbox-check-color;
 
         height: @alegrify-checkbox__check-size;
         width: @alegrify-checkbox__check-size;
@@ -59,7 +59,7 @@
     }
     &__trigger:focus + &__check {
         &:before {
-            outline-color: @secondary-color--outline;
+            outline-color: @checkbox-outline-color;
             outline-offset: 2px;
             outline-width: 1px;
             outline-style: dashed;
@@ -82,7 +82,7 @@
             border-radius: @alegrify-checkbox__check-size * .5;
             border-width: 2px;
             border-style: solid;
-            border-color: @secondary-color;
+            border-color: @checkbox-check-color;
 
             /* @TODO: clip-path is only supported from IE10 */
             clip-path: circle(12px at 0 0);

@@ -1,13 +1,13 @@
 .alegrify-range-input {
     .focus-thumb() {
-        background-color: @action-color;
-        border-color: @primary-color;
+        background-color: @range-input-focus-thumb-color;
+        border-color: @range-input-focus-border-color;
     }
     .thumb() {
         appearance: none;
         display: block;
-        background-color: fade(@action-color, 70%);
-        border-color: fade(@primary-color, 50%);
+        background-color: @range-input-thumb-color;
+        border-color: @range-input-border-color;
         border-width: 1px;
         border-style: solid;
         cursor: pointer;
@@ -19,7 +19,7 @@
     }
     .runnable-track() {
         display: block;
-        background: linear-gradient(to right, lighten(@primary-color, 30%), lighten(@secondary-color, 30%));
+        background: @range-input-track;
         height: @space-8;
     }
 
@@ -43,7 +43,7 @@
     }
 
     &:focus {
-        outline-color: @secondary-color--outline;
+        outline-color: @range-input-focus-color;
         outline-offset: 15px;
         outline-style: dashed;
         outline-width: 1px;

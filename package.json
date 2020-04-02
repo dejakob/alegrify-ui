@@ -23,9 +23,7 @@
     }
   },
   "scripts": {
-    "build": "npm run build:full && npm run build:min",
-    "build:full": "lessc index.less alegrify-ui.css --auto-rtl --autoprefix",
-    "build:min": "lessc alegrify-ui.css alegrify-ui.min.css --clean-css",
+    "build": "cli/build.sh",
     "watch": "npm-watch"
   }
 }

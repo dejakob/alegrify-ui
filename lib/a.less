@@ -1,5 +1,5 @@
 .alegrify-a {
-  color: @primary-color;
+  color: @link-color;
   font-weight: 600;
   text-decoration: none;
   opacity: 1;
@@ -13,9 +13,17 @@
   }
 
   &:focus {
-    outline-color: @primary-color--outline;
+    outline-color: @link-color;
     outline-offset: 2px;
     outline-style: dashed;
     outline-width: 1px;
+  }
+
+  &[target="_blank"] {
+    color: @link-color--external;
+
+    &:focus {
+      outline-color: @link-color--external;
+    }
   }
 }

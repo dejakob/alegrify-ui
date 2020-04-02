@@ -26,9 +26,9 @@
     border-style: solid;
 
     // Colors
-    color: @primary-color;
-    border-color: @primary-color;
-    background-color: @action-color;
+    color: @button-color;
+    border-color: @button-border-color;
+    background-color: @button-background-color;
     transition: background-color 0.2s;
 
     &__content {
@@ -39,16 +39,16 @@
 
     // States
     &:focus {
-        outline-color: @primary-color--outline;
+        outline-color: @button-outline-color;
         outline-style: dashed;
         outline-width: 1px;
         outline-offset: 2px;
     }
     &:hover {
-        background-color: lighten(@primary-color, 45%);
+        background-color: @button-hover-background-color;
     }
     &:active {
-        background-color: lighten(@primary-color, 40%);
+        background-color: @button-active-background-color;
     }
 
     &[disabled],
@@ -66,17 +66,17 @@
     &--primary {
         border: none;
         padding: 0 20px;
-        background-color: @primary-color;
-        color: @action-color;
+        background-color: @button-background-color--primary;
+        color: @button-color--primary;
 
         &:focus {
-            outline-color: @primary-color--outline;
+            outline-color: @button-outline-color--primary;
         }
         &:hover {
-            background-color: darken(@primary-color, 10%);
+            background-color: @button-hover-background-color--primary;
         }
         &:active {
-            background-color: darken(@primary-color, 20%);
+            background-color: @button-hover-background-color--active;
         }
 
         &[disabled],
@@ -89,25 +89,25 @@
     &--destructive {
         border: none;
         padding: 0 20px;
-        background-color: @error-color;
-        color: @action-color;
+        background-color: @button-background-color--destructive;
+        color: @button-color--destructive;
 
         &:focus {
-            outline-color: @error-color--outline;
+            outline-color: @button-outline-color--destructive;
         }
         &:hover {
-            background-color: darken(@error-color, 10%);
-            border-color: darken(@error-color, 10%);
+            background-color: @button-hover-background-color--destructive;
+            border-color: @button-hover-background-color--destructive;
         }
         &:active {
-            background-color: darken(@error-color, 20%);
-            border-color: darken(@error-color, 20%);
+            background-color: @button-active-background-color--destructive;
+            border-color: @button-active-background-color--destructive;
         }
 
         &[disabled],
         &.alegrify-button--disabled,
         &.alegrify-button--loading {
-            background-color: @error-color;
+            background-color: @button-active-background-color--destructive;
         }
     }
 
@@ -137,7 +137,7 @@
             border-radius: @alegrify-button__loader-size * .5;
             border-width: 2px;
             border-style: solid;
-            border-color: @primary-color;
+            border-color: @button-color;
 
             /* @TODO: clip-path is only supported from IE10 */
             clip-path: circle(12px at 0 0);
@@ -146,15 +146,15 @@
 
         &:hover,
         &:active {
-            background-color: @action-color;
+            background-color: @button-background-color;
         }
         &.alegrify-button--primary:hover,
         &.alegrify-button--primary:active {
-            background-color: @primary-color;
+            background-color: @button-background-color--primary;
         }
         &.alegrify-button--error:hover,
         &.alegrify-button--error:active {
-            background-color: @error-color;
+            background-color: @button-background-color--destructive;
         }
 
         .alegrify-button__content {
@@ -163,7 +163,7 @@
 
         &.alegrify-button--primary {
             &:before {
-                border-color: @action-color;
+                border-color: @button-color--primary;
             }
         }
     }

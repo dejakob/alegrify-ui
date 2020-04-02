@@ -32,7 +32,7 @@
                 }
 
                 .alegrify-card__title-overlay {
-                    background-color: fade(@body-color, 70%);
+                    background-color: @card-overlay-color;
                     transition: background-color 0.4s;
                     opacity: 1;
                 }
@@ -43,7 +43,7 @@
         }
         &:focus {
             & + .alegrify-card {
-                outline-color: @secondary-color--outline;
+                outline-color: @card-outline-color;
                 outline-style: dashed;
                 outline-width: 1px;
                 outline-offset: 2px;
@@ -52,7 +52,7 @@
         }
         &:checked:focus {
             & + .alegrify-card {
-                outline-color: @primary-color--outline;
+                outline-color: @card-active-outline-color;
             }
         }
     }
@@ -62,7 +62,7 @@
         padding: 0;
         line-height: 0;
 
-        background-color: @image-placeholder-color;
+        background-color: @card-image-placeholder-color;
     }
     &__image {
         height: 100%;
@@ -83,8 +83,8 @@
 
         opacity: 0;
         transition: opacity 0.4s, background-color 0.4s;
-        background: fade(@secondary-color, 80%);
-        color: @action-color;
+        background: @card-title-overlay-color;
+        color: @card-title-color;
     }
     &__title {
         margin: 0;
@@ -93,7 +93,7 @@
     }
 
     &__content {
-        background-color: @action-color;
+        background-color: @card-content-background-color;
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
         padding: 16px;
@@ -109,7 +109,7 @@
             display: block;
             height: 0;
             overflow: visible;
-            color: @action-color;
+            color: @card-content-color;
             font-size: 24px;
         }
     }
