@@ -1,0 +1,151 @@
+/* Base colors */
+@primary-color: #4e4cc1;
+@secondary-color: #953495;
+@body-color: #000000;
+@action-color: #ffffff;
+@nav-color: #333333;
+
+/* Element specific colors */
+@image-placeholder-color: #333333;
+@backdrop-color: rgba(0, 0, 0, 0.6);
+@subtile-border-color: #cccccc;
+@arrow-color: #AAAAAA;
+
+/* State indication colors */
+@success-color: #399439;
+@info-color: #3a6596;
+@warning-color: #ce7023;
+@error-color: #c90a0a;
+
+/* Focus outline colors */
+@primary-color--outline: lighten(@primary-color, 20%);
+@secondary-color--outline: lighten(@secondary-color, 20%);
+@body-color--outline: lighten(@body-color, 20%);
+@action-color--outline: lighten(@action-color, 20%);
+@nav-color--outline: lighten(@nav-color, 20%);
+
+@success-color--outline: lighten(@success-color, 20%);
+@info-color--outline: lighten(@info-color, 20%);
+@warning-color--outline: lighten(@warning-color, 20%);
+@error-color--outline: lighten(@error-color, 20%);
+
+
+/* Element colors */
+// Page (body)
+@page-color: @action-color;
+@page-background-color: @primary-color;
+@page-gradient: linear-gradient(@primary-color, @secondary-color);
+
+// Link (a)
+@link-color: @primary-color;
+@link-color--external: @secondary-color;
+
+// Button
+@button-color: @primary-color;
+@button-border-color: @primary-color;
+@button-background-color: @action-color;
+@button-outline-color: @primary-color--outline;
+@button-hover-background-color: lighten(@primary-color, 45%);
+@button-active-background-color: lighten(@primary-color, 40%);
+
+  // Primary Button
+  @button-color--primary: @action-color;
+  @button-background-color--primary: @primary-color;
+  @button-outline-color--primary: @primary-color--outline;
+  @button-hover-background-color--primary: darken(@primary-color, 10%);
+  @button-hover-background-color--active: darken(@primary-color, 20%);
+
+  // Destructive Button
+  @button-color--destructive: @action-color;
+  @button-background-color--destructive: @error-color;
+  @button-outline-color--destructive: @error-color--outline;
+  @button-hover-background-color--destructive: darken(@error-color, 10%);
+  @button-active-background-color--destructive: darken(@error-color, 20%);
+
+// Card
+@card-overlay-color: fade(@body-color, 70%);
+@card-title-overlay-color: fade(@secondary-color, 80%);
+@card-outline-color: @secondary-color--outline;
+@card-active-outline-color: @primary-color--outline;
+@card-image-placeholder-color: @image-placeholder-color;
+@card-title-color: @action-color;
+@card-content-background-color: @action-color;
+@card-content-color: @action-color;
+
+// Checkbox
+@checkbox-border-color: @body-color;
+@checkbox-check-color: @secondary-color;
+@checkbox-outline-color: @secondary-color--outline;
+
+// Dialog
+@dialog-backdrop-color: @backdrop-color;
+@dialog-background-color: @action-color;
+@dialog-color: @body-color;
+
+// Drawer
+@drawer-backdrop-color: @backdrop-color;
+@drawer-background-color: @action-color;
+@drawer-color: @body-color;
+
+// Dropdown
+@dropdown-background-color: @action-color;
+@dropdown-border-color: @subtile-border-color;
+@dropdown-color: @body-color;
+@dropdown-outline-color: @secondary-color--outline;
+@dropdown-open-bottom-color: @secondary-color;
+@dropdown-open-background-color: lighten(@secondary-color, 55%);
+@dropdown-hover-background-color: lighten(@secondary-color, 45%);
+
+// Footer
+@footer-background-color: lighten(@body-color, 20%);
+@footer-color: @action-color;
+
+// Input
+@input-border-color: @subtile-border-color;
+@input-background-color: @action-color;
+@input-error-color: @error-color;
+@input-error-border-color: @error-color;
+@input-focus-border-color: @secondary-color;
+@input-focus-background-color: lighten(@secondary-color, 58%);
+@input-focus-outline-color: @secondary-color--outline;
+
+// Label
+@label-color: lighten(@body-color, 30%);
+@label-error-color: @error-color;
+
+// Notification
+@notification-success-color: darken(@success-color, 25%);
+@notification-success-border-color: darken(@success-color, 5%);
+@notification-success-background-color: lighten(@success-color, 52%);
+
+@notification-info-color: darken(@info-color, 25%);
+@notification-info-border-color: darken(@info-color, 5%);
+@notification-info-background-color: lighten(@info-color, 52%);
+
+@notification-warning-color: darken(@warning-color, 25%);
+@notification-warning-border-color: darken(@warning-color, 5%);
+@notification-warning-background-color: lighten(@warning-color, 45%);
+
+@notification-error-color: darken(@error-color, 25%);
+@notification-error-border-color: darken(@error-color, 5%);
+@notification-error-background-color: lighten(@error-color, 52%);
+
+// Radio
+@radio-border-color: @body-color;
+@radio-checked-color: @secondary-color;
+@radio-outline-color: @secondary-color--outline;
+
+// Range Input
+@range-input-focus-thumb-color: @action-color;
+@range-input-focus-border-color: @primary-color;
+@range-input-thumb-color: fade(@action-color, 70%);
+@range-input-border-color: fade(@primary-color, 50%);
+@range-input-track: lighten(@primary-color, 30%);
+@range-input-focus-color: @secondary-color--outline;
+
+// Section
+@section-color: @body-color;
+@section-background-color: @action-color;
+
+// Ul
+@list-dot-color: @primary-color;
