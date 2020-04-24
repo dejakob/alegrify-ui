@@ -1,7 +1,7 @@
 /* Base colors */
-@primary-color: #3431b3;
+@primary-color: #91daf0;
 @secondary-color: #e46700;
-@body-color: #000000;
+@body-color: #ffffff;
 @action-color: #ffffff;
 @nav-color: #333333;
 
@@ -18,7 +18,7 @@
 @error-color: #c90a0a;
 
 /* Focus outline colors */
-@primary-color--outline: lighten(@primary-color, 20%);
+@primary-color--outline: @primary-color;
 @secondary-color--outline: lighten(@secondary-color, 20%);
 @body-color--outline: lighten(@body-color, 20%);
 @action-color--outline: lighten(@action-color, 20%);
@@ -33,7 +33,7 @@
 /* Element colors */
 // Page (body)
 @page-color: @action-color;
-@page-background-color: #444444;
+@page-background-color: #662466;
 @page-gradient: linear-gradient(@primary-color, @secondary-color);
 
 // Link (a)
@@ -43,13 +43,13 @@
 // Button
 @button-color: @primary-color;
 @button-border-color: @primary-color;
-@button-background-color: @action-color;
+@button-background-color: transparent;
 @button-outline-color: @primary-color--outline;
-@button-hover-background-color: lighten(@primary-color, 45%);
-@button-active-background-color: lighten(@primary-color, 40%);
+@button-hover-background-color: rgba(255, 255, 255, 0.1);
+@button-active-background-color: rgba(255, 255, 255, 0.2);
 
   // Primary Button
-  @button-color--primary: @action-color;
+  @button-color--primary: #3b39ca;
   @button-background-color--primary: @primary-color;
   @button-outline-color--primary: @primary-color--outline;
   @button-hover-background-color--primary: darken(@primary-color, 10%);
@@ -63,14 +63,15 @@
   @button-active-background-color--destructive: darken(@error-color, 20%);
 
 // Card
-@card-overlay-color: fade(@body-color, 70%);
-@card-title-overlay-color: fade(@secondary-color, 80%);
-@card-outline-color: @secondary-color--outline;
+@card-overlay-color: fade(#3b39ca, 80%);
+@card-title-overlay-color: fade(#3b39ca, 80%);
+@card-outline-color: @primary-color;
 @card-active-outline-color: @primary-color--outline;
 @card-image-placeholder-color: @image-placeholder-color;
 @card-title-color: @action-color;
 @card-content-background-color: @action-color;
-@card-content-color: @action-color;
+@card-content-color: #333333;
+@card-content-title-color: @action-color;
 
 // Checkbox
 @checkbox-border-color: @body-color;
@@ -79,35 +80,35 @@
 
 // Dialog
 @dialog-backdrop-color: @backdrop-color;
-@dialog-background-color: @action-color;
+@dialog-background-color: #333333;
 @dialog-color: @body-color;
 
 // Drawer
 @drawer-backdrop-color: @backdrop-color;
-@drawer-background-color: @action-color;
+@drawer-background-color: #333333;
 @drawer-color: @body-color;
 
 // Dropdown
 @dropdown-background-color: @action-color;
-@dropdown-border-color: @subtile-border-color;
-@dropdown-color: @body-color;
+@dropdown-border-color: #333333;
+@dropdown-color: #333333;
 @dropdown-outline-color: @secondary-color--outline;
 @dropdown-open-bottom-color: @secondary-color;
 @dropdown-open-background-color: lighten(@secondary-color, 55%);
 @dropdown-hover-background-color: lighten(@secondary-color, 45%);
 
 // Footer
-@footer-background-color: lighten(@body-color, 20%);
+@footer-background-color: darken(@page-background-color, 15%);
 @footer-color: @action-color;
 
 // Input
-@input-border-color: @subtile-border-color;
-@input-background-color: @action-color;
+@input-border-color: #ffffff;
+@input-background-color: transparent;
 @input-error-color: @error-color;
 @input-error-border-color: @error-color;
 @input-focus-border-color: @secondary-color;
-@input-focus-background-color: lighten(@secondary-color, 58%);
-@input-focus-outline-color: @secondary-color--outline;
+@input-focus-background-color: rgba(255, 255, 255, 0.1);
+@input-focus-outline-color: #ffffff;
 
 // Label
 @label-color: lighten(@body-color, 30%);
@@ -136,17 +137,23 @@
 @radio-outline-color: @secondary-color--outline;
 
 // Range Input
-@range-input-focus-thumb-color: @action-color;
+@range-input-focus-thumb-color: @primary-color;
 @range-input-focus-border-color: @primary-color;
-@range-input-thumb-color: fade(@action-color, 70%);
+@range-input-thumb-color: fade(@primary-color, 70%);
 @range-input-border-color: fade(@primary-color, 50%);
 @range-input-track: lighten(@primary-color, 30%);
 @range-input-focus-color: @secondary-color--outline;
 
 // Section
 @section-color: @body-color;
-@section-background-color: #ffffff;
-@section-border-color: #666666;
+@section-background-color: rgba(255, 255, 255, 0.1);
+@section-border-color: transparent;
+
+// Stepper
+@stepper-active-dot-color: #e6be3e;
+@stepper-dot-color: #ffffff;
+@stepper-bar-color: fade(@stepper-dot-color, 50%);
+@stepper-step-color: #ffffff;
 
 // Ul
 @list-dot-color: @primary-color;

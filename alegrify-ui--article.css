@@ -849,6 +849,7 @@
 }
 .alegrify-card__content {
   background-color: #ffffff;
+  color: #000000;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 16px;
@@ -1110,6 +1111,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  color: #000000;
 }
 .alegrify-footer {
   display: block;
@@ -1928,6 +1930,7 @@
   padding: 8px 16px;
   width: 100%;
   cursor: text;
+  color: #000000;
   border: none;
   border-bottom-color: #cccccc;
   border-bottom-width: 2px;
@@ -1976,6 +1979,18 @@
 }
 .alegrify-input[error]::-webkit-input-placeholder {
   color: #c90a0a;
+}
+.alegrify-input[error]:-ms-input-placeholder {
+  color: #c90a0a;
+}
+.alegrify-input[error]::-ms-input-placeholder {
+  color: #c90a0a;
+}
+.alegrify-input[error]::placeholder {
+  color: #c90a0a;
+}
+.alegrify-input[error]::-webkit-input-placeholder {
+  color: #c90a0a;
   /* Chrome/Opera/Safari */
 }
 .alegrify-input[error]::-moz-placeholder {
@@ -2002,19 +2017,31 @@
   background-color: #ffffff;
 }
 .alegrify-input::-webkit-input-placeholder {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.2);
+}
+.alegrify-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.alegrify-input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.alegrify-input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.alegrify-input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
   /* Chrome/Opera/Safari */
 }
 .alegrify-input::-moz-placeholder {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.2);
   /* Firefox 19+ */
 }
 .alegrify-input:-ms-input-placeholder {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.2);
   /* IE 10+ */
 }
 .alegrify-input:-moz-placeholder {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.2);
   /* Firefox 18- */
 }
 .alegrify-label {
