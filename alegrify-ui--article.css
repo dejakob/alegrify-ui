@@ -2611,6 +2611,11 @@
   list-style: none;
   padding: 0;
 }
+.alegrify-stepper__steps:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 .alegrify-stepper__step {
   display: block;
   float: left;

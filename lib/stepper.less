@@ -47,6 +47,12 @@
   &__steps {
     list-style: none;
     padding: 0;
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
   }
   &__step {
     display: block;
