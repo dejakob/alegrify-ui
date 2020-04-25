@@ -1548,16 +1548,21 @@
   font-family: inherit;
   line-height: 24px;
   padding-left: 8px;
+  margin-left: 24px;
 }
 [dir="rtl"] .alegrify-checkbox__label,
 :host-context([dir="rtl"]) .alegrify-checkbox__label {
   padding-left: initial;
   padding-right: 8px;
+  margin-left: initial;
+  margin-right: 24px;
 }
 [dir="ltr"] .alegrify-checkbox__label,
 :host-context([dir="ltr"]) .alegrify-checkbox__label {
   padding-right: initial;
   padding-left: 8px;
+  margin-right: initial;
+  margin-left: 24px;
 }
 .alegrify-checkbox__check {
   cursor: pointer;
