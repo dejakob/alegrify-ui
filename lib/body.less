@@ -5,9 +5,22 @@
     color: @page-color;
     background-color: @page-background-color;
 
+    &__page-scroll {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
     &--gradient {
         background-color: @page-color;
         background: @page-gradient;
+    }
+    &--fixed-background {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
