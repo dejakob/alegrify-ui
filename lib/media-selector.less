@@ -6,15 +6,15 @@
   position: relative;
   height: calc(@ms--size * 2);
 
+  &:focus-within {
+    outline: @body-color--outline;
+    outline-offset: 2px;
+    outline-style: dashed;
+    outline-width: 1px;
+  }
+
   &__input {
     .checkbox-trigger();
-
-    &:focus-within {
-      outline: @body-color--outline;
-      outline-offset: 2px;
-      outline-style: dashed;
-      outline-width: 1px;
-    }
 
     &:checked {
       &+ @{project-prefix}@{component-name}__figure {

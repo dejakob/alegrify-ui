@@ -2216,6 +2216,12 @@
   position: relative;
   height: calc(300px * 2);
 }
+.alegrify-media-selector:focus-within {
+  outline: #333333;
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-width: 1px;
+}
 .alegrify-media-selector__input {
   position: absolute;
   height: 1px;
@@ -2233,12 +2239,6 @@
 :host-context([dir="ltr"]) .alegrify-media-selector__input {
   right: initial;
   left: -999999px;
-}
-.alegrify-media-selector__input:focus-within {
-  outline: #333333;
-  outline-offset: 2px;
-  outline-style: dashed;
-  outline-width: 1px;
 }
 .alegrify-media-selector__input:checked + .alegrify-media-selector__figure {
   display: flex;
