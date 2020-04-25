@@ -2442,6 +2442,10 @@
 .alegrify-notification--success .alegrify-notification__title {
   color: #328232;
 }
+.alegrify-notification--success .alegrify-button {
+  color: #328232;
+  border-color: #328232;
+}
 .alegrify-notification--info {
   border-left-color: #335984;
   background-color: #e4ecf5;
@@ -2464,6 +2468,10 @@
 }
 .alegrify-notification--info .alegrify-notification__title {
   color: #335984;
+}
+.alegrify-notification--info .alegrify-button {
+  color: #335984;
+  border-color: #335984;
 }
 .alegrify-notification--warning {
   border-left-color: #b8641f;
@@ -2488,6 +2496,10 @@
 .alegrify-notification--warning .alegrify-notification__title {
   color: #b8641f;
 }
+.alegrify-notification--warning .alegrify-button {
+  color: #b8641f;
+  border-color: #b8641f;
+}
 .alegrify-notification--error {
   border-left-color: #b10909;
   background-color: #fddfdf;
@@ -2510,6 +2522,10 @@
 }
 .alegrify-notification--error .alegrify-notification__title {
   color: #b10909;
+}
+.alegrify-notification--error .alegrify-button {
+  color: #b10909;
+  border-color: #b10909;
 }
 @-webkit-keyframes alegrify-radio__scale-animation {
   from {
@@ -2853,6 +2869,14 @@
 }
 .alegrify-section > *:last-child:not(.alegrify-grid) {
   margin-bottom: 0;
+}
+.alegrify-section--large {
+  background: none;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+.alegrify-section--large > *:first-child:not(.alegrify-grid) {
+  padding-top: 30vh;
 }
 /* 
  * Import font:
