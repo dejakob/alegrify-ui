@@ -1545,6 +1545,7 @@
           user-select: none;
 }
 .alegrify-checkbox__label {
+  display: block;
   font-family: inherit;
   line-height: 24px;
   padding-left: 8px;
