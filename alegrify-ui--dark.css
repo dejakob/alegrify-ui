@@ -2875,7 +2875,7 @@
   padding-top: 20vh;
   padding-bottom: 20vh;
 }
-.alegrify-section--large > *:first-child:not(.alegrify-grid) {
+.alegrify-section--large:first-child {
   padding-top: 30vh;
 }
 /* 
