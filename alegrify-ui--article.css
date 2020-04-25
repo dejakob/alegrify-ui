@@ -2087,6 +2087,7 @@
   width: 100%;
   cursor: text;
   color: #000000;
+  border-radius: 0;
   border: none;
   border-bottom-color: #cccccc;
   border-bottom-width: 2px;
