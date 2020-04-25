@@ -33,12 +33,12 @@
 /* Element colors */
 // Page (body)
 @page-color: @action-color;
-@page-background-color: #662466;
+@page-background-color: #383698;
 @page-gradient: linear-gradient(@primary-color, @secondary-color);
 
 // Link (a)
 @link-color: @primary-color;
-@link-color--external: @secondary-color;
+@link-color--external: @primary-color;
 
 // Button
 @button-color: @primary-color;
@@ -98,7 +98,7 @@
 @dropdown-hover-background-color: lighten(@secondary-color, 45%);
 
 // Footer
-@footer-background-color: darken(@page-background-color, 15%);
+@footer-background-color: darken(@page-background-color, 25%);
 @footer-color: @action-color;
 
 // Input
@@ -106,6 +106,8 @@
 @input-background-color: transparent;
 @input-error-color: @error-color;
 @input-error-border-color: @error-color;
+@input-hover-border-color: @input-border-color;
+@input-hover-background-color: rgba(255, 255, 255, 0.1);
 @input-focus-border-color: @secondary-color;
 @input-focus-background-color: rgba(255, 255, 255, 0.1);
 @input-focus-outline-color: #ffffff;
