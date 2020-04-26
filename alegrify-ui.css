@@ -2246,6 +2246,9 @@
 .alegrify-media-selector {
   position: relative;
   height: calc(300px * 2);
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .alegrify-media-selector:focus-within {
   outline: #333333;
