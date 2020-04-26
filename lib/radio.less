@@ -14,8 +14,9 @@
     &__trigger {
         .checkbox-trigger();
     }
-    &__trigger[disabled] + .alegrify-radio__check,
-    &__trigger[disabled] + .alegrify-radio__check + .alegrify-radio__label {
+    &__trigger[disabled] + .alegrify-radio__check, /* Deprecated */
+    &__trigger[disabled] + .alegrify-radio__check + .alegrify-radio__label, /* Deprecated */
+    &__trigger[disabled] + .alegrify-radio__view {
         opacity: 0.3;
         cursor: not-allowed;
         user-select: none;
@@ -66,14 +67,17 @@
 
         animation: alegrify-radio__scale-animation 0.2s;
     }
-    &__trigger:checked + &__check:before {
+    &__trigger:checked + &__check:before, /* Deprecated */
+    &__trigger:checked + &__view &__check:before {
         border-color: @radio-checked-color;
     }
-    &__trigger:checked + &__check:after {
+    &__trigger:checked + &__check:after, /* Deprecated */
+    &__trigger:checked + &__view &__check:after {
         content: '';
         display: block;
     }
-    &__trigger:checked + &__check:before {
+    &__trigger:checked + &__check:before, /* Deprecated */
+    &__trigger:checked + &__view &__check:before {
         content: '';
 
         color: @radio-checked-color;
@@ -87,7 +91,8 @@
         font-weight: 600;
         line-height: 18px;
     }
-    &__trigger:focus + &__check {
+    &__trigger:focus + &__check, /* Deprecated */
+    &__trigger:focus + &__view &__check {
         &:before {
             outline-color: @radio-outline-color;
             outline-offset: 2px;
