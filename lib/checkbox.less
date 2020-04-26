@@ -7,13 +7,17 @@
     &__trigger {
         .checkbox-trigger();
     }
-    &__trigger[disabled] + .alegrify-checkbox__check,
-    &__trigger[disabled] + .alegrify-checkbox__check + .alegrify-checkbox__label {
+    &__trigger[disabled] + .alegrify-checkbox__check, /* Deprecated */
+    &__trigger[disabled] + .alegrify-checkbox__check + .alegrify-checkbox__label /* Deprecated */,
+    &__trigger[disabled] + .alegrify-checkbox__view {
         opacity: 0.3;
         cursor: not-allowed;
         user-select: none;
     }
 
+    &__view {
+        display: block;
+    }
     &__label {
         display: block;
         font-family: inherit;
@@ -45,7 +49,8 @@
             transition: border-color 0.2s, font-size 0.2s;
         }
     }
-    &__trigger:checked + &__check:before {
+    &__trigger:checked + &__check:before, /* Deprecated */
+    &__trigger:checked + &__view &__check:before {
         content: 'x';
 
         color: @checkbox-check-color;
@@ -59,7 +64,8 @@
         font-weight: 600;
         line-height: 18px;
     }
-    &__trigger:focus + &__check {
+    &__trigger:focus + &__check, /* Deprecated */
+    &__trigger:focus + &__view &__check {
         &:before {
             outline-color: @checkbox-outline-color;
             outline-offset: 2px;
@@ -68,7 +74,8 @@
         }
     }
 
-    &__trigger--loading:checked + .alegrify-checkbox__check {
+    &__trigger--loading:checked + &__check, /* Deprecated */
+    &__trigger--loading:checked + &__view &__check {
         cursor: progress;
 
         &:before {
