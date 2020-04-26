@@ -520,7 +520,7 @@
   -webkit-transform-origin: calc(64px / 2) calc(64px / 4);
           transform-origin: calc(64px / 2) calc(64px / 4);
 }
-.alegrify-avatar__image {
+.alegrify-avatar .alegrify-avatar__image {
   height: calc(64px + 6px * 2);
   width: calc(64px + 6px * 2);
 }
@@ -567,7 +567,7 @@
   -webkit-transform-origin: calc(200px / 2) calc(200px / 4);
           transform-origin: calc(200px / 2) calc(200px / 4);
 }
-.alegrify-avatar--extra-large__image {
+.alegrify-avatar--extra-large .alegrify-avatar__image {
   height: calc(200px + 20px * 2);
   width: calc(200px + 20px * 2);
 }
@@ -592,7 +592,7 @@
   -webkit-transform-origin: calc(100px / 2) calc(100px / 4);
           transform-origin: calc(100px / 2) calc(100px / 4);
 }
-.alegrify-avatar--large__image {
+.alegrify-avatar--large .alegrify-avatar__image {
   height: calc(100px + 10px * 2);
   width: calc(100px + 10px * 2);
 }
@@ -617,7 +617,7 @@
   -webkit-transform-origin: calc(32px / 2) calc(32px / 4);
           transform-origin: calc(32px / 2) calc(32px / 4);
 }
-.alegrify-avatar--small__image {
+.alegrify-avatar--small .alegrify-avatar__image {
   height: calc(32px + 2px * 2);
   width: calc(32px + 2px * 2);
 }
@@ -642,7 +642,7 @@
   -webkit-transform-origin: calc(16px / 2) calc(16px / 4);
           transform-origin: calc(16px / 2) calc(16px / 4);
 }
-.alegrify-avatar--extra-small__image {
+.alegrify-avatar--extra-small .alegrify-avatar__image {
   height: calc(16px + 1px * 2);
   width: calc(16px + 1px * 2);
 }
