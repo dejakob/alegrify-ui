@@ -2257,7 +2257,7 @@
   outline-width: 1px;
 }
 .alegrify-media-selector__input {
-  top: 0;
+  top: 300px;
   position: absolute;
   height: 1px;
   width: 1px;
@@ -2274,6 +2274,11 @@
 :host-context([dir="ltr"]) .alegrify-media-selector__input {
   right: initial;
   left: -999999px;
+}
+@media screen and (min-width: 600px) {
+  .alegrify-media-selector__input {
+    top: 0;
+  }
 }
 .alegrify-media-selector__input:checked + .alegrify-media-selector__figure {
   display: flex;
