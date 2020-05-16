@@ -1,0 +1,60 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNTFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzTRA.ttf) format('truetype');
+}
+.alegrify-main {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 16px;
+}
+[dir="rtl"] .alegrify-main,
+:host-context([dir="rtl"]) .alegrify-main {
+  margin-right: auto;
+  margin-left: auto;
+}
+[dir="ltr"] .alegrify-main,
+:host-context([dir="ltr"]) .alegrify-main {
+  margin-left: auto;
+  margin-right: auto;
+}
+.alegrify-main:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 600px) {
+  .alegrify-main {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .alegrify-main {
+    width: 960px;
+  }
+}
+.alegrify-main > .alegrify-h1,
+.alegrify-main > .alegrify-h2 {
+  text-align: center;
+}

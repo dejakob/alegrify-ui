@@ -1,12 +1,19 @@
 .alegrify-article {
-  > .alegrify-h2,
-  > .alegrify-h3 {
+  background-color: @article-background-color;
+  padding: @article-spacing;
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+
+  & > .alegrify-h2,
+  & > .alegrify-h3 {
     padding-left: 16px;
     padding-right: 16px;
 
     @media (min-width: @small + 40px) {
-      padding-left: inherit;
-      padding-right: inherit;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

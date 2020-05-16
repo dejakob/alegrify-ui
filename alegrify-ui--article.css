@@ -1,3 +1,29 @@
+/* Import global variables and mixins */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNTFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzTRA.ttf) format('truetype');
+}
+/* Helper classNames to export */
 .alegrify-align-child--start,
 .alegrify-align-child--center,
 .alegrify-align-child--end,
@@ -386,11 +412,6 @@
             transform: translate(100%, 0);
   }
 }
-/* Base colors */
-/* Element specific colors */
-/* State indication colors */
-/* Focus outline colors */
-/* Element colors */
 .alegrify-space--extra-small,
 [class^="alegrify-"].alegrify-space--extra-small {
   margin-bottom: 2px;
@@ -412,9 +433,11 @@
   margin-bottom: 32px;
 }
 .alegrify-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -422,6 +445,9 @@
   margin-bottom: 24px;
   font-size: 32px;
   line-height: 48px;
+  font-family: 'Noto Serif', serif;
+  font-size: 3rem;
+  line-height: 3.4rem;
   font-variant: normal;
   font-weight: 800;
 }
@@ -435,6 +461,9 @@
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 32px;
+  font-family: 'Noto Serif', serif;
+  font-size: 2.6rem;
+  line-height: 2.9rem;
   font-variant: normal;
   font-weight: 600;
 }
@@ -442,18 +471,22 @@
   margin-bottom: 8px;
   font-size: 20px;
   line-height: 24px;
+  font-size: 2rem;
+  line-height: 2.2rem;
   font-variant: normal;
   font-weight: 500;
 }
 [class^="alegrify-"].alegrify-p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
 [class^="alegrify-"].alegrify-p + .alegrify-p {
-  margin-bottom: 8px;
+  margin-top: 24px;
 }
 .alegrify-strong {
   font-style: normal;
@@ -472,14 +505,16 @@
 * + [class^="alegrify-"].alegrify-h3 {
   margin-top: 24px;
 }
+/* Use &{} to keep all variables inside within its scope */
 .alegrify-a {
   color: #3b39ca;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
+  border-bottom: 1px #3b39ca dotted;
   opacity: 1;
 }
 .alegrify-a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .alegrify-a:active {
   opacity: 0.7;
@@ -491,10 +526,10 @@
   outline-width: 1px;
 }
 .alegrify-a[target="_blank"] {
-  color: #e4a700;
+  color: #ff6a00;
 }
 .alegrify-a[target="_blank"]:focus {
-  outline-color: #e4a700;
+  outline-color: #ff6a00;
 }
 .alegrify-avatar {
   background-color: #cccccc;
@@ -646,6 +681,13 @@
   height: calc(16px + 1px * 2);
   width: calc(16px + 1px * 2);
 }
+.alegrify-article {
+  background-color: #ffffff;
+  padding: 32px;
+}
+.alegrify-article > *:first-child {
+  margin-top: 0;
+}
 .alegrify-article > .alegrify-h2,
 .alegrify-article > .alegrify-h3 {
   padding-left: 16px;
@@ -668,29 +710,29 @@
 @media (min-width: 640px) {
   .alegrify-article > .alegrify-h2,
   .alegrify-article > .alegrify-h3 {
-    padding-left: inherit;
-    padding-right: inherit;
+    padding-left: 0;
+    padding-right: 0;
   }
   [dir="rtl"] .alegrify-article > .alegrify-h2,
   [dir="rtl"] .alegrify-article > .alegrify-h3,
   :host-context([dir="rtl"]) .alegrify-article > .alegrify-h2,
   :host-context([dir="rtl"]) .alegrify-article > .alegrify-h3 {
-    padding-right: inherit;
-    padding-left: inherit;
+    padding-right: 0;
+    padding-left: 0;
   }
   [dir="ltr"] .alegrify-article > .alegrify-h2,
   [dir="ltr"] .alegrify-article > .alegrify-h3,
   :host-context([dir="ltr"]) .alegrify-article > .alegrify-h2,
   :host-context([dir="ltr"]) .alegrify-article > .alegrify-h3 {
-    padding-left: inherit;
-    padding-right: inherit;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .alegrify-body {
   margin: 0;
   padding: 0;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #fafafc;
 }
 .alegrify-body__page-scroll {
   height: 100vh;
@@ -701,7 +743,7 @@
 }
 .alegrify-body--gradient {
   background-color: #000000;
-  background: linear-gradient(#3b39ca, #e4a700);
+  background: linear-gradient(#3b39ca, #ff6a00);
 }
 .alegrify-body--fixed-background {
   background-size: cover;
@@ -903,9 +945,11 @@
   position: relative;
   cursor: pointer;
   border-radius: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -961,7 +1005,7 @@
   opacity: 0;
 }
 .alegrify-card__trigger:focus + .alegrify-card {
-  outline-color: #ffcf4b;
+  outline-color: #ffa666;
   outline-style: dashed;
   outline-width: 1px;
   outline-offset: 2px;
@@ -992,7 +1036,7 @@
   left: 0;
   opacity: 0;
   transition: opacity 0.4s, background-color 0.4s;
-  background: rgba(228, 167, 0, 0.8);
+  background: rgba(255, 106, 0, 0.8);
   color: #ffffff;
 }
 [dir="rtl"] .alegrify-card__title-overlay,
@@ -1083,9 +1127,11 @@
 .alegrify-dl__dd {
   margin: 0;
   padding-top: 8px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -1122,12 +1168,12 @@
           user-select: none;
 }
 .alegrify-dropdown__trigger:checked + .alegrify-dropdown__label {
-  border-bottom-color: #e4a700;
-  background-color: #fffffe;
+  border-bottom-color: #ff6a00;
+  background-color: #ffffff;
   transition: background-color 0.4s;
 }
 .alegrify-dropdown__trigger:checked + .alegrify-dropdown__label:after {
-  border-top-color: #e4a700;
+  border-top-color: #ff6a00;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   transition: -webkit-transform 0.4s;
@@ -1154,7 +1200,7 @@
   display: block;
 }
 .alegrify-dropdown__trigger:focus + .alegrify-dropdown__label {
-  outline-color: #ffcf4b;
+  outline-color: #ffa666;
   outline-offset: 2px;
   outline-style: dashed;
   outline-width: 1px;
@@ -1229,10 +1275,10 @@
   box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
 }
 .alegrify-dropdown__list-item:hover {
-  background-color: #fff1cb;
+  background-color: #fff0e5;
 }
 .alegrify-dropdown__list-item:active {
-  background-color: #fffffe;
+  background-color: #ffffff;
 }
 .alegrify-dropdown__list-item + .alegrify-dropdown__list-item {
   border-top-color: #cccccc;
@@ -1258,10 +1304,10 @@
   left: -999999px;
 }
 .alegrify-dropdown__list-item-trigger:checked + .alegrify-dropdown__list-item-label {
-  background-color: #fffffe;
+  background-color: #ffffff;
 }
 .alegrify-dropdown__list-item-trigger:focus + .alegrify-dropdown__list-item-label {
-  outline-color: #ffcf4b;
+  outline-color: #ffa666;
   outline-offset: 2px;
   outline-style: dashed;
   outline-width: 1px;
@@ -1280,11 +1326,13 @@
   display: block;
   width: 100%;
   padding: 32px 16px;
-  background-color: #333333;
+  background-color: #ccc;
   color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -1636,6 +1684,55 @@
     width: 91.66666667%;
   }
 }
+.alegrify-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 4px #eeeeee;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+[dir="rtl"] .alegrify-header,
+:host-context([dir="rtl"]) .alegrify-header {
+  box-shadow: -2px 2px 4px #eeeeee;
+  text-transform: uppercase;
+}
+[dir="ltr"] .alegrify-header,
+:host-context([dir="ltr"]) .alegrify-header {
+  box-shadow: 2px 2px 4px #eeeeee;
+  text-transform: uppercase;
+}
+.alegrify-header__content {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 0;
+}
+[dir="rtl"] .alegrify-header__content,
+:host-context([dir="rtl"]) .alegrify-header__content {
+  margin-right: auto;
+  margin-left: auto;
+}
+[dir="ltr"] .alegrify-header__content,
+:host-context([dir="ltr"]) .alegrify-header__content {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 600px) {
+  .alegrify-header__content {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .alegrify-header__content {
+    width: 960px;
+  }
+}
 .alegrify-main {
   display: block;
   position: relative;
@@ -1674,9 +1771,11 @@
 }
 .alegrify-checkbox {
   clear: both;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -1760,8 +1859,8 @@
 .alegrify-checkbox__trigger:checked + .alegrify-checkbox__check:before,
 .alegrify-checkbox__trigger:checked + .alegrify-checkbox__view .alegrify-checkbox__check:before {
   content: 'x';
-  color: #e4a700;
-  border-color: #e4a700;
+  color: #ff6a00;
+  border-color: #ff6a00;
   height: 24px;
   width: 24px;
   font-family: inherit;
@@ -1771,7 +1870,7 @@
 }
 .alegrify-checkbox__trigger:focus + .alegrify-checkbox__check:before,
 .alegrify-checkbox__trigger:focus + .alegrify-checkbox__view .alegrify-checkbox__check:before {
-  outline-color: #ffcf4b;
+  outline-color: #ffa666;
   outline-offset: 2px;
   outline-width: 1px;
   outline-style: dashed;
@@ -1791,7 +1890,7 @@
   border-radius: 12px;
   border-width: 2px;
   border-style: solid;
-  border-color: #e4a700;
+  border-color: #ff6a00;
   -webkit-clip-path: circle(12px at 0 0);
           clip-path: circle(12px at 0 0);
   -webkit-animation: alegrify-appear 2s, alegrify-rotate 1s infinite linear;
@@ -1814,21 +1913,6 @@
 .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__check + .alegrify-checkbox__label,
 .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__view .alegrify-checkbox__check + .alegrify-checkbox__label {
   cursor: progress;
-  padding-left: 32px;
-}
-[dir="rtl"] .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__check + .alegrify-checkbox__label,
-[dir="rtl"] .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__view .alegrify-checkbox__check + .alegrify-checkbox__label,
-:host-context([dir="rtl"]) .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__check + .alegrify-checkbox__label,
-:host-context([dir="rtl"]) .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__view .alegrify-checkbox__check + .alegrify-checkbox__label {
-  padding-left: initial;
-  padding-right: 32px;
-}
-[dir="ltr"] .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__check + .alegrify-checkbox__label,
-[dir="ltr"] .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__view .alegrify-checkbox__check + .alegrify-checkbox__label,
-:host-context([dir="ltr"]) .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__check + .alegrify-checkbox__label,
-:host-context([dir="ltr"]) .alegrify-checkbox__trigger--loading:checked + .alegrify-checkbox__view .alegrify-checkbox__check + .alegrify-checkbox__label {
-  padding-right: initial;
-  padding-left: 32px;
 }
 .alegrify-dialog {
   display: none;
@@ -1837,9 +1921,11 @@
   border: none;
   -webkit-animation: alegrify-disappear 0.4s;
           animation: alegrify-disappear 0.4s;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -1886,6 +1972,9 @@
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 32px;
+  font-family: 'Noto Serif', serif;
+  font-size: 2.6rem;
+  line-height: 2.9rem;
   font-variant: normal;
   font-weight: 600;
 }
@@ -1899,9 +1988,11 @@
   border: none;
   -webkit-animation: alegrify-disappear 0.4s;
           animation: alegrify-disappear 0.4s;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -1962,6 +2053,9 @@
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 32px;
+  font-family: 'Noto Serif', serif;
+  font-size: 2.6rem;
+  line-height: 2.9rem;
   font-variant: normal;
   font-weight: 600;
 }
@@ -2126,9 +2220,11 @@
   transition: border-color 0.4s, background-color 0.4s;
   text-align: left;
   resize: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -2198,11 +2294,11 @@
   background-color: #ffffff;
 }
 .alegrify-input:focus {
-  outline-color: #ffcf4b;
+  outline-color: #ffa666;
   outline-offset: 2px;
   outline-style: dashed;
   outline-width: 1px;
-  border-bottom-color: #e4a700;
+  border-bottom-color: #ff6a00;
   background-color: #ffffff;
 }
 .alegrify-input::-webkit-input-placeholder {
@@ -2382,9 +2478,11 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -2438,11 +2536,17 @@
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 32px;
+  font-family: 'Noto Serif', serif;
+  font-size: 2.6rem;
+  line-height: 2.9rem;
   font-variant: normal;
   font-weight: 600;
 }
 .alegrify-notification__description {
   margin: 0;
+}
+.alegrify-notification__action {
+  margin-top: 16px;
 }
 .alegrify-notification--success {
   border-left-color: #328232;
@@ -2629,9 +2733,11 @@
 }
 .alegrify-radio {
   clear: both;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   font-variant: normal;
   font-weight: 400;
 }
@@ -2681,10 +2787,7 @@
 .alegrify-radio__check {
   cursor: pointer;
   position: relative;
-}
-.alegrify-radio__check:before {
-  content: '';
-  display: table-cell;
+  display: block;
   float: left;
   text-align: center;
   height: 24px;
@@ -2696,24 +2799,23 @@
   font-size: 12px;
   transition: border-color 0.2s;
 }
-[dir="rtl"] .alegrify-radio__check:before,
-:host-context([dir="rtl"]) .alegrify-radio__check:before {
+[dir="rtl"] .alegrify-radio__check,
+:host-context([dir="rtl"]) .alegrify-radio__check {
   float: right;
 }
-[dir="ltr"] .alegrify-radio__check:before,
-:host-context([dir="ltr"]) .alegrify-radio__check:before {
+[dir="ltr"] .alegrify-radio__check,
+:host-context([dir="ltr"]) .alegrify-radio__check {
   float: left;
 }
 .alegrify-radio__check:after {
   height: 14px;
   width: 14px;
-  background-color: #e4a700;
+  background-color: #ff6a00;
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
-  margin-top: 2px;
-  margin-left: -19px;
+  margin: 3px;
   -webkit-animation: alegrify-radio__scale-animation 0.2s;
           animation: alegrify-radio__scale-animation 0.2s;
 }
@@ -2721,30 +2823,26 @@
 :host-context([dir="rtl"]) .alegrify-radio__check:after {
   left: initial;
   right: 0;
-  margin-left: initial;
-  margin-right: -19px;
 }
 [dir="ltr"] .alegrify-radio__check:after,
 :host-context([dir="ltr"]) .alegrify-radio__check:after {
   right: initial;
   left: 0;
-  margin-right: initial;
-  margin-left: -19px;
 }
-.alegrify-radio__trigger:checked + .alegrify-radio__check:before,
-.alegrify-radio__trigger:checked + .alegrify-radio__view .alegrify-radio__check:before {
-  border-color: #e4a700;
+.alegrify-radio__trigger:checked + .alegrify-radio__check,
+.alegrify-radio__trigger:checked + .alegrify-radio__view .alegrify-radio__check {
+  border-color: #ff6a00;
 }
 .alegrify-radio__trigger:checked + .alegrify-radio__check:after,
 .alegrify-radio__trigger:checked + .alegrify-radio__view .alegrify-radio__check:after {
   content: '';
   display: block;
 }
-.alegrify-radio__trigger:checked + .alegrify-radio__check:before,
-.alegrify-radio__trigger:checked + .alegrify-radio__view .alegrify-radio__check:before {
+.alegrify-radio__trigger:checked + .alegrify-radio__check,
+.alegrify-radio__trigger:checked + .alegrify-radio__view .alegrify-radio__check {
   content: '';
-  color: #e4a700;
-  border-color: #e4a700;
+  color: #ff6a00;
+  border-color: #ff6a00;
   height: 24px;
   width: 24px;
   font-family: inherit;
@@ -2752,9 +2850,9 @@
   font-weight: 600;
   line-height: 18px;
 }
-.alegrify-radio__trigger:focus + .alegrify-radio__check:before,
-.alegrify-radio__trigger:focus + .alegrify-radio__view .alegrify-radio__check:before {
-  outline-color: #ffcf4b;
+.alegrify-radio__trigger:focus + .alegrify-radio__check,
+.alegrify-radio__trigger:focus + .alegrify-radio__view .alegrify-radio__check {
+  outline-color: #ffa666;
   outline-offset: 2px;
   outline-width: 1px;
   outline-style: dashed;
@@ -2780,7 +2878,7 @@
   cursor: not-allowed;
 }
 .alegrify-range-input:focus {
-  outline-color: #ffcf4b;
+  outline-color: #ffa666;
   outline-offset: 15px;
   outline-style: dashed;
   outline-width: 1px;
@@ -2897,6 +2995,112 @@
   display: block;
   background: #b2b2ea;
   height: 8px;
+}
+.alegrify-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000000;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: #cccccc;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding: 8px 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-variant: normal;
+  font-weight: 400;
+}
+[dir="rtl"] .alegrify-select,
+:host-context([dir="rtl"]) .alegrify-select {
+  border-left: none;
+  border-right: none;
+}
+[dir="ltr"] .alegrify-select,
+:host-context([dir="ltr"]) .alegrify-select {
+  border-right: none;
+  border-left: none;
+}
+.alegrify-select[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.alegrify-select:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #cccccc;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+[dir="rtl"] .alegrify-select:after,
+:host-context([dir="rtl"]) .alegrify-select:after {
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+[dir="ltr"] .alegrify-select:after,
+:host-context([dir="ltr"]) .alegrify-select:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.alegrify-select:hover {
+  border-bottom-color: #ff6a00;
+  background-color: #ffffff;
+  transition: background-color 0.4s;
+}
+.alegrify-select:hover:after {
+  border-top-color: #ff6a00;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+[dir="rtl"] .alegrify-select:hover:after,
+:host-context([dir="rtl"]) .alegrify-select:hover:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+[dir="ltr"] .alegrify-select:hover:after,
+:host-context([dir="ltr"]) .alegrify-select:hover:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.alegrify-select:focus {
+  outline-color: #ffa666;
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-width: 1px;
+}
+.alegrify-select--inline {
+  width: auto;
 }
 .alegrify-section {
   background-color: #ffffff;
@@ -3020,7 +3224,7 @@
             transform: translate(0, -16px);
   }
   .alegrify-stepper__step--active:before {
-    background-color: #e4a700;
+    background-color: #ff6a00;
   }
 }
 .alegrify-ul {

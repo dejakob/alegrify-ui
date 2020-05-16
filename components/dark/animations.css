@@ -1,0 +1,346 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+@-webkit-keyframes alegrify-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes alegrify-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    display: block;
+  }
+}
+@-webkit-keyframes alegrify-disappear {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes alegrify-disappear {
+  from {
+    opacity: 1;
+    display: block;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes alegrify-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes alegrify-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes alegrify-slide-in {
+  from {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes alegrify-slide-in {
+  from {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(0, -300px);
+            transform: translate(0, -300px);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes alegrify-slide-in--from-right {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes alegrify-slide-in--from-right {
+  from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes alegrify-slide-out {
+  from {
+    -webkit-transform: translate(0, -500vh);
+            transform: translate(0, -500vh);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(0, -500vh);
+            transform: translate(0, -500vh);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(0, -500vh);
+            transform: translate(0, -500vh);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes alegrify-slide-out {
+  from {
+    -webkit-transform: translate(0, -500vh);
+            transform: translate(0, -500vh);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(0, -500vh);
+            transform: translate(0, -500vh);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(0, -500vh);
+            transform: translate(0, -500vh);
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes alegrify-slide-out--to-right {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+}
+@keyframes alegrify-slide-out--to-right {
+  from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="rtl"] from,
+  :host-context([dir="rtl"]) from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  [dir="ltr"] from,
+  :host-context([dir="ltr"]) from {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  to {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  [dir="rtl"] to,
+  :host-context([dir="rtl"]) to {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  [dir="ltr"] to,
+  :host-context([dir="ltr"]) to {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+}

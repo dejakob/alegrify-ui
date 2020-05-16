@@ -1,0 +1,30 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+.alegrify-space--extra-small,
+[class^="alegrify-"].alegrify-space--extra-small {
+  margin-bottom: 2px;
+}
+.alegrify-space--small,
+[class^="alegrify-"].alegrify-space--small {
+  margin-bottom: 4px;
+}
+.alegrify-space--medium,
+[class^="alegrify-"].alegrify-space--medium {
+  margin-bottom: 8px;
+}
+.alegrify-space--large,
+[class^="alegrify-"].alegrify-space--large {
+  margin-bottom: 16px;
+}
+.alegrify-space--extra-large,
+[class^="alegrify-"].alegrify-space--extra-large {
+  margin-bottom: 32px;
+}

@@ -30,11 +30,8 @@
     &__check {
         cursor: pointer;
         position: relative;
-    }
-    &__check:before {
-        content: '';
 
-        display: table-cell;
+        display: block;
 
         float: left;
         text-align: center;
@@ -62,13 +59,12 @@
         top: 0;
         left: 0;
 
-        margin-top: 2px;
-        margin-left: -19px;
+        margin: 3px;
 
         animation: alegrify-radio__scale-animation 0.2s;
     }
-    &__trigger:checked + &__check:before, /* Deprecated */
-    &__trigger:checked + &__view &__check:before {
+    &__trigger:checked + &__check, /* Deprecated */
+    &__trigger:checked + &__view &__check {
         border-color: @radio-checked-color;
     }
     &__trigger:checked + &__check:after, /* Deprecated */
@@ -76,8 +72,8 @@
         content: '';
         display: block;
     }
-    &__trigger:checked + &__check:before, /* Deprecated */
-    &__trigger:checked + &__view &__check:before {
+    &__trigger:checked + &__check, /* Deprecated */
+    &__trigger:checked + &__view &__check {
         content: '';
 
         color: @radio-checked-color;
@@ -93,11 +89,9 @@
     }
     &__trigger:focus + &__check, /* Deprecated */
     &__trigger:focus + &__view &__check {
-        &:before {
-            outline-color: @radio-outline-color;
-            outline-offset: 2px;
-            outline-width: 1px;
-            outline-style: dashed;
-        }
+        outline-color: @radio-outline-color;
+        outline-offset: 2px;
+        outline-width: 1px;
+        outline-style: dashed;
     }
 }

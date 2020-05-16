@@ -1,0 +1,208 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNTFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzTRA.ttf) format('truetype');
+}
+.alegrify-dropdown {
+  position: relative;
+}
+.alegrify-dropdown__trigger {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+  left: -999999px;
+}
+[dir="rtl"] .alegrify-dropdown__trigger,
+:host-context([dir="rtl"]) .alegrify-dropdown__trigger {
+  left: initial;
+  right: -999999px;
+}
+[dir="ltr"] .alegrify-dropdown__trigger,
+:host-context([dir="ltr"]) .alegrify-dropdown__trigger {
+  right: initial;
+  left: -999999px;
+}
+.alegrify-dropdown__trigger[disabled] + .alegrify-dropdown__label {
+  cursor: not-allowed;
+  opacity: 0.3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.alegrify-dropdown__trigger:checked + .alegrify-dropdown__label {
+  border-bottom-color: #ff6a00;
+  background-color: #ffffff;
+  transition: background-color 0.4s;
+}
+.alegrify-dropdown__trigger:checked + .alegrify-dropdown__label:after {
+  border-top-color: #ff6a00;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+[dir="rtl"] .alegrify-dropdown__trigger:checked + .alegrify-dropdown__label:after,
+:host-context([dir="rtl"]) .alegrify-dropdown__trigger:checked + .alegrify-dropdown__label:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+[dir="ltr"] .alegrify-dropdown__trigger:checked + .alegrify-dropdown__label:after,
+:host-context([dir="ltr"]) .alegrify-dropdown__trigger:checked + .alegrify-dropdown__label:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.alegrify-dropdown__trigger[disabled] + .alegrify-dropdown__label:hover {
+  border-bottom-color: #cccccc;
+}
+.alegrify-dropdown__trigger[disabled] + .alegrify-dropdown__label:hover:after {
+  border-top-color: #cccccc;
+}
+.alegrify-dropdown__trigger:checked + .alegrify-dropdown__label + .alegrify-dropdown__list {
+  display: block;
+}
+.alegrify-dropdown__trigger:focus + .alegrify-dropdown__label {
+  outline-color: #ffa666;
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-width: 1px;
+}
+.alegrify-dropdown__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom-color: #cccccc;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding: 8px 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s;
+}
+.alegrify-dropdown__label:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #cccccc;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+[dir="rtl"] .alegrify-dropdown__label:after,
+:host-context([dir="rtl"]) .alegrify-dropdown__label:after {
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+[dir="ltr"] .alegrify-dropdown__label:after,
+:host-context([dir="ltr"]) .alegrify-dropdown__label:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.alegrify-dropdown__label:hover {
+  border-color: #4d4d4d;
+}
+.alegrify-dropdown__label:hover:after {
+  border-top-color: #4d4d4d;
+}
+.alegrify-dropdown__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+}
+[dir="rtl"] .alegrify-dropdown__list,
+:host-context([dir="rtl"]) .alegrify-dropdown__list {
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+}
+[dir="ltr"] .alegrify-dropdown__list,
+:host-context([dir="ltr"]) .alegrify-dropdown__list {
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 2px;
+}
+.alegrify-dropdown__list-item:hover {
+  background-color: #fff0e5;
+}
+.alegrify-dropdown__list-item:active {
+  background-color: #ffffff;
+}
+.alegrify-dropdown__list-item + .alegrify-dropdown__list-item {
+  border-top-color: #cccccc;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+.alegrify-dropdown__list-item-trigger {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+  left: -999999px;
+}
+[dir="rtl"] .alegrify-dropdown__list-item-trigger,
+:host-context([dir="rtl"]) .alegrify-dropdown__list-item-trigger {
+  left: initial;
+  right: -999999px;
+}
+[dir="ltr"] .alegrify-dropdown__list-item-trigger,
+:host-context([dir="ltr"]) .alegrify-dropdown__list-item-trigger {
+  right: initial;
+  left: -999999px;
+}
+.alegrify-dropdown__list-item-trigger:checked + .alegrify-dropdown__list-item-label {
+  background-color: #ffffff;
+}
+.alegrify-dropdown__list-item-trigger:focus + .alegrify-dropdown__list-item-label {
+  outline-color: #ffa666;
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-width: 1px;
+}
+.alegrify-dropdown__list-item-label {
+  display: block;
+  cursor: pointer;
+  padding: 8px 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #000000;
+}

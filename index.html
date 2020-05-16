@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alegrify UI</title>
-    <link rel="stylesheet" href="./alegrify-ui.css" />
+    <link id="stylesheet" rel="stylesheet" href="./alegrify-ui.css" />
 </head>
 
 <body class="alegrify-body">
     <main id="page-content" class="alegrify-main"></main>
+
+    <footer class="alegrify-footer">
+        <label for="theme" class="alegrify-label">Theme:</label>
+        <select class="alegrify-select alegrify-select--inline" name="theme" id="theme">
+            <option value="default">Default</option>
+            <option value="article">Article</option>
+            <option value="dark">Dark</option>
+        </select>
+    </footer>
 
     <script src="node_modules/markdown-it/dist/markdown-it.min.js"></script>
     <script>
@@ -19,6 +28,7 @@
         }
 
         initIndex();
+        document.querySelector('#theme').addEventListener('change', handleThemeChange);
 
         function initIndex() {
             loadPage(`./docs/index.html`);
@@ -61,6 +71,12 @@
                     dialog.removeAttribute('open');
                 });
             });
+        }
+        
+        function handleThemeChange(changeEvent) { 
+            var theme = changeEvent.target.value;
+            var href = theme === 'default' ? 'alegrify-ui.css' : './alegrify-ui--' + theme + '.css';
+            document.getElementById('stylesheet').setAttribute('href', href);
         }
     </script>
 

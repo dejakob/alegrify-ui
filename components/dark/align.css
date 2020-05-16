@@ -1,0 +1,62 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+.alegrify-align-child--start,
+.alegrify-align-child--center,
+.alegrify-align-child--end,
+.alegrify-align-child--top,
+.alegrify-align-child--middle,
+.alegrify-align-child--bottom {
+  display: flex;
+  flex-direction: row;
+}
+.alegrify-align-child--start {
+  justify-content: flex-start;
+}
+.alegrify-align-child--center {
+  justify-content: center;
+}
+.alegrify-align-child--end {
+  justify-content: flex-end;
+}
+.alegrify-align-child--top {
+  align-items: flex-start;
+}
+.alegrify-align-child--middle {
+  align-items: center;
+}
+.alegrify-align-child--bottom {
+  align-items: flex-end;
+}
+.alegrify-align-text--start {
+  text-align: left;
+}
+[dir="rtl"] .alegrify-align-text--start,
+:host-context([dir="rtl"]) .alegrify-align-text--start {
+  text-align: right;
+}
+[dir="ltr"] .alegrify-align-text--start,
+:host-context([dir="ltr"]) .alegrify-align-text--start {
+  text-align: left;
+}
+.alegrify-align-text--center {
+  text-align: center;
+}
+.alegrify-align-text--end {
+  text-align: right;
+}
+[dir="rtl"] .alegrify-align-text--end,
+:host-context([dir="rtl"]) .alegrify-align-text--end {
+  text-align: left;
+}
+[dir="ltr"] .alegrify-align-text--end,
+:host-context([dir="ltr"]) .alegrify-align-text--end {
+  text-align: right;
+}

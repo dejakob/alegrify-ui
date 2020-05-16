@@ -1,6 +1,6 @@
 /* Base colors */
 @primary-color: #3b39ca;
-@secondary-color: #e4a700;
+@secondary-color: #ff6a00;
 @body-color: #000000;
 @action-color: #ffffff;
 @nav-color: #333333;
@@ -33,12 +33,15 @@
 /* Element colors */
 // Page (body)
 @page-color: @body-color;
-@page-background-color: #ffffff;
+@page-background-color: #fafafc;
 @page-gradient: linear-gradient(@primary-color, @secondary-color);
 
 // Link (a)
 @link-color: @primary-color;
 @link-color--external: @secondary-color;
+
+// Article
+@article-background-color: #ffffff;
 
 // Avatar
 @avatar-background-color: @subtile-border-color;
@@ -101,8 +104,12 @@
 @dropdown-hover-background-color: lighten(@secondary-color, 45%);
 
 // Footer
-@footer-background-color: lighten(@body-color, 20%);
+@footer-background-color: #ccc;
 @footer-color: @action-color;
+
+// Header
+@header-background-color: #ffffff;
+@header-border-color: #eeeeee;
 
 // Input
 @input-border-color: @subtile-border-color;

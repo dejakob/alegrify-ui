@@ -1,0 +1,25 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+.alegrify-p--welcome {
+  max-width: 432px;
+  margin-left: auto;
+  margin-right: auto;
+}
+[dir="rtl"] .alegrify-p--welcome,
+:host-context([dir="rtl"]) .alegrify-p--welcome {
+  margin-right: auto;
+  margin-left: auto;
+}
+[dir="ltr"] .alegrify-p--welcome,
+:host-context([dir="ltr"]) .alegrify-p--welcome {
+  margin-left: auto;
+  margin-right: auto;
+}

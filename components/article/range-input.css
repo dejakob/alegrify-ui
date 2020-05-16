@@ -1,0 +1,163 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNTFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzTRA.ttf) format('truetype');
+}
+.alegrify-range-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  background: transparent;
+}
+.alegrify-range-input[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.alegrify-range-input[disabled]::-webkit-slider-thumb {
+  cursor: not-allowed;
+}
+.alegrify-range-input[disabled]::-moz-range-thumb {
+  cursor: not-allowed;
+}
+.alegrify-range-input[disabled]::-ms-thumb {
+  cursor: not-allowed;
+}
+.alegrify-range-input:focus {
+  outline-color: #ffa666;
+  outline-offset: 15px;
+  outline-style: dashed;
+  outline-width: 1px;
+}
+.alegrify-range-input[data-low-indicator]:before {
+  content: attr(data-low-indicator);
+  font-size: 24px;
+  margin-right: 16px;
+}
+[dir="rtl"] .alegrify-range-input[data-low-indicator]:before,
+:host-context([dir="rtl"]) .alegrify-range-input[data-low-indicator]:before {
+  margin-right: initial;
+  margin-left: 16px;
+}
+[dir="ltr"] .alegrify-range-input[data-low-indicator]:before,
+:host-context([dir="ltr"]) .alegrify-range-input[data-low-indicator]:before {
+  margin-left: initial;
+  margin-right: 16px;
+}
+.alegrify-range-input[data-high-indicator]:after {
+  content: attr(data-high-indicator);
+  font-size: 24px;
+  margin-left: 16px;
+}
+[dir="rtl"] .alegrify-range-input[data-high-indicator]:after,
+:host-context([dir="rtl"]) .alegrify-range-input[data-high-indicator]:after {
+  margin-left: initial;
+  margin-right: 16px;
+}
+[dir="ltr"] .alegrify-range-input[data-high-indicator]:after,
+:host-context([dir="ltr"]) .alegrify-range-input[data-high-indicator]:after {
+  margin-right: initial;
+  margin-left: 16px;
+}
+.alegrify-range-input::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.alegrify-range-input:focus::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border-color: #3b39ca;
+}
+.alegrify-range-input:focus::-moz-range-thumb {
+  background-color: #ffffff;
+  border-color: #3b39ca;
+}
+.alegrify-range-input:focus::-ms-thumb {
+  background-color: #ffffff;
+  border-color: #3b39ca;
+}
+.alegrify-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(59, 57, 202, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-top: -12px;
+  border-radius: 16px;
+  transition: background 0.4s;
+}
+.alegrify-range-input::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(59, 57, 202, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-top: -12px;
+  border-radius: 16px;
+  transition: background 0.4s;
+}
+.alegrify-range-input::-ms-thumb {
+  appearance: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(59, 57, 202, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-top: -12px;
+  border-radius: 16px;
+  transition: background 0.4s;
+}
+.alegrify-range-input::-webkit-slider-runnable-track {
+  display: block;
+  background: #b2b2ea;
+  height: 8px;
+}
+.alegrify-range-input::-moz-range-track {
+  display: block;
+  background: #b2b2ea;
+  height: 8px;
+}
+.alegrify-range-input::-ms-fill-lower {
+  display: block;
+  background: #b2b2ea;
+  height: 8px;
+}
+.alegrify-range-input::-ms-fill-upper {
+  display: block;
+  background: #b2b2ea;
+  height: 8px;
+}

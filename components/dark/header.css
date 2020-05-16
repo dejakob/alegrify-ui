@@ -1,0 +1,59 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+.alegrify-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
+  box-shadow: 2px 2px 4px #cccccc;
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+[dir="rtl"] .alegrify-header,
+:host-context([dir="rtl"]) .alegrify-header {
+  box-shadow: -2px 2px 4px #cccccc;
+  text-transform: uppercase;
+}
+[dir="ltr"] .alegrify-header,
+:host-context([dir="ltr"]) .alegrify-header {
+  box-shadow: 2px 2px 4px #cccccc;
+  text-transform: uppercase;
+}
+.alegrify-header__content {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 0;
+}
+[dir="rtl"] .alegrify-header__content,
+:host-context([dir="rtl"]) .alegrify-header__content {
+  margin-right: auto;
+  margin-left: auto;
+}
+[dir="ltr"] .alegrify-header__content,
+:host-context([dir="ltr"]) .alegrify-header__content {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 600px) {
+  .alegrify-header__content {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .alegrify-header__content {
+    width: 960px;
+  }
+}

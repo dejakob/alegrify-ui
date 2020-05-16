@@ -1,0 +1,72 @@
+@component-name: ~'select';
+
+@{project-prefix}@{component-name} {
+    appearance: none;
+    border-radius: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .font--body();
+
+    background-color: @dropdown-background-color;
+    color: @dropdown-color;
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: @dropdown-border-color;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+
+    transition: background-color 0.4s;
+
+    &[disabled] {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+
+        width: 0; 
+        height: 0; 
+
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid @dropdown-border-color;
+
+        transform: rotate(0deg);
+        transition: transform 0.4s;
+    }
+
+    &:hover {
+        border-bottom-color: @dropdown-open-bottom-color;
+        background-color: @dropdown-open-background-color;
+        transition: background-color 0.4s;
+
+        &:after {
+            border-top-color: @dropdown-open-bottom-color;
+            transform: rotate(180deg);
+            transition: transform 0.4s;
+        }
+    }
+
+    &:focus {
+        outline-color: @dropdown-outline-color;
+        outline-offset: 2px;
+        outline-style: dashed;
+        outline-width: 1px;
+    }
+
+    &--inline {
+        width: auto;
+    }
+}

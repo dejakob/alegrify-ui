@@ -1,0 +1,30 @@
+@component-name: ~'header';
+
+@{project-prefix}@{component-name} {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    background-color: @header-background-color;
+    box-shadow: 2px 2px 4px @header-border-color;
+    margin-bottom: @space-32;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &__content {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; 
+        padding: @space-16 0;
+    
+        @media screen and (min-width: @small) {
+            width: @small;
+        }
+        @media screen and (min-width: @medium + 40px) {
+            width: @medium;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+.alegrify-body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #383698;
+}
+.alegrify-body__page-scroll {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.alegrify-body--gradient {
+  background-color: #ffffff;
+  background: linear-gradient(#91daf0, #e46700);
+}
+.alegrify-body--fixed-background {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+[class^="alegrify-"] {
+  margin: 0;
+  box-sizing: border-box;
+}
+[class^="alegrify-"]:before,
+[class^="alegrify-"]:after {
+  box-sizing: border-box;
+}
