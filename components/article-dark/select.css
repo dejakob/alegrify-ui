@@ -1,0 +1,125 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNTFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzTRA.ttf) format('truetype');
+}
+.alegrify-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  color: #ffffff;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom-color: #cccccc;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  padding: 8px 16px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: background-color 0.4s;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-variant: normal;
+  font-weight: 400;
+}
+[dir="rtl"] .alegrify-select,
+:host-context([dir="rtl"]) .alegrify-select {
+  border-left: none;
+  border-right: none;
+}
+[dir="ltr"] .alegrify-select,
+:host-context([dir="ltr"]) .alegrify-select {
+  border-right: none;
+  border-left: none;
+}
+.alegrify-select[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.alegrify-select:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #cccccc;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+[dir="rtl"] .alegrify-select:after,
+:host-context([dir="rtl"]) .alegrify-select:after {
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+[dir="ltr"] .alegrify-select:after,
+:host-context([dir="ltr"]) .alegrify-select:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.alegrify-select:hover {
+  border-bottom-color: #ffe600;
+  background-color: transparent;
+  transition: background-color 0.4s;
+}
+.alegrify-select:hover:after {
+  border-top-color: #ffe600;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+[dir="rtl"] .alegrify-select:hover:after,
+:host-context([dir="rtl"]) .alegrify-select:hover:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+[dir="ltr"] .alegrify-select:hover:after,
+:host-context([dir="ltr"]) .alegrify-select:hover:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.alegrify-select:focus {
+  outline-color: #fff066;
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-width: 1px;
+}
+.alegrify-select--inline {
+  width: auto;
+}

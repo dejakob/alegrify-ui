@@ -55,6 +55,7 @@
     &--disabled {
         opacity: 0.3;
         cursor: not-allowed;
+        background-color: @button-background-color;
     }
 
 
@@ -113,6 +114,12 @@
 
     &--link {
         border: none;
+
+        &[disabled],
+        &.alegrify-button--disabled,
+        &.alegrify-button--loading {
+            background-color: @button-background-color;
+        }
     }
 
     &--loading {

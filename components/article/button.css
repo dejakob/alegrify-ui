@@ -77,6 +77,7 @@
 .alegrify-button--disabled {
   opacity: 0.3;
   cursor: not-allowed;
+  background-color: #ffffff;
 }
 .alegrify-button--full {
   width: 100%;
@@ -125,6 +126,11 @@
 }
 .alegrify-button--link {
   border: none;
+}
+.alegrify-button--link[disabled],
+.alegrify-button--link.alegrify-button--disabled,
+.alegrify-button--link.alegrify-button--loading {
+  background-color: #ffffff;
 }
 .alegrify-button--loading {
   -webkit-animation: alegrify-button__loading-slide 1s;

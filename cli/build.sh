@@ -4,7 +4,7 @@ lessc index.less alegrify-ui.css --auto-rtl --autoprefix --global-var="theme=def
 lessc alegrify-ui.css alegrify-ui.min.css --clean-css
 
 ## Other themes
-for THEME in "article" "dark"
+for THEME in "article" "article-dark" "dark"
 do
   lessc index.less alegrify-ui--$THEME.css --auto-rtl --autoprefix --global-var="theme=$THEME"
   lessc alegrify-ui--$THEME.css alegrify-ui--$THEME.min.css --clean-css
@@ -21,7 +21,7 @@ do
   then
     echo "@import '../lib/_index.less';\n\n$(cat $f)" > "./tmp/$(basename $f)"
 
-    for THEME in "article" "dark"
+    for THEME in "article" "article-dark" "dark"
     do
       lessc "./tmp/$(basename $f)" "./components/$THEME/$(echo $(basename $f) | sed 's/\.[^.]*$//').css" --auto-rtl --autoprefix --global-var="theme=$THEME"
       lessc "./components/$THEME/$(echo $(basename $f) | sed 's/\.[^.]*$//').css" "./components/$THEME/$(echo $(basename $f) | sed 's/\.[^.]*$//').min.css" --clean-css

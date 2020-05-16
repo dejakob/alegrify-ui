@@ -165,6 +165,9 @@
   -webkit-transform: translate(0, 32px);
           transform: translate(0, 32px);
 }
+.alegrify-card__content .alegrify-button {
+  margin-top: 16px;
+}
 .alegrify-card__content:before {
   content: attr(data-title);
   -webkit-transform: translate(0, -48px);

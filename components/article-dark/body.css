@@ -1,0 +1,49 @@
+/* Base colors */
+/* Element specific colors */
+/* State indication colors */
+/* Focus outline colors */
+/* Element colors */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif'), local('NotoSerif'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Iaw1J5X9T9RW6j9bNTFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url(https://fonts.gstatic.com/s/notoserif/v8/ga6Law1J5X9T9RW6j9bNdOwzTRA.ttf) format('truetype');
+}
+.alegrify-body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #222222;
+}
+.alegrify-body__page-scroll {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.alegrify-body--gradient {
+  background-color: #ffffff;
+  background: linear-gradient(#6199e2, #ffe600);
+}
+.alegrify-body--fixed-background {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+[class^="alegrify-"] {
+  margin: 0;
+  box-sizing: border-box;
+}
+[class^="alegrify-"]:before,
+[class^="alegrify-"]:after {
+  box-sizing: border-box;
+}
