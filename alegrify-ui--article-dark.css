@@ -521,10 +521,10 @@
   outline-width: 1px;
 }
 .alegrify-a[target="_blank"] {
-  color: #ffe600;
+  color: #6199e2;
 }
 .alegrify-a[target="_blank"]:focus {
-  outline-color: #ffe600;
+  outline-color: #6199e2;
 }
 .alegrify-avatar {
   background-color: #cccccc;
