@@ -27,7 +27,7 @@
  * ```
  */
 .alegrify-stepper {
-  padding: 8px;
+  padding: 32px 8px 8px 8px;
 }
 .alegrify-stepper__progress {
   -webkit-appearance: none;
@@ -68,50 +68,100 @@
   clear: both;
 }
 .alegrify-stepper__step {
+  position: relative;
   display: none;
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 24px;
+  padding: 0 16px;
 }
-@media screen and (min-width: 1000px) {
-  .alegrify-stepper__step {
-    display: block;
-    float: left;
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 24px;
-    padding: 0 16px;
-  }
-  [dir="rtl"] .alegrify-stepper__step,
-  :host-context([dir="rtl"]) .alegrify-stepper__step {
-    float: right;
-  }
-  [dir="ltr"] .alegrify-stepper__step,
-  :host-context([dir="ltr"]) .alegrify-stepper__step {
-    float: left;
-  }
-  .alegrify-stepper__step:before {
-    content: '';
-    display: block;
-    margin: 0 auto;
-    height: 24px;
-    width: 24px;
-    border-radius: 12px;
-    background-color: #555477;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-transform: translate(0, -16px);
-            transform: translate(0, -16px);
-  }
-  [dir="rtl"] .alegrify-stepper__step:before,
-  :host-context([dir="rtl"]) .alegrify-stepper__step:before {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-transform: translate(0, -16px);
-            transform: translate(0, -16px);
-  }
-  [dir="ltr"] .alegrify-stepper__step:before,
-  :host-context([dir="ltr"]) .alegrify-stepper__step:before {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-transform: translate(0, -16px);
-            transform: translate(0, -16px);
-  }
-  .alegrify-stepper__step--active:before {
-    background-color: #ffe600;
-  }
+[dir="rtl"] .alegrify-stepper__step,
+:host-context([dir="rtl"]) .alegrify-stepper__step {
+  float: right;
+}
+[dir="ltr"] .alegrify-stepper__step,
+:host-context([dir="ltr"]) .alegrify-stepper__step {
+  float: left;
+}
+.alegrify-stepper__step:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  height: 24px;
+  width: 24px;
+  border-radius: 12px;
+  background-color: #555477;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translate(0, -16px);
+          transform: translate(0, -16px);
+}
+[dir="rtl"] .alegrify-stepper__step:before,
+:host-context([dir="rtl"]) .alegrify-stepper__step:before {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translate(0, -16px);
+          transform: translate(0, -16px);
+}
+[dir="ltr"] .alegrify-stepper__step:before,
+:host-context([dir="ltr"]) .alegrify-stepper__step:before {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translate(0, -16px);
+          transform: translate(0, -16px);
+}
+.alegrify-stepper__step:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(0, 0, 0, 0.95);
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translate(-6px, -24px);
+          transform: translate(-6px, -24px);
+}
+[dir="rtl"] .alegrify-stepper__step:after,
+:host-context([dir="rtl"]) .alegrify-stepper__step:after {
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  left: initial;
+  right: 50%;
+  -webkit-transform: translate(6px, -24px);
+          transform: translate(6px, -24px);
+}
+[dir="ltr"] .alegrify-stepper__step:after,
+:host-context([dir="ltr"]) .alegrify-stepper__step:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  right: initial;
+  left: 50%;
+  -webkit-transform: translate(-6px, -24px);
+          transform: translate(-6px, -24px);
+}
+.alegrify-stepper__step--active:before {
+  background-color: #ffe600;
+}
+.alegrify-stepper__step-label {
+  background: rgba(0, 0, 0, 0.95);
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  font-size: 14px;
+  color: #ffd000;
+  top: 0;
+  -webkit-transform: translate(-50%, -52px);
+          transform: translate(-50%, -52px);
+}
+[dir="rtl"] .alegrify-stepper__step-label,
+:host-context([dir="rtl"]) .alegrify-stepper__step-label {
+  -webkit-transform: translate(50%, -52px);
+          transform: translate(50%, -52px);
+}
+[dir="ltr"] .alegrify-stepper__step-label,
+:host-context([dir="ltr"]) .alegrify-stepper__step-label {
+  -webkit-transform: translate(-50%, -52px);
+          transform: translate(-50%, -52px);
 }
