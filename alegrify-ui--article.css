@@ -526,10 +526,10 @@
   outline-width: 1px;
 }
 .alegrify-a[target="_blank"] {
-  color: #ff6a00;
+  color: #3b39ca;
 }
 .alegrify-a[target="_blank"]:focus {
-  outline-color: #ff6a00;
+  outline-color: #3b39ca;
 }
 .alegrify-avatar {
   background-color: #cccccc;
@@ -1336,7 +1336,7 @@
   width: 100%;
   padding: 32px 16px;
   background-color: #ccc;
-  color: #ffffff;
+  color: #333;
   font-size: 14px;
   line-height: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
