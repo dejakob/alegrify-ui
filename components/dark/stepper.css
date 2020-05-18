@@ -143,16 +143,16 @@
   font-size: 14px;
   color: #ffffff;
   top: 0;
-  -webkit-transform: translate(-50%, -52px);
-          transform: translate(-50%, -52px);
+  -webkit-transform: translate(-50%, -57px);
+          transform: translate(-50%, -57px);
 }
 [dir="rtl"] .alegrify-stepper__step-label,
 :host-context([dir="rtl"]) .alegrify-stepper__step-label {
-  -webkit-transform: translate(50%, -52px);
-          transform: translate(50%, -52px);
+  -webkit-transform: translate(50%, -57px);
+          transform: translate(50%, -57px);
 }
 [dir="ltr"] .alegrify-stepper__step-label,
 :host-context([dir="ltr"]) .alegrify-stepper__step-label {
-  -webkit-transform: translate(-50%, -52px);
-          transform: translate(-50%, -52px);
+  -webkit-transform: translate(-50%, -57px);
+          transform: translate(-50%, -57px);
 }

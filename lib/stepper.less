@@ -79,23 +79,6 @@
         transform: translate(0, -16px);
       }
 
-      &:after {
-        display: block;
-        content: '';
-  
-        width: 0; 
-        height: 0; 
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 6px solid @backdrop-color;
-        
-        position: absolute;
-        top: 0;
-        margin: 0 auto;
-        left: 50%;
-        transform: translate(-6px, -24px);
-      }
-
       &--active {
         &:before {
           background-color: @stepper-active-dot-color;
@@ -104,13 +87,10 @@
     // }
   }
   &__step-label {
-    background: @backdrop-color;
-    padding: 4px 8px;
-    border-radius: 4px;
-    position: absolute;
-    font-size: 14px;
-    color: @action-color;
-    top: 0;
-    transform: translate(-50%, -57px);
+    display: block;
+    color: @body-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
