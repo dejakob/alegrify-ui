@@ -2483,10 +2483,6 @@
   border-left-width: 4px;
   border-left-style: solid;
   border-radius: 2px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   font-size: 14px;
   line-height: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -2584,6 +2580,12 @@
   color: #328232;
   border-color: #328232;
 }
+.alegrify-notification--success .alegrify-a {
+  color: #328232;
+}
+.alegrify-notification--success .alegrify-a:focus {
+  outline-color: #328232;
+}
 .alegrify-notification--info {
   border-left-color: #335984;
   background-color: #e4ecf5;
@@ -2610,6 +2612,12 @@
 .alegrify-notification--info .alegrify-button {
   color: #335984;
   border-color: #335984;
+}
+.alegrify-notification--info .alegrify-a {
+  color: #335984;
+}
+.alegrify-notification--info .alegrify-a:focus {
+  outline-color: #335984;
 }
 .alegrify-notification--warning {
   border-left-color: #b8641f;
@@ -2638,6 +2646,12 @@
   color: #b8641f;
   border-color: #b8641f;
 }
+.alegrify-notification--warning .alegrify-a {
+  color: #b8641f;
+}
+.alegrify-notification--warning .alegrify-a:focus {
+  outline-color: #b8641f;
+}
 .alegrify-notification--error {
   border-left-color: #b10909;
   background-color: #fddfdf;
@@ -2664,6 +2678,12 @@
 .alegrify-notification--error .alegrify-button {
   color: #b10909;
   border-color: #b10909;
+}
+.alegrify-notification--error .alegrify-a {
+  color: #b10909;
+}
+.alegrify-notification--error .alegrify-a:focus {
+  outline-color: #b10909;
 }
 .alegrify-p--welcome {
   max-width: 432px;

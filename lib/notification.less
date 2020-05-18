@@ -15,8 +15,6 @@
     border-left-style: solid;
     border-radius: 2px;
 
-    user-select: none;
-
     &:after {
         display: block;
         position: absolute;
@@ -74,6 +72,13 @@
             color: @notification-success-border-color;
             border-color: @notification-success-border-color;
         }
+        .alegrify-a {
+            color: @notification-success-border-color;
+
+            &:focus {
+                outline-color: @notification-success-border-color;
+            }
+        }
     }
 
     &--info {
@@ -94,6 +99,13 @@
         .alegrify-button {
             color: @notification-info-border-color;
             border-color: @notification-info-border-color;
+        }
+        .alegrify-a {
+            color: @notification-info-border-color;
+
+            &:focus {
+                outline-color: @notification-info-border-color;
+            }
         }
     }
 
@@ -116,6 +128,13 @@
             color: @notification-warning-border-color;
             border-color: @notification-warning-border-color;
         }
+        .alegrify-a {
+            color: @notification-warning-border-color;
+
+            &:focus {
+                outline-color: @notification-warning-border-color;
+            }
+        }
     }
 
     &--error {
@@ -136,6 +155,13 @@
         .alegrify-button {
             color: @notification-error-border-color;
             border-color: @notification-error-border-color;
+        }
+        .alegrify-a {
+            color: @notification-error-border-color;
+
+            &:focus {
+                outline-color: @notification-error-border-color;
+            }
         }
     }
 }
