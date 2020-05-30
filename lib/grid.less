@@ -56,37 +56,57 @@
     box-sizing: border-box;
 
     &--1 {
-        width: 100% * 1 / 12;
+        .grid-cell-viewports(100% * 1 / 12);
     }
     &--2 {
-        width: 100% * 2 / 12;
+        .grid-cell-viewports(100% * 2 / 12);
     }
     &--3 {
-        width: 100% * 3 / 12;
+        .grid-cell-viewports(100% * 3 / 12);
     }
     &--4 {
-        width: 100% * 4 / 12;
+        .grid-cell-viewports(100% * 4 / 12);
     }
     &--5 {
-        width: 100% * 5 / 12;
+        .grid-cell-viewports(100% * 5 / 12);
     }
     &--6 {
-        width: 100% * 6 / 12;
+        .grid-cell-viewports(100% * 6 / 12);
     }
     &--7 {
-        width: 100% * 7 / 12;
+        .grid-cell-viewports(100% * 7 / 12);
     }
     &--8 {
-        width: 100% * 8 / 12;
+        .grid-cell-viewports(100% * 8 / 12);
     }
     &--9 {
-        width: 100% * 9 / 12;
+        .grid-cell-viewports(100% * 9 / 12);
     }
     &--10 {
-        width: 100% * 10 / 12;
+        .grid-cell-viewports(100% * 10 / 12);
     }
     &--11 {
-        width: 100% * 11 / 12;
+        .grid-cell-viewports(100% * 11 / 12);
+    }
+}
+
+.grid-cell-viewports(@width) {
+    width: @width;
+
+    &\@small {
+        @media screen and (min-width: @small + 40px) {
+            width: @width;
+        }
+    }
+    &\@medium {
+        @media screen and (min-width: @medium + 40px) {
+            width: @width;
+        }
+    }
+    &\@large {
+        @media screen and (min-width: @large + 40px) {
+            width: @width;
+        }
     }
 }
 
@@ -102,7 +122,7 @@
     &--small {
         @media (min-width: @small + 40px) {
             .grid();
-            
+
             .alegrify-grid__cell,
             [class^="alegrify-"].alegrify-grid__cell {
                 .grid-cell();
