@@ -93,7 +93,7 @@
 .alegrify-grid {
     margin: -16px 0 0 0;
 
-    &:not(.alegrify-grid--small) {
+    &:not(.alegrify-grid--large) {
         @media (min-width: @medium + 40px) {
             .grid();
         }
@@ -102,6 +102,11 @@
     &--small {
         @media (min-width: @small + 40px) {
             .grid();
+            
+            .alegrify-grid__cell,
+            [class^="alegrify-"].alegrify-grid__cell {
+                .grid-cell();
+            }
         }
     }
 
